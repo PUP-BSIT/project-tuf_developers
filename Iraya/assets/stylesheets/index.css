@@ -68,6 +68,31 @@ nav ul li a.get-started-btn:hover {
   background-color: #FF8C00;
 }
 
+main {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 18px;
+  color: #555;
+}
+
 footer {
   background-color: #FFA500;
   padding: 20px 0;
