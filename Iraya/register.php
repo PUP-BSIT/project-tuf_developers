@@ -1,3 +1,14 @@
+<?php
+    require_once 'user.php';
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        registerUser($username, $password);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,7 +18,7 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<link rel="stylesheet" href="./assets/stylesheets/login.css" />
-		<title>Document</title>
+		<title>Register</title>
 	</head>
 	<body>
 		<header>
@@ -37,21 +48,21 @@
 			</nav>
 		</header>
         <div>
-            <form>
+            <form action="POST">
                 <div class="title">
                     <h1>Register</h1>
                 </div>
                 <div>
                     <label for="username">Username</label>
-                    <input type="text">
+                    <input type="text" name="username" required>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password">
+                    <input type="password" name="password" required>
                 </div>
                 <div>
                     <label for="confirm_password">Confirm Password</label>
-                    <input type="password">
+                    <input type="password" required>
                 </div>
                 <button type="submit">Register</button>
             </form>

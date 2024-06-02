@@ -1,3 +1,19 @@
+<?php
+    require_once 'user.php';
+    session_start();
+
+    if(isUserLoggedIn()){
+        header('Location:journal_manager.php');
+    }
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        loginUser($username, $password);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,7 +23,7 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<link rel="stylesheet" href="./assets/stylesheets/login.css" />
-		<title>Document</title>
+		<title>Login</title>
 	</head>
 	<body>
 		<header>
@@ -30,28 +46,23 @@
 					<li><a href="#">About</a></li>
 					<li>
 						<a href="#" class="get-started-btn"
-							>Get Started</a
-						>
+							>Get Started</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
         <div>
-            <form>
+            <form method="POST">
                 <div class="title">
                     <h1>Login</h1>
                 </div>
                 <div>
                     <label for="username">Username</label>
-                    <input type="text">
+                    <input type="text" name="username" required>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password">
-                </div>
-                <div>
-                    <label for="confirm_password">Confirm Password</label>
-                    <input type="password">
+                    <input type="password" name="password" required>
                 </div>
                 <button type="submit">Login</button>
             </form>
