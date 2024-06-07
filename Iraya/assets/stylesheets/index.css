@@ -110,6 +110,37 @@ section {
   color: #555;
 }
 
+.welcome-text a {
+  display: inline-block;
+  color: #000;
+  background-color: #FFA500;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+}
+
+.welcome-text a:hover {
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+
+.welcome-text a.reg {
+  background: transparent;
+  border:  1px solid black;
+  margin-left: 20px;
+}
+
+.welcome-text a.reg i {
+  vertical-align: middle;
+  margin-right: 5px;
+
+}
 
 .welcome-section h2 {
   font-size: 32px;
