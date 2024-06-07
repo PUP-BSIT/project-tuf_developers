@@ -139,30 +139,20 @@ section {
 .welcome-text a.reg i {
   vertical-align: middle;
   margin-right: 5px;
-
 }
 
-.welcome-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.welcome-section p {
-  font-size: 18px;
-  color: #555;
-}
-
-footer {
+.footer {
   background-color: #FFA500;
-  padding: 20px 0;
   color: #000;
+  padding: 1px 0%; 
 }
 
 .footer-container {
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 5px 10%; 
 }
 
 .footer-logo {
@@ -170,15 +160,26 @@ footer {
   align-items: center;
 }
 
+.footer-logo img {
+  height: 50px; 
+  margin-right: 10px;
+}
+
+.footer-logo .logo-text {
+  margin-left: 10px;
+}
+
 .footer-columns {
   display: flex;
-  justify-content: space-around;
-  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .footer-column {
   flex: 1;
   margin: 0 20px;
+  min-width: 200px; 
 }
 
 .footer-column h3 {
@@ -188,6 +189,7 @@ footer {
 .footer-column p, .footer-column a {
   color: #000;
   text-decoration: none;
+  margin: 5px 0; 
 }
 
 .footer-column form {
@@ -201,6 +203,7 @@ footer {
   margin-right: 10px;
   border: none;
   border-radius: 5px;
+  flex-grow: 1;
 }
 
 .footer-column button {
@@ -218,7 +221,8 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   background-color: #000;
   color: #fff;
+  margin-top: 20px; 
 }
