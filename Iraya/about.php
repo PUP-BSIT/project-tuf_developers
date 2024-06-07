@@ -25,8 +25,8 @@
             <li><a href="#">Register</a></li>
             <li><a href="#">About</a></li>
             <li>
-                <a href="#" class="get-started-btn"
-                    >Get Started</a>
+                <a href="#" class="get-started-btn">
+                    Get Started</a>
             </li>
         </ul>
     </nav>
@@ -85,8 +85,5 @@
         <p>© 2023 by Iraya. All rights reserved.</p>
     </div>
 </footer>
-
-
-
 </body>
-</html>*/
+</html>
