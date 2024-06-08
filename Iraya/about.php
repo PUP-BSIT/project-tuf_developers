@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,7 +51,34 @@
             </p>
        </div>   
        <div class="tuf-members">
-            <h1>TUF Developers</h1>
+         <h1>TUF Developers</h1>
+       <div class="members">
+              <img src="./assets/images/Añonuevo_DIT.jpeg">
+         <div class="member-name">
+                Jheferson Añonuevo
+         </div>
+            <img src="./assets/images/ROCHE_DIT.jpg">
+         <div class="member-name">
+                Maui Jane Roche
+         </div>
+            <img src="./assets/images/Nogadas_DIT.jpeg">
+         <div class="member-name">
+                Von Ryan Nogadas
+         </div>
+            <img src="./assets/images/DONATOS_DIT.jpeg">
+         <div class="member-name">
+                Andrea Donatos
+         </div>
+            <img src="./assets/images/CAHIGAN_DIT.jpeg">
+         <div class="member-name">
+                Mark Cahigan
+         </div>
+      </div>
+      </div>
+      <div class="closing_remark">
+       <p class="closing">"Thank you for choosing Iraya. Embrace change, preserve memories, and let your digital story unfold with us."
+       </p>
+        </div>
        </div>
     </section>
 </main>
