@@ -33,7 +33,25 @@
 </header>
 <main>
     <section class="about">
-        
+       <div> 
+         <h2>About Us</h2>  
+            <p>Welcome to Iraya, your modern solution to journaling that blends innovation with inspiration. 
+               At Iraya, we believe in the power of capturing life’s moments, reflections, and aspirations 
+               in a way that is both secure and creatively fulfilling. Our mission is to simplify and enhance 
+               your journaling experience, making it a delightful journey through nostalgia.
+            </p>
+       </div>
+       <div class="vision">
+         <h1>Our Vision</h1>
+            <p>In today’s fast-paced world, we understand the importance of preserving memories while 
+               adapting to ever-evolving digital landscapes. Iraya aims to bridge the gap between 
+               traditional journaling and modern technology, offering a user-centric platform 
+               that caters to your personal and creative needs.
+            </p>
+       </div>   
+       <div class="tuf-members">
+            <h1>TUF Developers</h1>
+       </div>
     </section>
 </main>
 <footer>
