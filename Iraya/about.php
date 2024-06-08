@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,15 +26,60 @@
             <li><a href="#">Register</a></li>
             <li><a href="#">About</a></li>
             <li>
-                <a href="#" class="get-started-btn"
-                    >Get Started</a>
+                <a href="#" class="get-started-btn">
+                    Get Started</a>
             </li>
         </ul>
     </nav>
 </header>
 <main>
     <section class="about">
-        
+       <div> 
+         <h2>About Us</h2>  
+            <p>Welcome to Iraya, your modern solution to journaling that blends innovation with inspiration. 
+               At Iraya, we believe in the power of capturing life’s moments, reflections, and aspirations 
+               in a way that is both secure and creatively fulfilling. Our mission is to simplify and enhance 
+               your journaling experience, making it a delightful journey through nostalgia.
+            </p>
+       </div>
+       <div class="vision">
+         <h1>Our Vision</h1>
+            <p>In today’s fast-paced world, we understand the importance of preserving memories while 
+               adapting to ever-evolving digital landscapes. Iraya aims to bridge the gap between 
+               traditional journaling and modern technology, offering a user-centric platform 
+               that caters to your personal and creative needs.
+            </p>
+       </div>   
+       <div class="tuf-members">
+         <h1>TUF Developers</h1>
+       <div class="members">
+              <img src="./assets/images/Añonuevo_DIT.jpeg">
+         <div class="member-name">
+                Jheferson Añonuevo
+         </div>
+            <img src="./assets/images/ROCHE_DIT.jpg">
+         <div class="member-name">
+                Maui Jane Roche
+         </div>
+            <img src="./assets/images/Nogadas_DIT.jpeg">
+         <div class="member-name">
+                Von Ryan Nogadas
+         </div>
+            <img src="./assets/images/DONATOS_DIT.jpeg">
+         <div class="member-name">
+                Andrea Donatos
+         </div>
+            <img src="./assets/images/CAHIGAN_DIT.jpeg">
+         <div class="member-name">
+                Mark Cahigan
+         </div>
+      </div>
+      </div>
+      <div class="closing_remark">
+       <p class="closing">"Thank you for choosing Iraya. Embrace change, preserve memories, and let your digital story unfold with us."
+       </p>
+        </div>
+       </div>
     </section>
 </main>
 <footer>
@@ -85,8 +131,5 @@
         <p>© 2023 by Iraya. All rights reserved.</p>
     </div>
 </footer>
-
-
-
 </body>
-</html>*/
+</html>
