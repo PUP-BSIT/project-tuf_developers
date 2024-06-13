@@ -53,6 +53,23 @@
           making it a delightful journey through nostalgia.
         </p>
        </div>
+       </section>
+      <div class="vision-container">
+        <section class="vision">
+         <div class="vision-image">
+          <img src="./vision_picture.png" alt="Picture">
+         </div> 
+         <div class="vision-content">
+          <h2>Our Vision</h2>
+          <p>
+            In today's fast-paced world, we understand the importance 
+          of preserving memories while adapting to ever-evolving digital 
+          landscapes. Iraya aims to bridge the gap between traditional 
+          journaling and modern technology, offering a user-centric platform
+          that caters to your personal and creative needs.
+          </p>
+         </div>
+        </section>
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
