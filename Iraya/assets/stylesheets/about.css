@@ -213,3 +213,42 @@ main {
   border-radius: 15px;
   margin-bottom: 15px;
 }
+
+.center h1 {
+  color: #000;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.box {
+ padding: 10px;
+ background-color:  #f09c35;
+ border-radius: 15px;
+ transition: all .38s ease;
+}
+
+.box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.icons i {
+  display: inline-block;
+  color: #000;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: all .38s ease; 
+} 
+
+.icons i:hover {
+  transform: scale(1.2);
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+
+}
