@@ -116,7 +116,7 @@
       </div>
     </section>
   </main>
-  <>
+  <footer>
     <div class="footer-container">
       <div class="footer-logo">
         <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
