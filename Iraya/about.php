@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="./assets/stylesheets/about.css">
   <title>About Us</title>
 </head>
-
 <body>
   <header>
     <div class="logo-container">
