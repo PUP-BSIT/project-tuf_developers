@@ -60,12 +60,14 @@ function editJournal(journalId) {
 }
 
 async function deleteJournal(journalId) {
-    const formBody = new FormData();
-    formBody.append('journal_id',journalId);
-    const data = { method: 'POST', body: formBody };
+    const options = {
+        method: 'DELETE',
+        headers: {
+            "Content-type": "application/x-www-form-urlencoded",
+        },
+        body: `journal_id=${journalId}`
+    };
 
-    await fetch('./apis/delete_journal.php', data)
-        .then((data) => console.log(data.text()))
-
-    window.location.reload();
+    const response = await fetch('./api.php', options);
+    const data = await response.text();
 }

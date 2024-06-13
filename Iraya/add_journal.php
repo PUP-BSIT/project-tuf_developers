@@ -6,16 +6,16 @@
         header('Location:login.php');
     }
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $userId = $_SESSION['user_id'];
-        $journalTitle = $_POST['journal_title'];
-        $journalContent = $_POST['journal_content'];
-        $sticker = 'none';
+    // if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //     $userId = $_SESSION['user_id'];
+    //     $journalTitle = $_POST['journal_title'];
+    //     $journalContent = $_POST['journal_content'];
+    //     $sticker = 'none';
 
-        addJournal($userId, $journalTitle, $journalContent, $sticker);
+    //     addJournal($userId, $journalTitle, $journalContent, $sticker);
 
-        header('Location:journal_manager.php');
-    }
+    //     header('Location:journal_manager.php');
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@
 </head>
 <body>
     <button type="button">Back</button>
-    <form action="./add_journal.php" method="POST">
+    <form>
         <div>
             <label for="journal_title">Title</label>
             <input type="text" name="journal_title" id="journal_title"
@@ -38,7 +38,8 @@
             <textarea name="journal_content"
                 id="journal_content" required></textarea>
         </div>
-        <button type="submit">Add Journal</button>
+        <button type="button" onclick="insertJournal()">Add Journal</button>
     </form>
+    <script src="./scripts/add_journal.js"></script>
 </body>
 </html>
