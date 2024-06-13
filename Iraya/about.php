@@ -107,6 +107,15 @@
         </div>
         </div>
       </div>
+      </section>
+      <div class="closing_remark">
+        <p>"Thank you for choosing Iraya.  Embrace change, preserve memories,
+           and let your digital story unfold with us."
+        </p>
+      </div>
+      </div>
+    </section>
+  </main>
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
