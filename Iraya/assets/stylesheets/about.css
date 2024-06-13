@@ -126,3 +126,61 @@ main {
 .about-image:hover img {
   transform: scale(1.2);
 }
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.vision-content h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.vision {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; 
+}
+
+.vision-content {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.vision-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.vision-image {
+  flex: 1;
+  overflow: hidden;
+  margin-left: 40px; 
+}
+
+.vision-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.vision-image:hover img {
+  transform: scale(1.2);
+}
