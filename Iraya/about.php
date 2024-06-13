@@ -9,29 +9,25 @@
 <body>
 <header>
     <div class="logo-container">
-        <img
-            src="./assets/images/logo.png"
-            alt="Iraya Logo"
-            class="logo"
-        />
-        <div class="logo-text">
-            <h1>Iraya</h1>
-            <p>Simplify Your Journaling Experience</p>
-        </div>
+      <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
+      <div class="logo-text">
+        <h1>Iraya</h1>
+        <p>Simplify Your Journaling Experience</p>
+      </div>
     </div>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
-            <li><a href="#">About</a></li>
-            <li>
-                <a href="#" class="get-started-btn">
-                    Get Started</a>
-            </li>
-        </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#" class="get-started-btn">
+            Get Started</a>
+        </li>
+      </ul>
     </nav>
-</header>
+  </header>
 <main>
     <section class="about">
        <div> 
