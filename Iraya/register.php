@@ -4,7 +4,7 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $username = $_POST['username'];
         $password = $_POST['password'];
-
+        
         registerUser($username, $password);
     }
 ?>
@@ -44,21 +44,21 @@
       </nav>
     </header>
     <div>
-      <form>
+      <form method="POST">
         <div class="title">
           <h1>Register</h1>
         </div>
         <div>
           <label for="username">Username</label>
-          <input type="text" />
+          <input type="text" name="username"/>
         </div>
         <div>
           <label for="password">Password</label>
-          <input type="password" />
+          <input type="password" name="password"/>
         </div>
         <div>
           <label for="confirm_password">Confirm Password</label>
-          <input type="password" />
+          <input type="password" name="confirm_password"/>
         </div>
         <button type="submit">Register</button>
       </form>
