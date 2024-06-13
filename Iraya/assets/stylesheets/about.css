@@ -184,3 +184,32 @@ main {
 .vision-image:hover img {
   transform: scale(1.2);
 }
+
+.team {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.team-container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.team-container img {
+  width: 60%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
