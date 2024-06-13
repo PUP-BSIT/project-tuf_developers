@@ -12,3 +12,24 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+  
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+  
+.logo-text h1 {
+  margin: 0;
+  font-size: 24px;
+}
+  
+.logo-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
