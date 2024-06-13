@@ -37,7 +37,22 @@
         analyze your entries over time. 
       </p>
     </div>
-   
+    <div class="about-container">
+      <section class="about">
+       <div class="about-image">
+        <img src="./about_picture.png" alt="Picture">
+       </div> 
+       <div class="about-content">
+        <h2>Capture moments through Iraya</h2>
+        <p>
+          Iraya, your modern solution to journaling
+           that blends innovation with inspiration. At Iraya, we believe in 
+           the power of capturing life moments, reflections, and aspirations
+          in a way that is both secure and creatively fulfilling. 
+          Our mission is to simplify and enhance your journaling experience, 
+          making it a delightful journey through nostalgia.
+        </p>
+       </div>
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
