@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="./assets/stylesheets/about.css">
   <title>About Us</title>
 </head>
 
@@ -42,7 +42,7 @@
     <div class="about-container">
       <section class="about">
        <div class="about-image">
-        <img src="./about_picture.png" alt="Picture">
+        <img src="./assets/images/about.png" alt="Picture">
        </div> 
        <div class="about-content">
         <h2>Capture moments through Iraya</h2>
@@ -59,7 +59,7 @@
       <div class="vision-container">
         <section class="vision">
          <div class="vision-image">
-          <img src="./vision_picture.png" alt="Picture">
+          <img src="./assets/images/vision_picture.png" alt="Picture">
          </div> 
          <div class="vision-content">
           <h2>Our Vision</h2>
@@ -79,7 +79,8 @@
       </div>
       <div class="team-container">
         <div class="box">
-          <img src="./Añonuevo_DIT.jpg" alt="Jheferson's Picture">
+          <img src="./assets/images/Añonuevo_DIT.jpg" 
+            alt="Jheferson's Picture">
           <h3>Jheferson Añonuevo</h3>
           <h5>Project Manager</h5>
           <div class="icons">
@@ -88,7 +89,7 @@
         </div>
         </div>
         <div class="box">
-          <img src="./ROCHE_DIT.jpg" alt="Maui's Picture">
+          <img src="./assets/images/Roche_DIT.jpg" alt="Maui's Picture">
           <h3>Maui Jane Roche</h3>
           <h5>UI/UX Design</h5>
           <div class="icons">
@@ -97,7 +98,7 @@
         </div>
         </div>
         <div class="box">
-          <img src="./Nogadas_DIT.jpg" alt="Von's Picture">
+          <img src="./assets/images/Nogadas_DIT.jpg" alt="Von's Picture">
           <h3>Von Ryan Nogadas</h3>
           <h5>Lead Developer</h5>
           <div class="icons">
@@ -106,7 +107,7 @@
         </div>
         </div>
         <div class="box">
-          <img src="./DONATOS_DIT.jpg" alt="Andrea's Picture">
+          <img src="./assets/images/Donatos_DIT.jpg" alt="Andrea's Picture">
           <h3>Andrea Donatos</h3> 
           <h5>UI/UX Design</h5>
           <div class="icons">
@@ -115,7 +116,7 @@
         </div>
         </div>
         <div class="box">
-          <img src="./CAHIGAN_DIT.jpg" alt="Mark's Picture">
+          <img src="./assets/images/Cahigan_DIT.jpg" alt="Mark's Picture">
           <h3>Mark Cahigan</h3>
           <h5>Tester</h5>
           <div class="icons">
