@@ -250,5 +250,8 @@ main {
 .box:hover {
   transform: translateY(-10px);
   cursor: pointer;
+}
 
+.closing_remark {
+  text-align: center;
 }
