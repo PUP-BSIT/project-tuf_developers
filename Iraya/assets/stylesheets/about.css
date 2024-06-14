@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-
 }
 
 header {
@@ -227,8 +226,15 @@ main {
  transition: all .38s ease;
 }
 
+.box-girls {
+  padding: 10px;
+  background-color:  #fd4c4c;
+  border-radius: 15px;
+  transition: all .38s ease;
+}
+
 .box h3 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   color: black;
   margin-bottom: 8px;
@@ -252,8 +258,14 @@ main {
   cursor: pointer;
 }
 
+.box-girls:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
 .closing_remark {
   text-align: center;
+  font-style: italic;
 }
 
 footer {
@@ -341,4 +353,10 @@ footer {
   background-color: #000;
   color: #fff;
   margin-top: 20px;
-}   
+}  
+
+.header-about {
+  background: -webkit-linear-gradient(#ffd685, #cc7700);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
