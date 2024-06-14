@@ -13,4 +13,6 @@ async function insertJournal() {
 
     const response = await fetch('./api.php', options);
     const data = await response.text();
+
+    window.location.replace('./journal_manager.php');
 }

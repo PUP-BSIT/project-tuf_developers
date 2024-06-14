@@ -5,17 +5,6 @@
     if(!isUserLoggedIn()) {
         header('Location:login.php');
     }
-
-    // if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    //     $userId = $_SESSION['user_id'];
-    //     $journalTitle = $_POST['journal_title'];
-    //     $journalContent = $_POST['journal_content'];
-    //     $sticker = 'none';
-
-    //     addJournal($userId, $journalTitle, $journalContent, $sticker);
-
-    //     header('Location:journal_manager.php');
-    // }
 ?>
 
 <!DOCTYPE html>

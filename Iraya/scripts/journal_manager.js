@@ -1,7 +1,8 @@
 const journals = document.querySelector("#journals");
+const endpoint = './api.php';
 let journalData;
 
-fetch("./apis/get_journals.php")
+fetch(endpoint)
 	.then((result) => result.json())
 	.then((data) => {
 		journalData = data;
@@ -56,7 +57,8 @@ function createActionButtons(journalId) {
 }
 
 function editJournal(journalId) {
-    window.location.replace(`./edit_journal.php?journal_id=${journalId}`);
+    const edit_endpoint = 'edit_journal.php';
+    window.location.replace(`./${edit_endpoint}?journal_id=${journalId}`);
 }
 
 async function deleteJournal(journalId) {
@@ -68,6 +70,8 @@ async function deleteJournal(journalId) {
         body: `journal_id=${journalId}`
     };
 
-    const response = await fetch('./api.php', options);
+    const response = await fetch(endpoint, options);
     const data = await response.text();
+
+    window.location.replace('./journal_manager.php');
 }

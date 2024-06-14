@@ -37,6 +37,4 @@ else if($_SERVER['REQUEST_METHOD'] == 'DELETE') {
 
     deleteJournal($journalId);
 }
-
-echo '{ "status": "Operation Sucess!" }';
 ?>

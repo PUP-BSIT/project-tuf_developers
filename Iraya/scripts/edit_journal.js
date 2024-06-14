@@ -15,4 +15,6 @@ async function editJournal() {
 
     const response = await fetch('./api.php', options);
     const data = await response.text();
+
+    window.location.assign('./journal_manager.php');
 }
