@@ -4,8 +4,14 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $confirm = $_POST['confirm_password'];
         
-        registerUser($username, $password);
+        if($password == $confirm) {
+          registerUser($username, $password);
+          return;
+        }
+
+        $message = "Passwords don't match";
     }
 ?>
 
@@ -50,17 +56,18 @@
         </div>
         <div>
           <label for="username">Username</label>
-          <input type="text" name="username"/>
+          <input type="text" name="username" required/>
         </div>
         <div>
           <label for="password">Password</label>
-          <input type="password" name="password"/>
+          <input type="password" name="password" required/>
         </div>
         <div>
           <label for="confirm_password">Confirm Password</label>
-          <input type="password" name="confirm_password"/>
+          <input type="password" name="confirm_password" required/>
         </div>
         <button type="submit">Register</button>
+        <?= $message ?? '' ?>
       </form>
     </div>
     <footer>
