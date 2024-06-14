@@ -1,12 +1,17 @@
 <?php
-    //TODO(Nogadas,Von Ryan): Define user.php along with registerUser function
     require_once 'user.php';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $confirm = $_POST['confirm_password'];
+        
+        if($password == $confirm) {
+          registerUser($username, $password);
+          return;
+        }
 
-        registerUser($username, $password);
+        $message = "Passwords don't match";
     }
 ?>
 
@@ -16,8 +21,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+      content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./assets/stylesheets/login.css" />
     <title>Document</title>
   </head>
@@ -46,23 +50,24 @@
       </nav>
     </header>
     <div>
-      <form>
+      <form method="POST">
         <div class="title">
           <h1>Register</h1>
         </div>
         <div>
           <label for="username">Username</label>
-          <input type="text" />
+          <input type="text" name="username" required/>
         </div>
         <div>
           <label for="password">Password</label>
-          <input type="password" />
+          <input type="password" name="password" required/>
         </div>
         <div>
           <label for="confirm_password">Confirm Password</label>
-          <input type="password" />
+          <input type="password" name="confirm_password" required/>
         </div>
         <button type="submit">Register</button>
+        <?= $message ?? '' ?>
       </form>
     </div>
     <footer>
