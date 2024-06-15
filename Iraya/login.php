@@ -1,5 +1,4 @@
 <?php
-	//TODO(Cahigan,Mark Louie): Define user.ph and journal_manager.php
     require_once 'user.php';
     session_start();
 

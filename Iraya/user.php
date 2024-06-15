@@ -32,4 +32,13 @@ function loginUser($username, $password) {
     $_SESSION['username'] = $user['username'];
     header('Location:journal_manager.php');
 }
+
+function getUser($username) {
+    global $conn;
+    $params = [$username];
+
+    $result = $conn->execute_query('select * from user where username=?',
+        $params);
+    return $result->fetch_assoc();
+}
 ?>
