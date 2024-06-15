@@ -22,3 +22,12 @@ else if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     addJournal($journalTitle, $journalContent);
 }
+else if($_SERVER['REQUEST_METHOD'] == 'PATCH') {
+    parse_str(file_get_contents('php://input'), $_PATCH);
+    $journalId = $_PATCH['journal_id'];
+    $title = $_PATCH['journal_title'];
+    $content = $_PATCH['journal_content'];
+    $sticker = 'none';
+
+    updateJournal($journalId, $title, $content, $sticker);
+}
