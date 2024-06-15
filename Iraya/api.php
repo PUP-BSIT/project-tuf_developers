@@ -15,3 +15,10 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     echo $json;
 }
+else if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $journalTitle = $_POST['journal_title'];
+    $journalContent = $_POST['journal_content'];
+    $sticker = 'none';
+
+    addJournal($journalTitle, $journalContent);
+}
