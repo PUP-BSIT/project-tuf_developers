@@ -74,4 +74,14 @@ function getJournal($journalId) {
 
     return $result;
 }
+
+function getAllJournals($userId) {
+    global $conn;
+    $params = [$userId];
+
+    $result = $conn->execute_query("select * from journal where user_id=?",
+        $params);
+
+    return $result;
+}
 ?>
