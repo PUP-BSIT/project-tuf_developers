@@ -1,3 +1,16 @@
+<?php
+session_start();
+require_once 'user.php';
+
+if (!isUserLoggedIn()) {
+    header('Location:login.php');
+}
+
+$journalId = $_GET['journal_id'] ?? '';
+$result = getJournal($journalId);
+$row = $result->fetch_assoc();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
