@@ -22,5 +22,6 @@
             value=<?= $journalId ?>>
         <button type="button" onclick="editJournal()">Edit Journal</button>
   </form>
+  <script src="./scripts/edit_journal.js"></script>
 </body>
 </html>
