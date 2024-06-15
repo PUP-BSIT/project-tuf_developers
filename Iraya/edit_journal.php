@@ -8,7 +8,11 @@
 <body>
   <button type="button">Back</button>
   <form>
-    
+    <div>
+      <label for="journal_title">Title</label>
+      <input type="text" name="journal_title" id="journal_title" 
+          value="<?= $row['journal_title'] ?>">
+    </div>
   </form>
 </body>
 </html>
