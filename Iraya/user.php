@@ -84,4 +84,15 @@ function getAllJournals($userId) {
 
     return $result;
 }
+
+function deleteJournal($journalId) {
+    echo $journalId;
+    global $conn;
+    $params = [$journalId];
+
+    $result = $conn->execute_query("delete from journal where 
+        journal_id=?", $params);
+
+    echo $result;
+}
 ?>
