@@ -7,7 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <a href="./add_journal.php">Add Journal</a>
+  <a href="./logout.php">Logout</a>
 </body>
 </html>
 ?>
