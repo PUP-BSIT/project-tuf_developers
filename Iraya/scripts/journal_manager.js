@@ -60,3 +60,18 @@ function editJournal(journalId) {
     const edit_endpoint = 'edit_journal.php';
     window.location.replace(`./${edit_endpoint}?journal_id=${journalId}`);
 }
+
+async function deleteJournal(journalId) {
+    const options = {
+        method: 'DELETE',
+        headers: {
+            "Content-type": "application/x-www-form-urlencoded",
+        },
+        body: `journal_id=${journalId}`
+    };
+
+    const response = await fetch(endpoint, options);
+    const data = await response.text();
+
+    window.location.replace('./journal_manager.php');
+}
