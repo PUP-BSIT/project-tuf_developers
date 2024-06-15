@@ -65,4 +65,13 @@ function updateJournal($journalId, $title, $content, $sticker) {
         ,journal_content=?,sticker_name=? where journal_id=?", $params);
 }
 
+function getJournal($journalId) {
+    global $conn;
+    $params = [$journalId];
+
+    $result = $conn->execute_query("select * from journal where journal_id=?",
+        $params);
+
+    return $result;
+}
 ?>
