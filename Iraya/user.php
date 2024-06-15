@@ -12,4 +12,24 @@ function registerUser($username, $password) {
 function isUserLoggedIn() {
     return isset($_SESSION['user_id']);
 }
+
+function loginUser($username, $password) {
+    global $conn;
+    
+    $user = getUser($username);
+
+    if(!$user) {
+        echo 'User with that username does not exist';
+        exit;
+    }
+
+    if($user['password'] != $password) {
+        echo "Invalid password.";
+        exit;
+    }
+
+    $_SESSION['user_id'] = $user['user_id'];
+    $_SESSION['username'] = $user['username'];
+    header('Location:journal_manager.php');
+}
 ?>
