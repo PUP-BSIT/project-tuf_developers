@@ -55,3 +55,8 @@ function createActionButtons(journalId) {
 
     return { editButton, deleteButton };
 }
+
+function editJournal(journalId) {
+    const edit_endpoint = 'edit_journal.php';
+    window.location.replace(`./${edit_endpoint}?journal_id=${journalId}`);
+}
