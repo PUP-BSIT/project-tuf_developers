@@ -42,3 +42,16 @@ function displayJournals() {
         journals.append(row);
     }
 }
+
+function createActionButtons(journalId) {
+    const editButton = document.createElement('button');
+    const deleteButton = document.createElement('button'); 
+
+    editButton.textContent = 'Edit';
+    deleteButton.textContent = 'Delete';
+
+    editButton.addEventListener('click', () => editJournal(journalId));
+    deleteButton.addEventListener('click', () => deleteJournal(journalId));
+
+    return { editButton, deleteButton };
+}
