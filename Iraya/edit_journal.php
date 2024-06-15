@@ -6,6 +6,9 @@
   <title>Edit Journal</title>
 </head>
 <body>
-  
+  <button type="button">Back</button>
+  <form>
+    
+  </form>
 </body>
 </html>
