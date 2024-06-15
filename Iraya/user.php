@@ -41,4 +41,19 @@ function getUser($username) {
         $params);
     return $result->fetch_assoc();
 }
+
+function addJournal($title, $content) {
+    global $conn;
+
+    $params = [$title, $content];
+
+    $stmnt = $conn->execute_query("insert into journal (title, content) 
+    values (?, ?)", $params);
+
+    if ($stmnt) {
+        echo "Journal entry added successfully!";
+    } else {
+        echo "Error adding journal entry: " . $conn->error;
+    }
+}
 ?>
