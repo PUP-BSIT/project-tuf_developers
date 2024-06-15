@@ -17,6 +17,7 @@
         <th>Delete</th>
     </tr>
   </table>
+  <script src="./scripts/journal_manager.js"></script>
 </body>
 </html>
 ?>
