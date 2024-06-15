@@ -8,4 +8,8 @@ function registerUser($username, $password) {
     $stmnt = $conn->execute_query("insert into user(username,password)
             values(?,?)", $params);
 }
+
+function isUserLoggedIn() {
+    return isset($_SESSION['user_id']);
+}
 ?>
