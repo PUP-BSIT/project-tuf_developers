@@ -13,6 +13,11 @@
       <input type="text" name="journal_title" id="journal_title" 
           value="<?= $row['journal_title'] ?>">
     </div>
+    <div>
+    <label for="journal_content">Content</label>
+    <textarea name="journal_content" 
+        id="journal_content"><?= $row['journal_content'] ?></textarea>
+    </div>
   </form>
 </body>
 </html>
