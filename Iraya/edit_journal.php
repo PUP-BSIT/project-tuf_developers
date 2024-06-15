@@ -18,6 +18,9 @@
     <textarea name="journal_content" 
         id="journal_content"><?= $row['journal_content'] ?></textarea>
     </div>
+    <input type="hidden" id="journal_id" name="journal_id" 
+            value=<?= $journalId ?>>
+        <button type="button" onclick="editJournal()">Edit Journal</button>
   </form>
 </body>
 </html>
