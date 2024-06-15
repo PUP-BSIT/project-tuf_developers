@@ -9,6 +9,14 @@
 <body>
   <a href="./add_journal.php">Add Journal</a>
   <a href="./logout.php">Logout</a>
+    <table id="journals">
+    <tr>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+  </table>
 </body>
 </html>
 ?>
