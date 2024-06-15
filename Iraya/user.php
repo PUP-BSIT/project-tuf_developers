@@ -56,4 +56,13 @@ function addJournal($title, $content) {
         echo "Error adding journal entry: " . $conn->error;
     }
 }
+
+function updateJournal($journalId, $title, $content, $sticker) {
+    global $conn;
+    $params = [$title, $content, $sticker, $journalId];
+
+    $stmnt = $conn->execute_query("update journal set journal_title=?
+        ,journal_content=?,sticker_name=? where journal_id=?", $params);
+}
+
 ?>
