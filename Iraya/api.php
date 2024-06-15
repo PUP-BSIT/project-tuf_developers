@@ -31,3 +31,10 @@ else if($_SERVER['REQUEST_METHOD'] == 'PATCH') {
 
     updateJournal($journalId, $title, $content, $sticker);
 }
+else if($_SERVER['REQUEST_METHOD'] == 'DELETE') {
+    parse_str(file_get_contents('php://input'), $_DELETE);
+    $journalId = $_DELETE['journal_id'];
+
+    deleteJournal($journalId);
+}
+?>
