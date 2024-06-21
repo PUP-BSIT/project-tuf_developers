@@ -59,7 +59,7 @@
                 <button type="submit">Login</button>
             </form>
         </div>
-				<footer>
+		<footer>
       <div class="footer-container">
         <div class="footer-logo">
           <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
