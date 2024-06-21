@@ -14,7 +14,7 @@ $row = $result->fetch_assoc();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Journal</title>
+    <title>View Journal</title>
 </head>
 
 <body>
@@ -26,6 +26,7 @@ $row = $result->fetch_assoc();
             <label for="journal_content">Content</label>
             <div id="journal_content"><?= $row['journal_content'] ?></div>
         </div>
+        <img id="sticker">
         <script src="./scripts/view_journal.js"></script>
     </div>
 </body>
