@@ -35,17 +35,14 @@
         </div>
       </div>
 			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Register</a></li>
-					<li><a href="#">About</a></li>
-					<li>
-						<a href="#" class="get-started-btn"
-							>Get Started</a>
-					</li>
-				</ul>
-			</nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" class="get-started-btn">Get Started</a></li>
+        </ul>
+      </nav>
 		</header>
         <div>
             <form method="POST">
@@ -69,8 +66,7 @@
 					<img
 						src="./assets/images/iraya_logo.png"
 						alt="Iraya Logo"
-						class="logo"
-					/>
+						class="logo" />
 					<div class="logo-text">
 						<h1>Iraya</h1>
 						<p>Simplify Your Journaling Experience</p>
