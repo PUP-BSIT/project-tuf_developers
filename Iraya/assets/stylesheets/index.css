@@ -75,7 +75,6 @@ main {
 
 .welcome-section {
   height: 70%;
-  width: 80%;
   min-height: 70vh;
   position: relative;
   display: grid;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Iraya/assets/stylesheets/about.css">
+  <link rel="stylesheet" href="./assets/stylesheets/about.css">
   <title>About Us</title>
 </head>
 <body>
@@ -80,7 +80,7 @@
       </div>
       <div class="team-container">
         <div class="box">
-          <img src="./Iraya/assets/images/Añonuevo_DIT.jpg" 
+          <img src="./assets/images/Añonuevo_DIT.jpg" 
             alt="Jheferson's Picture">
           <h3>Jheferson Añonuevo</h3>
           <h5>Project Manager</h5>
@@ -90,7 +90,7 @@
         </div>
         </div>
         <div class="box-girls">
-          <img src="./Iraya/assets/images/Roche_DIT.jpg" 
+          <img src="./assets/images/Roche_DIT.jpg" 
                alt="Maui's Picture">
           <h3>Maui Jane Roche</h3>
           <h5>UI/UX Designer</h5>
@@ -100,7 +100,7 @@
         </div>
         </div>
         <div class="box">
-          <img src="./Iraya/assets/images/Nogadas_DIT.jpg" 
+          <img src="./assets/images/Nogadas_DIT.jpg" 
                alt="Von's Picture">
           <h3>Von Ryan Nogadas</h3>
           <h5>Lead Developer</h5>
@@ -110,7 +110,7 @@
         </div>
         </div>
         <div class="box-girls">
-          <img src="./Iraya/assets/images/Donatos_DIT.jpg" 
+          <img src="./assets/images/Donatos_DIT.jpg" 
                alt="Andrea's Picture">
           <h3>Andrea Donatos</h3> 
           <h5>UI/UX Designer</h5>
@@ -120,7 +120,7 @@
         </div>
         </div>
         <div class="box">
-          <img src="./Iraya/assets/images/Cahigan_DIT.jpg" 
+          <img src="./assets/images/Cahigan_DIT.jpg" 
                alt="Mark's Picture">
           <h3>Mark Cahigan</h3>
           <h5>Tester</h5>
