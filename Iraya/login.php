@@ -27,17 +27,13 @@
 	</head>
 	<body>
 		<header>
-			<div class="logo-container">
-				<img
-					src="./assets/images/iraya_logo.png"
-					alt="Iraya Logo"
-					class="logo"
-				/>
-				<div class="logo-text">
-					<h1>Iraya</h1>
-					<p>Simplify Your Journaling Experience</p>
-				</div>
-			</div>
+		<div class="logo-container">
+        <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
+        <div class="logo-text">
+          <h1>Iraya</h1>
+          <p>Simplify Your Journaling Experience</p>
+        </div>
+      </div>
 			<nav>
 				<ul>
 					<li><a href="#">Home</a></li>
