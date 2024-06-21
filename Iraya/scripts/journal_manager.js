@@ -28,14 +28,17 @@ function displayJournals() {
                 ${item[FIELD.CONTENT]}
             </td>`;
         
-        const {editButton, deleteButton} = createActionButtons(
+        const {viewButton, editButton, deleteButton} = createActionButtons(
             item[FIELD.JOURNAL_ID]);
         
+        const viewColumn = document.createElement('td');
+        viewColumn.append(viewButton);
         const editColumn = document.createElement('td');
         editColumn.append(editButton);
         const deleteColumn = document.createElement('td');
         deleteColumn.append(deleteButton);
 
+        row.append(viewColumn);
         row.append(editColumn);
         row.append(deleteColumn);
         
@@ -44,16 +47,24 @@ function displayJournals() {
 }
 
 function createActionButtons(journalId) {
+    const viewButton = document.createElement('button');
     const editButton = document.createElement('button');
     const deleteButton = document.createElement('button'); 
 
+    viewButton.textContent = 'View';
     editButton.textContent = 'Edit';
     deleteButton.textContent = 'Delete';
 
+    viewButton.addEventListener('click', () => viewJournal(journalId));
     editButton.addEventListener('click', () => editJournal(journalId));
     deleteButton.addEventListener('click', () => deleteJournal(journalId));
 
-    return { editButton, deleteButton };
+    return { viewButton, editButton, deleteButton };
+}
+
+function viewJournal(journalId) {
+    const view_endpoint = 'view_journal.php';
+    window.location.replace(`./${view_endpoint}?journal_id=${journalId}`);
 }
 
 function editJournal(journalId) {
