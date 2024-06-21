@@ -19,10 +19,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./login.php">Login</a></li>
+        <li><a href="./register.php">Register</a></li>
+        <li><a href="./about.php">About</a></li>
         <li>
           <a href="#" class="get-started-btn">
             Get Started</a>
