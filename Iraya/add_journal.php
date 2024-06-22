@@ -12,6 +12,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <title>Add Journal</title>
 </head>
 <body>
@@ -33,27 +36,21 @@
         <li><a href="./about.php">About</a></li>
        </ul>
     </nav>
- </header>
-  <div class="add-container">
-   <div>
-    <button type="button">Back</button>
+</header>
+ <h2>Add Your Journey</h2>
+       <button class="add-button"> <i class="ri-file-add-fill"></i>></i></i>
+            Add Notes</button>
+   <div class="journal-container">
+      <div class="journal">
+       <button class="edit"><i class="ri-edit-fill"></i></button>
+       <button class="delete"><i class="ri-chat-delete-fill"></i>
+      </i></button>
+    </div>
+   <div class="hidden"> 
+    <textarea></textarea>
+   </div> 
    </div>
-    <form class="journal-form">
-      <div>
-        <label for="journal_title">Title</label>
-          <input type="text" name="journal_title" id="journal_title"
-                required>
-      </div>
-      <div>
-          <label for="journal_content">Content</label>
-          <textarea name="journal_content"
-                id="journal_content" required></textarea>
-      </div>
-      <button type="button" onclick="insertJournal()">
-            Add Journal</button>
-    </form>
-  </div>
- <footer>
+<footer>
     <div class="footer-container">
       <div class="footer-logo">
         <img src="../Iraya/assets/images/logo.png" 
