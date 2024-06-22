@@ -26,14 +26,21 @@
         </ul>
       </nav>
   </header>
-    <main>
-      <section class="welcome-section">
+  <main>
+    <section class="welcome-section">
+        <div class="welcome-text">
           <h2>Welcome to Iraya</h2>
           <p>
             Your go-to platform for simplifying your journaling experience.
-            Start today and discover the benefits of keeping a journal.
           </p>
-      </section>
+          <p>Start today and discover the benefits of keeping a journal.</p>
+          <a href="./login.php">Login</a>
+          <a href="./register.php" class="reg"><i class="ri-play-fill"></i> Register</a>
+        </div>
+        <div class="welocome-img">
+          <img src="./assets/images/welcome_picture.png" />
+        </div>
+    </section>
   </main>
   <footer>
       <div class="footer-container">
