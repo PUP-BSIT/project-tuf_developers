@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue";
 }
 
 header {
@@ -107,6 +107,7 @@ section {
   text-align: center;
   white-space: nowrap;
   margin-left: 400px;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue";
 }
 
 .welcome-text {
