@@ -1,0 +1,11 @@
+.title-journal {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#journal_content {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
