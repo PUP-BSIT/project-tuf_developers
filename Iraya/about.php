@@ -88,7 +88,7 @@
           <h3>Jheferson Añonuevo</h3>
           <h5>Project Manager</h5>
           <div class="icons">
-          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
           <a href="#"><i class="ri-github-fill"></i></a>
         </div>
         </div>
@@ -98,7 +98,7 @@
           <h3>Maui Jane Roche</h3>
           <h5>UI/UX Designer</h5>
           <div class="icons">
-          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
           <a href="#"><i class="ri-github-fill"></i></a>
         </div>
         </div>

@@ -99,7 +99,7 @@ main {
 .about-container {
   width: 90%;
   margin: 0 auto;
-  padding: 10px 20px;  
+  padding: 20px 50px;  
 }
 
 .about {
@@ -243,7 +243,7 @@ main {
 
 .icons i {
   display: inline-block;
-  color: #000;
+  color: #fff;
   font-size: 20px;
   margin: 0 8px;
   transition: all .38s ease; 
