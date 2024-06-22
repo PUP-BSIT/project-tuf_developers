@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iraya Home Page</title>
     <link rel="stylesheet" href="./assets/stylesheets/index.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   </head>
   <body>
-  <header>
+    <header>
       <div class="logo-container">
         <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
         <div class="logo-text">
@@ -25,9 +25,9 @@
           <li><a href="#" class="get-started-btn">Get Started</a></li>
         </ul>
       </nav>
-  </header>
-  <main>
-    <section class="welcome-section">
+    </header>
+    <main>
+      <section class="welcome-section">
         <div class="welcome-text">
           <h2>Welcome to Iraya</h2>
           <p>
@@ -35,14 +35,16 @@
           </p>
           <p>Start today and discover the benefits of keeping a journal.</p>
           <a href="./login.php">Login</a>
-          <a href="./register.php" class="reg"><i class="ri-play-fill"></i> Register</a>
+          <a href="./register.php" class="reg"
+            ><i class="ri-play-fill"></i> Register</a
+          >
         </div>
         <div class="welocome-img">
           <img src="./assets/images/welcome_picture.png" />
         </div>
-    </section>
-  </main>
-  <footer>
+      </section>
+    </main>
+    <footer>
       <div class="footer-container">
         <div class="footer-logo">
           <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
