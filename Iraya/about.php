@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="logo-container">
-      <img src="./Iraya/assets/images/logo.png" 
+      <img src="./assets/images/logo.png" 
            alt="Iraya Logo" 
            class="logo" />
       <div class="logo-text">
@@ -42,7 +42,7 @@
     <div class="about-container">
       <section class="about">
        <div class="about-image">
-        <img src="./Iraya/assets/images/about.png" alt="Picture">
+        <img src="./assets/images/about.png" alt="Picture">
        </div> 
        <div class="about-content">
         <h2>Capture moments through Iraya</h2>
@@ -59,7 +59,7 @@
       <div class="vision-container">
         <section class="vision">
          <div class="vision-image">
-          <img src="./Iraya/assets/images/vision_picture.png" 
+          <img src="./assets/images/vision_picture.png" 
                alt="Picture">
          </div> 
          <div class="vision-content">
@@ -142,7 +142,7 @@
   <footer>
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="./Iraya/assets/images/logo.png" 
+        <img src="./assets/images/logo.png" 
              alt="Iraya Logo" 
              class="logo" />
         <div class="logo-text">
