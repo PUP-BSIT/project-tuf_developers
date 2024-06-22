@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iraya Home Page</title>
     <link rel="stylesheet" href="./assets/stylesheets/index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   </head>
   <body>
     <header>
       <div class="logo-container">
-        <img
-          src="./assets/images/iraya_logo.png"
-          alt="Iraya Logo"
-          class="logo"
-        />
+        <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
         <div class="logo-text">
           <h1>Iraya</h1>
           <p>Simplify Your Journaling Experience</p>
@@ -31,21 +28,26 @@
     </header>
     <main>
       <section class="welcome-section">
+        <div class="welcome-text">
           <h2>Welcome to Iraya</h2>
           <p>
             Your go-to platform for simplifying your journaling experience.
-            Start today and discover the benefits of keeping a journal.
           </p>
+          <p>Start today and discover the benefits of keeping a journal.</p>
+          <a href="./login.php">Login</a>
+          <a href="./register.php" class="reg"
+            ><i class="ri-play-fill"></i> Register</a
+          >
+        </div>
+        <div class="welocome-img">
+          <img src="./assets/images/welcome_picture.png" />
+        </div>
       </section>
-  </main>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-logo">
-          <img
-            src="./assets/images/iraya_logo.png"
-            alt="Iraya Logo"
-            class="logo"
-          />
+          <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
           <div class="logo-text">
             <h1>Iraya</h1>
             <p>Simplify Your Journaling Experience</p>
@@ -54,7 +56,7 @@
         <div class="footer-columns">
           <div class="footer-column">
             <h3>Contact</h3>
-            <p>123 Journal Street, City, Zip Code</p>
+            <p>Polytechnic University of the Philippines, Taguig, 1632</p>
             <p>Support: support@iraya.com</p>
             <p>General Inquiries: info@iraya.com</p>
           </div>
@@ -77,7 +79,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2023 by Iraya. All rights reserved.</p>
+        <p>© 2024 by Iraya. All rights reserved.</p>
       </div>
     </footer>
   </body>

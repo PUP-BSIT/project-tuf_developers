@@ -74,27 +74,39 @@ main {
 }
 
 .welcome-section {
-  height: 70%;
-  min-height: 70vh;
+  height: 10%;
+  width: 70%;
+  min-height: 80vh;
   position: relative;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 2rem;
-  margin-top: 50px;
+  gap: 1rem;
+  margin-top: 0;
   margin-bottom: 50px;
+  padding: 20px 60px;
 }
 
 section {
   padding: 0 19%;
 }
 
+.welcome-section img {
+  height: auto;
+  margin-left: 150px;
+  white-space: nowrap;
+}
+
 .welcome-text h2 {
   text-shadow: 1px 1px 1px #000000;
-  font-size: 70px;
-  font-weight: 400;
+  font-size: 60px;
+  font-weight: 0px;
   color: #000;
   margin-bottom: 40px;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: 400px;
 }
 
 .welcome-text {
@@ -107,11 +119,15 @@ section {
 .welcome-section p {
   font-size: 18px;
   color: #555;
+  margin-left: 400px;
+  white-space: nowrap;
 }
 
 .welcome-text a {
   display: inline-block;
   color: #000;
+  margin-left: 400px;
+  white-space: nowrap;
   background-color: #ffa500;
   border: 1px solid transparent;
   padding: 12px 30px;

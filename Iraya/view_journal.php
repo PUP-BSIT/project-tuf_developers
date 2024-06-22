@@ -1,4 +1,5 @@
-<?php session_start();
+<?php 
+session_start();
 require_once 'user.php';
 if (!isUserLoggedIn()) {
     header('Location:login.php');
@@ -15,6 +16,7 @@ $row = $result->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Journal</title>
+    <link rel="stylesheet" href="./asset/stylesheets/view_journal.css" />
 </head>
 
 <body>
