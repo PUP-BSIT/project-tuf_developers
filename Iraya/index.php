@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iraya Home Page</title>
     <link rel="stylesheet" href="./assets/stylesheets/index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   </head>
   <body>
     <header>
