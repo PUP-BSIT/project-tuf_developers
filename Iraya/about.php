@@ -48,7 +48,7 @@
         <img src="./assets/images/about.png" alt="Picture">
        </div> 
        <div class="about-content">
-        <h2>Capture moments through Iraya</h2>
+        <h2>Capture moments with Iraya</h2>
         <p>
           Iraya, your modern solution to journaling
            that blends innovation with inspiration. At Iraya, we believe in 
@@ -57,26 +57,16 @@
           Our mission is to simplify and enhance your journaling experience, 
           making it a delightful journey through nostalgia.
         </p>
-       </div>
-      </section>
-      <div class="vision-container">
-        <section class="vision">
-         <div class="vision-image">
-          <img src="./assets/images/vision_picture.png" 
-               alt="Picture">
-         </div> 
-         <div class="vision-content">
-          <h2>Our Vision</h2>
-          <p>
-            In today's fast-paced world, we understand the importance 
+        <h2>Our Vision</h2>
+        <p>
+          In today's fast-paced world, we understand the importance 
           of preserving memories while adapting to ever-evolving digital 
           landscapes. Iraya aims to bridge the gap between traditional 
           journaling and modern technology, offering a user-centric platform
           that caters to your personal and creative needs.
-          </p>
-         </div>
-        </section>
-      </div>
+        </p>
+       </div>
+      </section>
       <section class="team">
       <div class="center">
         <h1 class="header-member">TUF Developers</h1>
@@ -88,7 +78,7 @@
           <h3>Jheferson Añonuevo</h3>
           <h5>Project Manager</h5>
           <div class="icons">
-          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
           <a href="#"><i class="ri-github-fill"></i></a>
         </div>
         </div>
@@ -98,7 +88,7 @@
           <h3>Maui Jane Roche</h3>
           <h5>UI/UX Designer</h5>
           <div class="icons">
-          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
           <a href="#"><i class="ri-github-fill"></i></a>
         </div>
         </div>
