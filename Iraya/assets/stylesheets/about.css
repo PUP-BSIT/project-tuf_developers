@@ -1,5 +1,4 @@
 body {
-  padding: 0;
   margin: 0;
   font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue";
 }
@@ -316,5 +315,5 @@ footer {
   padding: 10px;
   background-color: #000;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 21px;
 }
