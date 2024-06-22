@@ -8,13 +8,9 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   </head>
   <body>
-    <header>
+  <header>
       <div class="logo-container">
-        <img
-          src="./assets/images/iraya_logo.png"
-          alt="Iraya Logo"
-          class="logo"
-        />
+        <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
         <div class="logo-text">
           <h1>Iraya</h1>
           <p>Simplify Your Journaling Experience</p>
@@ -29,7 +25,7 @@
           <li><a href="#" class="get-started-btn">Get Started</a></li>
         </ul>
       </nav>
-    </header>
+  </header>
     <main>
       <section class="welcome-section">
           <h2>Welcome to Iraya</h2>
