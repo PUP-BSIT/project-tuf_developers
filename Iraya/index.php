@@ -35,14 +35,10 @@
           </p>
       </section>
   </main>
-    <footer>
+  <footer>
       <div class="footer-container">
         <div class="footer-logo">
-          <img
-            src="./assets/images/iraya_logo.png"
-            alt="Iraya Logo"
-            class="logo"
-          />
+          <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
           <div class="logo-text">
             <h1>Iraya</h1>
             <p>Simplify Your Journaling Experience</p>
@@ -51,7 +47,7 @@
         <div class="footer-columns">
           <div class="footer-column">
             <h3>Contact</h3>
-            <p>123 Journal Street, City, Zip Code</p>
+            <p>Polytechnic University of the Philippines, Taguig, 1632</p>
             <p>Support: support@iraya.com</p>
             <p>General Inquiries: info@iraya.com</p>
           </div>
@@ -74,7 +70,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2023 by Iraya. All rights reserved.</p>
+        <p>© 2024 by Iraya. All rights reserved.</p>
       </div>
     </footer>
   </body>
