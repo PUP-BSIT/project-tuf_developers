@@ -27,14 +27,10 @@
    </div>
     <nav>
        <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">About</a></li>
-        <li>
-            <a href="#" class="get-started-btn">
-            Get Started</a>
-        </li>
+        <li><a href="./index.php">Home</a></li>
+        <li><a href="./login.php">Login</a></li>
+        <li><a href="./register.php">Register</a></li>
+        <li><a href="./about.php">About</a></li>
        </ul>
     </nav>
  </header>
@@ -43,17 +39,17 @@
     <button type="button">Back</button>
    </div>
     <form class="journal-form">
-        <div>
-            <label for="journal_title">Title</label>
-            <input type="text" name="journal_title" id="journal_title"
+      <div>
+        <label for="journal_title">Title</label>
+          <input type="text" name="journal_title" id="journal_title"
                 required>
-        </div>
-        <div>
-            <label for="journal_content">Content</label>
-            <textarea name="journal_content"
+      </div>
+      <div>
+          <label for="journal_content">Content</label>
+          <textarea name="journal_content"
                 id="journal_content" required></textarea>
-        </div>
-        <button type="button" onclick="insertJournal()">
+      </div>
+      <button type="button" onclick="insertJournal()">
             Add Journal</button>
     </form>
   </div>

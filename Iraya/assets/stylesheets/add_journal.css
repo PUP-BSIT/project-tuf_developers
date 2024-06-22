@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("./images/journal_background.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+  
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+    
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+    
+.logo-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+    
+.logo-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+    
+nav ul li {
+    margin: 0 10px;
+}
+    
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+    
+nav ul li a:hover {
+    color: #FFA500;
+}
+
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+  
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+  
+.heading h1 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+  
+.about-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 35px;
+}
+  
+.about-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;  
+}
+
+footer {
+    background-color: #ffa600f3;
+    color: #000;
+    padding: 1px 0;
+}
+  
+.footer-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 10%;
+} 
+  
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+  
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 200px;
+}
+  
+.footer-column h3 {
+    margin-top: 0;
+  }
+  
+.footer-column p,
+.footer-column a {
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0;
+}
+  
+.footer-column form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+.footer-column input[type="email"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+  
+.footer-column button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.footer-column button:hover {
+    background-color: #333;
+}
+  
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+}
+
+body {
+    font-family: "Gill Sans", sans-serif;
+    background-image: url('');
+  }
+  
+  h3 {
+    font-family: Arial, Verdana, sans-serif;
+    color:#fad54c;
+  
+  }
+    
+  form {
+    background-color: #c7c7c7d5;
+    padding: 20px; 
+    margin: 100px;
+    width: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }  
+  
+  .journal-form label {
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .journal-form input,
+  .journal-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .journal-form textarea {
+    background-image: url('note2.png');
+    background-size: 30px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+  }
+  
+  .journal-form div {
+    margin-bottom: 20px;
+  }
+  
+  .journal-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffad30;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .journal-form button:hover {
+    background-color: #ffec3f;
+  }
