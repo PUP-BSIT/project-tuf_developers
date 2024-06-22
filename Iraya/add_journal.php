@@ -90,6 +90,6 @@
       <p>© 2024 by Iraya. All rights reserved.</p>
     </div>
  </footer>
-    <script src="add_journal.js"></script>
+    <script src="./scripts/add_journal.js"></script>
 </body>
 </html>
