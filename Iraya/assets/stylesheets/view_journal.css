@@ -100,6 +100,10 @@ nav ul li a.get-started-btn:hover {
     padding-bottom: 100px;
 }
 
+.journal-content {
+    text-align: center;
+}
+
 #journal_content {
     display: flex;
     justify-content: center;
