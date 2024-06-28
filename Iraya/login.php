@@ -1,17 +1,17 @@
 <?php
-    // require_once 'user.php';
-    // session_start();
+    require_once 'user.php';
+    session_start();
 
-    // if(isUserLoggedIn()){
-    //     header('Location:journal_manager.php');
-    // }
+    if(isUserLoggedIn()){
+        header('Location:journal_manager.php');
+    }
 
-    // if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    //     $username = $_POST['username'];
-    //     $password = $_POST['password'];
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
 
-    //     loginUser($username, $password);
-    // }
+        loginUser($username, $password);
+    }
 ?>
 
 <!DOCTYPE html>
