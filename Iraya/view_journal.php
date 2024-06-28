@@ -43,19 +43,21 @@ $row = $result->fetch_assoc();
             </ul>
         </nav>
         </header>
-
-        <button type="button" class="back-btn">Back</button>
-        <div>
-            <div class="title-journal">
-                <label for="journal_title">Title</label>
+        <div class="content">
+            <button type="button" class="back-btn">Back</button>
+            <div>
+                <div class="title-journal">
+                    <label for="journal_title">Title</label>
+                </div>
+                <div id="journal_title"><?= $row['journal_title'] ?></div>
+                <div class="journal-content">
+                    <label for="journal_content">Content</label>
+                    <div id="journal_content"><?= $row['journal_content'] ?>
+                    </div>
+                </div>
+                <img id="sticker">
+                <script src="./scripts/view_journal.js"></script>
             </div>
-            <div id="journal_title"><?= $row['journal_title'] ?></div>
-            <div class="journal-content">
-                <label for="journal_content">Content</label>
-                <div id="journal_content"><?= $row['journal_content'] ?></div>
-            </div>
-            <img id="sticker">
-            <script src="./scripts/view_journal.js"></script>
         </div>
         <section class="footer">
             <p class="copyright">© 2024 by Iraya. All rights reserved. </p>
