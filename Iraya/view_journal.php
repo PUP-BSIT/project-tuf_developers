@@ -33,6 +33,9 @@ $row = $result->fetch_assoc();
             <img id="sticker">
             <script src="./scripts/view_journal.js"></script>
         </div>
+        <section class="footer">
+            <p class="copyright">© 2024 by Iraya. All rights reserved. </p>
+        </section>
     </body>
 
 </html>
