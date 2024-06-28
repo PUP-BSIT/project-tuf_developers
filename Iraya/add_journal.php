@@ -64,9 +64,11 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <p class="copyright">© 2024 by Iraya. All rights reserved.</p>
-    </footer>
+    <section class="footer">
+      <p class="copyright">
+        © 2024 by Iraya. All rights reserved.
+      </p>
+    </section>
     <script src="./scripts/add_journal.js"></script>
   </body>
 </html>

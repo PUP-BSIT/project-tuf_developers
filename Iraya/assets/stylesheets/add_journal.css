@@ -78,8 +78,8 @@ main {
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-     margin-right: 750px;
-    margin-left: 500px;
+    margin-right: 650px;
+    margin-left: 400px;
 }
 
 .journal-container {
@@ -87,8 +87,7 @@ main {
     color: #000;
     border-radius: 10px;
     max-width: 500px;
-    width: 200%;
-
+    width: 300%;
 }
 
 .journal-container h1 {
@@ -144,8 +143,12 @@ main {
 }
 
 .footer {
-    padding: 10px 0;
+    padding: 17px 0;
     background-color: #ffa500;
+  }
+  
+.footer .copyright {
+    margin-top: 5px;
     text-align: center;
     font-size: 15px;
     color: #000;
