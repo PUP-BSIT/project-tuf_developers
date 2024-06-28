@@ -79,3 +79,15 @@ body {
     justify-content: center;
     padding: 10px;
 }
+
+.footer {
+    padding: 17px 0;
+    background-color: #ffa500;
+  }
+  
+  .footer .copyright {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+  }
