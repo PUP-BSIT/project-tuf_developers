@@ -68,6 +68,11 @@ body {
     background-color: #ff8c00;
   }
 
+.content {
+    padding-top: 30px;
+    padding-bottom: 240px;
+}
+
 .back-btn {
     display: inline-block;
     color: #000;
