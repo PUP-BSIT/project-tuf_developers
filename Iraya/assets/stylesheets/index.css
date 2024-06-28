@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue";
@@ -74,22 +78,14 @@ main {
 }
 
 .welcome-section {
-  height: 10%;
   width: 70%;
-  min-height: 80vh;
   position: relative;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1rem;
-  margin-top: 0;
-  margin-bottom: 50px;
-  padding: 20px 60px;
-}
-
-section {
-  padding: 0 19%;
+  padding: 20px 50px; 
 }
 
 .welcome-section img {
@@ -120,14 +116,14 @@ section {
 .welcome-section p {
   font-size: 18px;
   color: #555;
-  margin-left: 400px;
+  margin-left: 420px;
   white-space: nowrap;
 }
 
 .welcome-text a {
   display: inline-block;
   color: #000;
-  margin-left: 400px;
+  margin-left: 419px;
   white-space: nowrap;
   background-color: #ffa500;
   border: 1px solid transparent;
@@ -157,89 +153,14 @@ section {
   margin-right: 5px;
 }
 
-footer {
+.footer {
+  padding: 17px 0;
   background-color: #ffa500;
-  color: #000;
-  padding: 1px 0;
 }
 
-.footer-container {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 5px 10%;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-}
-
-.footer-logo img {
-  height: 50px;
-  margin-right: 10px;
-}
-
-.footer-logo .logo-text {
-  margin-left: 10px;
-}
-
-.footer-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.footer-column {
-  flex: 1;
-  margin: 0 20px;
-  min-width: 200px;
-}
-
-.footer-column h3 {
-  margin-top: 0;
-}
-
-.footer-column p,
-.footer-column a {
-  color: #000;
-  text-decoration: none;
-  margin: 5px 0;
-}
-
-.footer-column form {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.footer-column input[type="email"] {
-  padding: 5px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 5px;
-  flex-grow: 1;
-}
-
-.footer-column button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-.footer-column button:hover {
-  background-color: #333;
-}
-
-.footer-bottom {
+.footer .copyright {
+  margin-top: 5px;
   text-align: center;
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
-  margin-top: 20px;
+  font-size: 15px;
+  color: #000;
 }
