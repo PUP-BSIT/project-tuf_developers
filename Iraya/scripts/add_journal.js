@@ -16,3 +16,25 @@ async function insertJournal() {
 
     window.location.replace('./journal_manager.php');
 }
+
+function createEntry() {
+  const notesContainer = document.querySelector('.notes-container');
+
+  const newNote = document.createElement('div');
+  newNote.className = 'note';
+  
+  const noteContent = document.createElement('p');
+  noteContent.className = 'input-box';
+  noteContent.contentEditable = 'true';
+  
+  const deleteIcon = document.createElement('img');
+  deleteIcon.src = './assets/images/delete_image.png';
+  deleteIcon.alt = 'delete_image';
+  deleteIcon.onclick = function() {
+    notesContainer.removeChild(newNote);
+  };
+  
+  noteContent.appendChild(deleteIcon);
+  newNote.appendChild(noteContent);
+  notesContainer.appendChild(newNote);
+}
