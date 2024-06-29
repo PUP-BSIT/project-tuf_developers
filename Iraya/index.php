@@ -45,9 +45,11 @@
       </section>
     </main>
     <section class="footer">
-      <p class="copyright">
+      <div class="copyright">
+      <p>
         © 2024 by Iraya. All rights reserved.
       </p>
+      </div>
     </section>
   </body>
 </html>

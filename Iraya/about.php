@@ -69,7 +69,7 @@
       </section>
       <section class="team">
       <div class="center">
-        <h1 class="header-member">TUF Developers</h1>
+        <h1>TUF Developers</h1>
       </div>
       <div class="team-container">
         <div class="box">
@@ -110,7 +110,6 @@
           <h3>Mark Cahigan</h3>
           <h5>Tester</h5>
           <div class="icons">
-
         </div>
         </div>
       </div>
@@ -126,9 +125,11 @@
 </section>
 </main>
 <section class="footer">
-  <p class="copyright">
-    © 2024 by Iraya. All rights reserved.
-  </p>
-</section>
+      <div class="copyright">
+      <p>
+        © 2024 by Iraya. All rights reserved.
+      </p>
+      </div>
+    </section>
 </body>
 </html>
