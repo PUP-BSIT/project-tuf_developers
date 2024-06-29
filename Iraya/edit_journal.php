@@ -42,7 +42,7 @@ $row = $result->fetch_assoc();
       </ul>
     </nav>
   </header>
-  
+
   <button type="button">Back</button>
   <form>
     <div>
@@ -59,6 +59,11 @@ $row = $result->fetch_assoc();
             value=<?= $journalId ?>>
         <button type="button" onclick="editJournal()">Edit Journal</button>
   </form>
+
+  <section class="footer">
+    <p class="copyright">© 2024 by Iraya. All rights reserved. </p>
+  </section>
+  
   <script src="./scripts/edit_journal.js"></script>
 </body>
 </html>
