@@ -17,6 +17,7 @@ $row = $result->fetch_assoc();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edit Journal</title>
+  <link rel="stylesheet" href="./assets/stylesheets/edit_journal.css" />
 </head>
 <body>
   <header>
@@ -63,7 +64,7 @@ $row = $result->fetch_assoc();
   <section class="footer">
     <p class="copyright">© 2024 by Iraya. All rights reserved. </p>
   </section>
-  
+
   <script src="./scripts/edit_journal.js"></script>
 </body>
 </html>
