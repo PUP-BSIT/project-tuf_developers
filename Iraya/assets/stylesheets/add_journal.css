@@ -90,6 +90,10 @@ main {
     width: 300%;
 }
 
+.journal-container img {
+    width: 1000px;
+}
+
 .journal-container h1 {
     display: flex;
     align-items: center;

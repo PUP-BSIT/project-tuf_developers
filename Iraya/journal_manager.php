@@ -39,9 +39,6 @@ if (!isUserLoggedIn()) {
   <div class="main-content">
     <a href="./add_journal.php" class="add-journal">Add Journal</a>
     <table id="journals">
-    <button type="button" onclick="viewJournal()">View</button>
-    <button type="button" onclick="editJournal()">Edit</button>
-    <button type="button" onclick="deleteJournal()">Delete</button>
       <tr>
           <th>Title</th>
           <th>Content</th>
