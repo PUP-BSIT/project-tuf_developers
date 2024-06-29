@@ -46,20 +46,14 @@
     <main>
       <section class="journal">
         <div class="journal-container">
-          <h1>
-            <img src="./assets/images/note_image.png" alt="note_img" />Add
-            your entry here
-          </h1>
-          <button>
-            <img src="./assets/images/edit_image.png" alt="" />Create Entry
+          <h1>Title</h1>
+          <input id="journal_title" placeholder="Add your entry title here">
+          <button onclick="insertJournal()">
+            <img src="./assets/images/edit_image.png" alt="edit"/>Create Entry
           </button>
           <div class="notes-container">
-            <p contenteditable="true" class="input-box">
-              <img
-                src="./assets/images/delete_image.png"
-                alt="delete_image"
-              />
-            </p>
+            <textarea id="journal_content" class="input-box" 
+              name="journal-content"></textarea>
           </div>
         </div>
       </section>
