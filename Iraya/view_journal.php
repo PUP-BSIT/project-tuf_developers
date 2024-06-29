@@ -56,12 +56,15 @@ $row = $result->fetch_assoc();
                     </div>
                 </div>
                 <img id="sticker">
-                <script src="./scripts/view_journal.js"></script>
             </div>
         </div>
         <section class="footer">
-            <p class="copyright">© 2024 by Iraya. All rights reserved. </p>
-        </section>
+      <div class="copyright">
+      <p>
+        © 2024 by Iraya. All rights reserved.
+      </p>
+      </div>
+    </section>
+    <script src="./scripts/view_journal.js"></script>
     </body>
-
 </html>
