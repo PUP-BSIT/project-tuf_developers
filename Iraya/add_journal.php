@@ -1,12 +1,10 @@
 <?php
-    /*
     session_start();
     require_once 'user.php';
 
     if(!isUserLoggedIn()) {
         header('Location:login.php');
     }
-    */
 ?>
 
 
@@ -27,8 +25,7 @@
         <img
           src="../Iraya/assets/images/logo.png"
           alt="Iraya Logo"
-          class="logo"
-        />
+          class="logo"/>
         <div class="logo-text">
           <h1>Iraya</h1>
           <p>Simplify Your Journaling Experience</p>
@@ -46,28 +43,24 @@
     <main>
       <section class="journal">
         <div class="journal-container">
-          <h1>
-            <img src="./assets/images/note_image.png" alt="note_img" />Add
-            your entry here
-          </h1>
-          <button>
-            <img src="./assets/images/edit_image.png" alt="" />Create Entry
+          <h1>Title</h1>
+          <input id="journal_title" placeholder="Add your entry title here">
+          <button onclick="insertJournal()">
+            <img src="./assets/images/edit_image.png" alt="edit"/>Create Entry
           </button>
           <div class="notes-container">
-            <p contenteditable="true" class="input-box">
-              <img
-                src="./assets/images/delete_image.png"
-                alt="delete_image"
-              />
-            </p>
+            <textarea id="journal_content" class="input-box" 
+              name="journal-content"></textarea>
           </div>
         </div>
       </section>
     </main>
     <section class="footer">
-      <p class="copyright">
+      <div class="copyright">
+      <p>
         © 2024 by Iraya. All rights reserved.
       </p>
+      </div>
     </section>
     <script src="./scripts/add_journal.js"></script>
   </body>
