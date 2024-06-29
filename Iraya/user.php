@@ -47,8 +47,8 @@ function addJournal($title, $content) {
 
     $params = [$title, $content];
 
-    $stmnt = $conn->execute_query("insert into journal (title, content) 
-    values (?, ?)", $params);
+    $stmnt = $conn->execute_query("insert into journal (journal_title, 
+        journal_content) values (?, ?)", $params);
 
     if ($stmnt) {
         echo "Journal entry added successfully!";
