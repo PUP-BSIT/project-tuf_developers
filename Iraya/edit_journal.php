@@ -19,6 +19,30 @@ $row = $result->fetch_assoc();
   <title>Edit Journal</title>
 </head>
 <body>
+  <header>
+    <div class="logo-container">
+      <img src="./assets/images/logo.png" 
+          alt="Iraya Logo" 
+          class="logo" />
+      <div class="logo-text">
+          <h1>Iraya</h1>
+          <p>Simplify Your Journaling Experience</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.php">Home</a></li>
+        <li><a href="./login.php">Login</a></li>
+        <li><a href="./register.php">Register</a></li>
+        <li><a href="./about.php">About</a></li>
+        <li>
+          <a href="#" class="get-started-btn">
+              Get Started</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
   <button type="button">Back</button>
   <form>
     <div>
