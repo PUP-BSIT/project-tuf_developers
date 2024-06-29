@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue";
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #121212;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  border-bottom: 1px solid #555;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+nav ul li a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffa500;
+}
+
+nav ul li a.get-started-btn {
+  background-color: #ffa500;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a.get-started-btn:hover {
+  background-color: #ff8c00;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  margin-right: 650px;
+  margin-left: 400px;
+}
+
+.journal-container {
+  background: #333;
+  color: #fff;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 300%;
+}
+
+.journal-container img {
+  width: 1000px;
+}
+
+.journal-container h1 {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.journal-container img {
+  width: 100px;
+}
+
+.journal-container button img {
+  width: 20px;
+  margin: 1px;
+}
+
+.journal-container button {
+  display: flex;
+  align-items: center;
+  background-color: #ffa500;
+  color: black;
+}
+
+#journal_title {
+  width: 100%;
+  height: 2rem;
+}
+
+.input-box {
+  position: relative;
+  padding: 5px;
+  width: 100%;
+  min-height: 150px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px; 
+}
+
+.input-box img {
+  width: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 17px 0;
+  background-color: #333;
+}
+
+.footer .copyright {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
