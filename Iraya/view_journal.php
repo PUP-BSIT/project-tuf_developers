@@ -47,9 +47,9 @@ $row = $result->fetch_assoc();
             <button type="button" class="back-btn">Back</button>
             <div>
                 <div class="title-journal">
-                    <label for="journal_title">Title</label>
+                    <div id="journal_title"><?= $row['journal_title'] ?></div>
                 </div>
-                <div id="journal_title"><?= $row['journal_title'] ?></div>
+                
                 <div class="journal-content">
                     <label for="journal_content">Content</label>
                     <div id="journal_content"><?= $row['journal_content'] ?>
