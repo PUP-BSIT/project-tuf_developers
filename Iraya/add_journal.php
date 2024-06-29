@@ -1,12 +1,10 @@
 <?php
-    /*
     session_start();
     require_once 'user.php';
 
     if(!isUserLoggedIn()) {
         header('Location:login.php');
     }
-    */
 ?>
 
 
@@ -27,8 +25,7 @@
         <img
           src="../Iraya/assets/images/logo.png"
           alt="Iraya Logo"
-          class="logo"
-        />
+          class="logo"/>
         <div class="logo-text">
           <h1>Iraya</h1>
           <p>Simplify Your Journaling Experience</p>
@@ -57,17 +54,18 @@
             <p contenteditable="true" class="input-box">
               <img
                 src="./assets/images/delete_image.png"
-                alt="delete_image"
-              />
+                alt="delete_image" />
             </p>
           </div>
         </div>
       </section>
     </main>
     <section class="footer">
-      <p class="copyright">
+      <div class="copyright">
+      <p>
         © 2024 by Iraya. All rights reserved.
       </p>
+      </div>
     </section>
     <script src="./scripts/add_journal.js"></script>
   </body>
