@@ -44,12 +44,17 @@ function getUser($username) {
 
 function addJournal($title, $content) {
     global $conn;
+    $userId = $_SESSION['user_id'];
 
-    $params = [$title, $content];
+    $index = $conn->query("select max(index_id) from journals")->fetch_assoc();
+    $journalId = (int) $index['max(index_id)'];
+    $formatJournalId = sprintf('j%04d', $journalId);
 
-    $stmnt = $conn->execute_query("insert into journal (journal_title, 
-        journal_content) values (?, ?)", $params);
+    $params = [$formatJournalId, $userId, $title, $content];
 
+    $stmnt = $conn->execute_query("insert into journals (journal_id, user_id, 
+        journal_title, journal_content) values (?, ?, ?, ?)", $params);
+    
     if ($stmnt) {
         echo "Journal entry added successfully!";
     } else {
