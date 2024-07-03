@@ -5,7 +5,7 @@ function registerUser($username, $password) {
     global $conn;
     $params = [$username, $password];
 
-    $stmnt = $conn->execute_query("insert into user(username,password)
+    $stmnt = $conn->execute_query("insert into users(username,password)
             values(?,?)", $params);
 }
 
@@ -37,7 +37,7 @@ function getUser($username) {
     global $conn;
     $params = [$username];
 
-    $result = $conn->execute_query('select * from user where username=?',
+    $result = $conn->execute_query('select * from users where username=?',
         $params);
     return $result->fetch_assoc();
 }
@@ -66,7 +66,7 @@ function updateJournal($journalId, $title, $content, $sticker) {
     global $conn;
     $params = [$title, $content, $sticker, $journalId];
 
-    $stmnt = $conn->execute_query("update journal set journal_title=?
+    $stmnt = $conn->execute_query("update journals set journal_title=?
         ,journal_content=?,sticker_name=? where journal_id=?", $params);
 }
 
@@ -74,7 +74,7 @@ function getJournal($journalId) {
     global $conn;
     $params = [$journalId];
 
-    $result = $conn->execute_query("select * from journal where journal_id=?",
+    $result = $conn->execute_query("select * from journals where journal_id=?",
         $params);
 
     return $result;
@@ -84,7 +84,7 @@ function getAllJournals($userId) {
     global $conn;
     $params = [$userId];
 
-    $result = $conn->execute_query("select * from journal where user_id=?",
+    $result = $conn->execute_query("select * from journals where user_id=?",
         $params);
 
     return $result;
@@ -95,7 +95,7 @@ function deleteJournal($journalId) {
     global $conn;
     $params = [$journalId];
 
-    $result = $conn->execute_query("delete from journal where 
+    $result = $conn->execute_query("delete from journals where 
         journal_id=?", $params);
 
     echo $result;
