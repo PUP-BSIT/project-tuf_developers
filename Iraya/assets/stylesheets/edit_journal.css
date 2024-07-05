@@ -52,6 +52,23 @@ nav ul li a:hover {
     color: #ffa500;
 }
 
+form {
+    max-width: 500px;
+    margin: 50px;
+    padding: 30px;
+    background-color: #fff9c4;
+    border: 2px solid #ffeb3b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    justify-content: center;
+}
+
+form div {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
 .footer {
     padding: 17px 0;
     background-color: #ffa500;
