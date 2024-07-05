@@ -69,6 +69,29 @@ form div {
     padding: 5px;
 }
 
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f57f17;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffeb3b;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fffde7;
+    color: #333;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
 .footer {
     padding: 17px 0;
     background-color: #ffa500;
