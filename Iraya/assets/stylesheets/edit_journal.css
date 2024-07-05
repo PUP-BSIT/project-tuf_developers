@@ -63,3 +63,15 @@ nav ul li a.get-started-btn {
 nav ul li a.get-started-btn:hover {
     background-color: #ff8c00;
 }
+
+.footer {
+    padding: 17px 0;
+    background-color: #ffa500;
+}
+
+.footer .copyright {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+}
