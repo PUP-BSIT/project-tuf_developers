@@ -12,10 +12,9 @@ fetch(endpoint)
 function displayJournals() {
     const FIELD = {
         JOURNAL_ID: 0,
-        USER_ID: 1,
-        TITLE: 2,
-        CONTENT: 3,
-        STICKER: 4
+        USER_ID: 2,
+        TITLE: 3,
+        CONTENT: 4
     };
 
     for(item of journalData) {
