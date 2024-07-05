@@ -37,7 +37,6 @@
           <li><a href="#">Login</a></li>
           <li><a href="#">Register</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#" class="get-started-btn">Get Started</a></li>
         </ul>
       </nav>
     </header>
