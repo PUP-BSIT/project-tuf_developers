@@ -51,25 +51,13 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: #6b6363;
   padding: 5px 10px;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #ffa500;
-}
-
-nav ul li a.get-started-btn {
-  background-color: #ffa500;
-  color: #fff;
-  padding: 5px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a.get-started-btn:hover {
-  background-color: #ff8c00;
 }
 
 main {
@@ -124,7 +112,6 @@ main {
   display: inline-block;
   color: #000;
   margin-left: 419px;
-  white-space: nowrap;
   background-color: #ffa500;
   border: 1px solid transparent;
   padding: 12px 30px;
@@ -143,14 +130,7 @@ main {
 }
 
 .welcome-text a.reg {
-  background: transparent;
-  border: 1px solid black;
   margin-left: 20px;
-}
-
-.welcome-text a.reg i {
-  vertical-align: middle;
-  margin-right: 5px;
 }
 
 .footer {

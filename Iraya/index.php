@@ -22,7 +22,6 @@
           <li><a href="./login.php">Login</a></li>
           <li><a href="./register.php">Register</a></li>
           <li><a href="./about.php">About</a></li>
-          <li><a href="#" class="get-started-btn">Get Started</a></li>
         </ul>
       </nav>
     </header>
@@ -35,9 +34,8 @@
           </p>
           <p>Start today and discover the benefits of keeping a journal.</p>
           <a href="./login.php">Login</a>
-          <a href="./register.php" class="reg"
-            ><i class="ri-play-fill"></i> Register</a
-          >
+          <a href="./register.php" class="reg"><i class="ri-play-fill">            
+             </i> Register</a>
         </div>
         <div class="welocome-img">
           <img src="./assets/images/welcome_picture.png" />
