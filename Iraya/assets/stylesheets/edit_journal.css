@@ -52,18 +52,6 @@ nav ul li a:hover {
     color: #ffa500;
 }
 
-nav ul li a.get-started-btn {
-    background-color: #ffa500;
-    color: #fff;
-    padding: 5px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a.get-started-btn:hover {
-    background-color: #ff8c00;
-}
-
 .footer {
     padding: 17px 0;
     background-color: #ffa500;
