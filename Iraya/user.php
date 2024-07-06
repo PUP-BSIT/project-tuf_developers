@@ -7,6 +7,8 @@ function registerUser($username, $password) {
 
     $stmnt = $conn->execute_query("insert into users(username,password)
             values(?,?)", $params);
+
+    header('Location:login.php');
 }
 
 function isUserLoggedIn() {
