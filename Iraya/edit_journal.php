@@ -40,7 +40,7 @@ $row = $result->fetch_assoc();
     </nav>
   </header>
 
-  <button type="button">Back</button>
+  <button type="button" id="back_button">Back</button>
   <form>
     <div>
       <label for="journal_title">Title</label>
