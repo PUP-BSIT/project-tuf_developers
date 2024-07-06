@@ -1,0 +1,8 @@
+.alert-red {
+    width: fit-content;
+    margin: auto;
+    border-radius: 0.5rem;
+    color: #842029;
+    background-color: #f8d7da;
+    padding: 1rem;  
+}
