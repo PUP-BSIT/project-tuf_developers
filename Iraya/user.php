@@ -65,12 +65,12 @@ function addJournal($title, $content) {
     }
 }
 
-function updateJournal($journalId, $title, $content, $sticker) {
+function updateJournal($journalId, $title, $content) {
     global $conn;
-    $params = [$title, $content, $sticker, $journalId];
+    $params = [$title, $content, $journalId];
 
     $stmnt = $conn->execute_query("update journals set journal_title=?
-        ,journal_content=?,sticker_name=? where journal_id=?", $params);
+        ,journal_content=? where journal_id=?", $params);
 }
 
 function getJournal($journalId) {
