@@ -5,8 +5,10 @@ function registerUser($username, $password) {
     global $conn;
     $params = [$username, $password];
 
-    $stmnt = $conn->execute_query("insert into users(username,password)
-            values(?,?)", $params);
+    $stmnt = $conn->execute_query("
+        insert into users(user_id,username,password)
+        select concat('ui', lpad(max(index_id) + 1, 4, '0')), ?, ?
+        from users", $params);
 
     header('Location:login.php');
 }
@@ -63,12 +65,12 @@ function addJournal($title, $content) {
     }
 }
 
-function updateJournal($journalId, $title, $content, $sticker) {
+function updateJournal($journalId, $title, $content) {
     global $conn;
-    $params = [$title, $content, $sticker, $journalId];
+    $params = [$title, $content, $journalId];
 
     $stmnt = $conn->execute_query("update journals set journal_title=?
-        ,journal_content=?,sticker_name=? where journal_id=?", $params);
+        ,journal_content=? where journal_id=?", $params);
 }
 
 function getJournal($journalId) {
