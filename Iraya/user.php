@@ -5,8 +5,10 @@ function registerUser($username, $password) {
     global $conn;
     $params = [$username, $password];
 
-    $stmnt = $conn->execute_query("insert into users(username,password)
-            values(?,?)", $params);
+    $stmnt = $conn->execute_query("
+        insert into users(user_id,username,password)
+        select concat('ui', lpad(max(index_id) + 1, 4, '0')), ?, ?
+        from users", $params);
 
     header('Location:login.php');
 }
