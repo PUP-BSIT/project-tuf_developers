@@ -1,0 +1,193 @@
+body {
+    color: #f57f17;
+    font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue";
+}
+
+.modal {
+	display: none; 
+	position: fixed;
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.display {
+    display: block;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ffeb3b;
+    background-color: #fff;
+    color: #f57f17;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fdd835;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.6rem 0rem;
+}
+
+textarea {
+    height: 5rem;
+}
+
+.mood-btn {
+    background-color: #fff;
+}
+
+.mood-btn-selected {
+    background-color: #fcda91;
+}
+
+.mood-sad {
+    background-image: url('../assets/images/emotion-sad-line.png');
+}
+
+.mood-unhappy {
+    background-image: url('../assets/images/emotion-unhappy-line.png');
+}
+
+.mood-neutral {
+    background-image: url('../assets/images/emotion-normal-line.png');
+}
+
+.mood-happy {
+    background-image: url('../assets/images/emotion-happy-line.png');
+}
+
+.mood-joyful {
+    background-image: url('../assets/images/emotion-laugh-line.png');
+}
+
+.bottom-right {
+    text-align: end;
+    align-self: end;
+    width: 15rem;
+}
+
+.text-left {
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grow-3 {
+    flex-grow: 3;
+}
+
+.grow-4 {
+    flex-grow: 4;
+}
+
+.grow-5 {
+    flex-grow: 5;
+}
+
+.grow-6 {
+    flex-grow: 6;
+}
+
+.none {
+    display: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	height: 40px;
+	margin-right: 10px;
+}
+
+.logo-text h1 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.logo-text p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+	padding: 5px 10px;
+	transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+	color: #ffa500;
+}
