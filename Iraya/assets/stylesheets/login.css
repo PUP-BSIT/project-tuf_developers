@@ -102,3 +102,7 @@ button {
   font-size: 15px;
   color: #000;
 }
+
+.warning-container {
+  max-width: min-content;
+}

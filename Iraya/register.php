@@ -1,6 +1,8 @@
 <?php
     require_once 'user.php';
 
+    $message = $_GET['message'] ?? '';
+
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -23,7 +25,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./assets/stylesheets/login.css" />
-    <title>Document</title>
+    <title>Register</title>
   </head>
   <body>
     <header>
@@ -53,18 +55,26 @@
         </div>
         <div>
           <label for="username">Username</label>
-          <input type="text" name="username" required/>
+          <input type="text" id="username" name="username" 
+            oninput="validateUsername()" required/>
+          <div id="username_message"></div>
         </div>
-        <div>
+        <div class="warning-container">
           <label for="password">Password</label>
-          <input type="password" name="password" required/>
+          <input type="password" id="password" name="password" 
+            oninput="validatePassword(this)" required/>
+          <div id="password_message"></div>
         </div>
-        <div>
-          <label for="confirm_password">Confirm Password</label>
-          <input type="password" name="confirm_password" required/>
+        <div class="warning-container">
+          <label for="confirm">
+            Confirm Password
+          </label>
+          <input type="password" id="confirm" name="confirm_password" 
+            oninput="validatePassword(this)" required/>
+          <div id="confirm_message"></div>
         </div>
-        <button type="submit">Register</button>
         <?= $message ?? '' ?>
+        <button type="submit">Register</button>
       </form>
     </div>
     <section class="footer">
@@ -74,5 +84,6 @@
       </p>
       </div>
     </section>
+    <script src="./scripts/register.js"></script>
   </body>
 </html>
