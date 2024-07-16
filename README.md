@@ -6,3 +6,8 @@
 WELCOME TO Iraya!
 
 https://iraya.site/
+
+---
+
+# Credentials
+Username: `irayauser` Password: `irayauser123`
