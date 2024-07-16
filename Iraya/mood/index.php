@@ -37,8 +37,8 @@
 	</header>
     <h1>Mood Tracker</h1>
     <div class="flex">
-        <input type="text" class="grow-6">
-        <button class="grow-1">Search</button>
+        <input type="text" id="search" class="grow-6">
+        <button class="grow-1" onclick="searchMoods()">Search</button>
         <select id="sort_mood" class="grow-1" oninput="sortDate()">
             <option value="date_descending">Sort by Date: Descending</option>
             <option value="date_ascending">Sort by Date: Ascending</option>

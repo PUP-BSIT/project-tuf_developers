@@ -30,7 +30,7 @@ if (!$_SESSION['user_id']) {
             <ul>
                 <li><a href="../index.php">Home</a></li>
                 <li><a href="../journal_manager.php">Journal</a></li>
-                <li><a href="#">Tasks</a></li>
+                <li><a href="./todo.php">Tasks</a></li>
                 <li><a href="../mood/index.php">Mood</a></li>
                 <li><a href="../logout.php">Logout</a></li>
             </ul>
@@ -41,6 +41,7 @@ if (!$_SESSION['user_id']) {
         <input type="text" 
             id="title" 
             class="input-title" 
+            onblur="updateTask()"
             placeholder="Add your title here">
     </div>
     <div class="flex">

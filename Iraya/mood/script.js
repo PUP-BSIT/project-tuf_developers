@@ -1,11 +1,13 @@
 const list = document.querySelector('#mood_list');
 const modal = document.querySelector('.modal');
 const warning = document.querySelector('#warn_text');
+const search = document.querySelector('#search');
 const clearButton = document.querySelector('#clear_button');
 const editButton = document.querySelector('#edit_button');
 const deleteButton = document.querySelector('#delete_button');
 
 let moodData;
+let searchData;
 let moodValue;
 let selectedMoods = [];
 const endpoint = './api.php';
@@ -42,6 +44,7 @@ async function getMoods() {
     const response = await fetch(endpoint);
     const data = await response.json();
     moodData = data;
+    searchData = data;
 
     sortDate();
 }
@@ -50,7 +53,7 @@ getMoods();
 function displayMoodList() {
     list.innerHTML = '';
 
-    for(const item of moodData) {
+    for(const item of searchData) {
         const row = document.createElement('button');
         row.id = item.mood_id;
         row.classList.add('card-list');
@@ -104,7 +107,7 @@ function sortDate() {
     const sortInput = document.querySelector('#sort_mood');
     const ascending = "date_ascending";
 
-    moodData.sort((a, b) => {
+    searchData.sort((a, b) => {
 		if (sortInput.value == ascending) {
 			return new Date(a.datetime_updated) - new Date(b.datetime_updated);
 		} else {
@@ -120,7 +123,7 @@ function filterMood() {
 
     list.innerHTML = '';
 
-    for(const item of moodData) {
+    for(const item of searchData) {
         if(filterInput.value != 'all' && filterInput.value != item.mood_status) 
             continue;
 
@@ -141,11 +144,14 @@ function filterMood() {
         row.onclick = selectMoods;
         list.append(row);
     }
-
 }
 
 function searchMoods() {
-
+    searchData = moodData.filter((item) => {
+        return item.mood_description.includes(search.value);
+    });
+    console.log(searchData);
+    sortDate(searchData);
 }
 
 function selectMoods(event) {

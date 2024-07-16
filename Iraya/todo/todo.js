@@ -5,7 +5,7 @@ let taskData;
 async function getTasks() {
     const data = await customFetch(endpoint);
     taskData = data;
-    displayTasks();
+    sortDate();
 }
 getTasks();
 
@@ -17,19 +17,15 @@ function displayTasks() {
         const todo = (item.todo)? JSON.parse(item.todo) : '';
         const progress = (item.in_progress)? JSON.parse(item.in_progress) : '';
         const completed = (item.completed)? JSON.parse(item.completed) : '';
+        const dateTime = new Date(item.datetime_updated).toLocaleString();
 
         const row = document.createElement('div');
         row.innerHTML = `
             <div class="card fit inverted">
-                <div class="flex right">
-                    <button class="more-icon inverted-btn"></button>
+                <div class="flex between">
+                    <div>${item.title}</div>
+                    <button class="delete-icon inverted-btn"></button>
                 </div>
-                <div class="dropdown-content none">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-
                 <div class="btn inverted-btn">
                     To-Do: ${todo.length}
                 </div>
@@ -39,13 +35,14 @@ function displayTasks() {
                 <div class="btn inverted-btn">
                     Completed: ${completed.length}
                 </div>
+                <div>${dateTime}</div>
             </div>`;
-        const more = row.querySelector('.more-icon');
-        const dropdown = row.querySelector('.dropdown-content');
+        const remove = row.querySelector('.delete-icon');
         const buttons = row.querySelectorAll('.btn');
 
-        more.addEventListener('click', () => {
-            dropdown.classList.remove('none');
+        remove.addEventListener('click', () => {
+            customFetch(endpoint, 'DELETE', { task_id: item.task_id });
+            window.location.reload();
         });
 
         for(const button of buttons) {
@@ -71,10 +68,10 @@ async function customFetch(endpoint, method='GET', data) {
 }
 
 function sortDate() {
-    const sortInput = document.querySelector('#sort_mood');
+    const sortInput = document.querySelector('#sort_tasks');
     const ascending = "date_ascending";
 
-    moodData.sort((a, b) => {
+    taskData.sort((a, b) => {
 		if (sortInput.value == ascending) {
 			return new Date(a.datetime_updated) - new Date(b.datetime_updated);
 		} else {
@@ -82,7 +79,7 @@ function sortDate() {
 		}
 	});
 
-   // displayMoodList();
+    displayTasks();
 }
 
 async function newTask() {
@@ -90,11 +87,11 @@ async function newTask() {
     window.location.replace(`add_task.php?task_id=${data.task_id}`);
 }
 
-window.onclick = () => {
-    console.log('test');
+window.onclick = (event) => {
+    if(event.target.classList.contains('more-icon')) return;
+
     const dropdowns = document.querySelectorAll('.dropdown-content');
     for(const item of dropdowns){
-        console.log(item)
         item.classList.add('none');
     }
 };

@@ -51,6 +51,7 @@ button, .btn {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 1rem;
 }
 
 .more-icon {
@@ -92,6 +93,10 @@ button, .btn {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.around {
+    justify-content: space-around;
 }
 
 .dropdown-content {

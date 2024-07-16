@@ -26,6 +26,11 @@ function addTaskInput(task='') {
     
     const [checkbox, input, remove] = newTask.children;
 
+    remove.addEventListener('click', () => {
+        newTask.remove();
+        updateTask();
+    });
+
     checkbox.addEventListener('click', () => {
         const parent = newTask.parentNode;
 
@@ -59,6 +64,8 @@ function populateTasks() {
     const todoData = JSON.parse(taskData.todo);
     const progressData = JSON.parse(taskData.in_progress);
     const completedData = JSON.parse(taskData.completed);
+
+    title.value = taskData.title;
 
     for(const item of todoData) {
         const input = addTaskInput(item);
@@ -105,7 +112,7 @@ function swapTask(target, destination) {
 function getJSON() {
     const json = {
         id: getTaskId(),
-        title: '',
+        title: title.value,
         todo: [],
         progress: [],
         completed: []

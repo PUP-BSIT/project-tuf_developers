@@ -38,15 +38,14 @@ if (!$_SESSION['user_id']) {
     </header>
     <h1>Tasks</h1>
     <div class="flex margin-down">
-        <input type="text" class="grow-6">
-        <button class="grow-1">Search</button>
-        <select id="sort_mood" class="grow-1" oninput="sortDate()">
+        <button type="button" onclick="newTask()">New Task</button>
+        <select id="sort_tasks" class="grow-1" oninput="sortDate()">
             <option value="date_descending">Sort by Date: Descending</option>
             <option value="date_ascending">Sort by Date: Ascending</option>
         </select>
     </div>
-    <button type="button" class="margin-down" onclick="newTask()">New Task</button>
-    <div id="task_list" class="flex gap wrap between">
+    
+    <div id="task_list" class="flex gap wrap around">
         <div class="card fit inverted">
             <div class="flex right">
                 <button class="more-icon inverted-btn"></button>
