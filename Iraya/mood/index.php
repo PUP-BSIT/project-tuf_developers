@@ -121,7 +121,8 @@
             </div>
             <div>
                 <sub id="warn_text"></sub>
-                <button onclick="addMood()">Save</button>
+                <button id="add" onclick="addMood()">Add</button>
+                <button id="edit" onclick="editMood()">Edit</button>
                 <button onclick="removeModal()">Cancel</button>
             </div>
         </div>

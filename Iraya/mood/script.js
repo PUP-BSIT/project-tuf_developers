@@ -2,6 +2,11 @@ const list = document.querySelector('#mood_list');
 const modal = document.querySelector('.modal');
 const warning = document.querySelector('#warn_text');
 const search = document.querySelector('#search');
+const description = document.querySelector('#mood_description');
+
+const add = document.querySelector('#add');
+const edit = document.querySelector('#edit');
+
 const clearButton = document.querySelector('#clear_button');
 const editButton = document.querySelector('#edit_button');
 const deleteButton = document.querySelector('#delete_button');
@@ -12,7 +17,13 @@ let moodValue;
 let selectedMoods = [];
 const endpoint = './api.php';
 
-function displayModal() {
+function displayModal(buttonName='add') {
+    if(buttonName == 'add') {
+        showButton('add');    
+    } else {
+        showButton('edit');
+    }
+
     modal.classList.add('display');
 }
 
@@ -31,7 +42,6 @@ function addMood() {
         return;
     }
 
-    const description = document.querySelector('#mood_description');
     const data = post(endpoint,{
         'mood_status' : moodValue,
         'mood_description' : description.value
@@ -40,12 +50,43 @@ function addMood() {
     location.reload();
 }
 
+async function editMood() {
+    console.log(selectedMoods[0].id)
+    const response = await fetch(endpoint, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            id: selectedMoods[0].id,
+            status: moodValue,
+            description: description.value
+        })
+    });
+
+    await getMoods();
+    removeModal();
+}
+
+function showButton(buttonName) {
+    switch(buttonName) {
+        case 'add': 
+            add.classList.remove('none');
+            edit.classList.add('none');
+            break;
+        case 'edit': 
+            edit.classList.remove('none');
+            add.classList.add('none');
+            break;
+    }
+}
+
 async function getMoods() {
     const response = await fetch(endpoint);
     const data = await response.json();
     moodData = data;
-    searchData = data;
-
+    
+    searchMoods();
     sortDate();
 }
 getMoods();
@@ -109,9 +150,9 @@ function sortDate() {
 
     searchData.sort((a, b) => {
 		if (sortInput.value == ascending) {
-			return new Date(a.datetime_updated) - new Date(b.datetime_updated);
+			return new Date(a.datetime_created) - new Date(b.datetime_created);
 		} else {
-			return new Date(b.datetime_updated) - new Date(a.datetime_updated);
+			return new Date(b.datetime_created) - new Date(a.datetime_created);
 		}
 	});
 
@@ -150,17 +191,21 @@ function searchMoods() {
     searchData = moodData.filter((item) => {
         return item.mood_description.includes(search.value);
     });
-    console.log(searchData);
+    
+    selectedMoods = [];
     sortDate(searchData);
 }
 
 function selectMoods(event) {
     const button = event.currentTarget;
-
+   
+     //unselect if selected
     if(button.classList.contains('mood-btn-selected')) {
         selectedMoods = selectedMoods.filter(item => item.id !== button.id);
         button.classList.remove('mood-btn-selected');
         
+        if(selectMoods.length == 1)
+            editButton.classList.remove('none');
         if(selectedMoods.length == 0) {
             clearButton.classList.add('none');
             editButton.classList.add('none');
@@ -169,6 +214,7 @@ function selectMoods(event) {
         return;
     } 
 
+    //select if not selected
     selectedMoods.push(button);
 
     button.classList.add('mood-btn-selected');
@@ -209,7 +255,7 @@ async function editSelection() {
     const descriptionText = document.querySelector('#mood_description');
     descriptionText.value = rowData.mood_description;
     set(statusButton);
-    displayModal();
+    displayModal('edit');
 }
 
 async function deleteSelection() {

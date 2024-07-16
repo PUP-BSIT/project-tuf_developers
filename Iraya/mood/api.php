@@ -22,6 +22,17 @@ else if($_SERVER['REQUEST_METHOD'] == 'POST') {
         select concat('m-', lpad(max(index_id) + 1, 4, '0')), ?, ?, ?
         from moods",[$_SESSION['user_id'], $status, $description]);
 }
+else if($_SERVER['REQUEST_METHOD'] == 'PATCH') {
+    $_PATCH = json_decode(file_get_contents('php://input'),true);
+
+    $id = $_PATCH['id'];
+    $status = $_PATCH['status'];
+    $description = $_PATCH['description'];
+
+    $conn->execute_query('update moods set mood_status=?, mood_description=?
+        where mood_id=?',
+        [$status, $description, $id]);
+}
 else if($_SERVER['REQUEST_METHOD'] == 'DELETE') {
     parse_str(file_get_contents('php://input'), $_DELETE);
 
