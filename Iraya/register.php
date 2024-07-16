@@ -31,7 +31,7 @@
     <header>
       <div class="logo-container">
         <img
-          src="./assets/images/iraya_logo.png"
+          src="./assets/images/logo.png"
           alt="Iraya Logo"
           class="logo"/>
         <div class="logo-text">
