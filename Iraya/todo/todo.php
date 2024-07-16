@@ -13,6 +13,7 @@ if (!$_SESSION['user_id']) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../mood/modal.css">
+    <link rel="stylesheet" href="style.css">
     <title>To Do List</title>
 </head>
 
@@ -36,8 +37,53 @@ if (!$_SESSION['user_id']) {
         </nav>
     </header>
     <h1>Tasks</h1>
-    <a href="./add_task.php">New Task</a>
-    <div id="task_list"></div>
+    <div class="flex margin-down">
+        <input type="text" class="grow-6">
+        <button class="grow-1">Search</button>
+        <select id="sort_mood" class="grow-1" oninput="sortDate()">
+            <option value="date_descending">Sort by Date: Descending</option>
+            <option value="date_ascending">Sort by Date: Ascending</option>
+        </select>
+    </div>
+    <button type="button" class="margin-down" onclick="newTask()">New Task</button>
+    <div id="task_list" class="flex gap wrap between">
+        <div class="card fit inverted">
+            <div class="flex right">
+                <button class="more-icon inverted-btn"></button>
+            </div>
+            <div class="btn inverted-btn">To-Do: 3</div>
+            <div class="btn inverted-btn">In Progress: 2</div>
+            <div class="btn inverted-btn">Completed: 4</div>
+        </div>
+
+        <div class="card fit">
+            <div class="flex right">
+                <button class="more-icon"></button>
+            </div>
+            <div class="btn">To-Do: 3</div>
+            <div class="btn">In Progress: 2</div>
+            <div class="btn">Completed: 4</div>
+        </div>
+
+        <div class="card fit">
+            <div class="flex right">
+                <button class="more-icon"></button>
+            </div>
+            <div class="btn">To-Do: 3</div>
+            <div class="btn">In Progress: 2</div>
+            <div class="btn">Completed: 4</div>
+        </div>
+
+        <div class="card fit">
+            <div class="flex right">
+                <button class="more-icon"></button>
+            </div>
+            <div class="btn">To-Do: 3</div>
+            <div class="btn">In Progress: 2</div>
+            <div class="btn">Completed: 4</div>
+        </div>
+    </div>
+    <script src="todo.js"></script>
 </body>
 
 </html>

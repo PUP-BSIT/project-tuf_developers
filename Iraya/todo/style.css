@@ -1,17 +1,13 @@
 .card {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.5rem;
     color: #f57f17;
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
     gap: 1rem;
-}
-
-.h-2 {
-    height: 50vh;
 }
 
 .task-card {
@@ -22,7 +18,7 @@
 }
 
 .gap {
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .column {
@@ -33,7 +29,7 @@ button, .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fdd835;
-    color: #fff;
+    color: #80511c;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -48,4 +44,67 @@ button, .btn {
 
 .margin-down {
     margin-bottom: 1rem;
+}
+
+.delete-icon {
+    background-image: url('../assets/images/delete_image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.more-icon {
+    background-image: url('../assets/images/more_icon.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.right {
+    justify-content: right;
+}
+
+.fit {
+    width: fit-content;
+}
+
+.inverted {
+    background-color: #fdd835;
+    color: #fff;
+}
+
+.inverted-btn {
+    background-color: #fff;
+    color: #6b602e;
+}
+
+.input-title {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }

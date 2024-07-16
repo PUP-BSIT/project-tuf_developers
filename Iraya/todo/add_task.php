@@ -36,33 +36,29 @@ if (!$_SESSION['user_id']) {
             </ul>
         </nav>
     </header>
-    <a href="./" class="btn margin-down margin-up">Cancel</a>
+    <a href="./todo.php" class="btn margin-down margin-up">Cancel</a>
+    <div>
+        <input type="text" 
+            id="title" 
+            class="input-title" 
+            placeholder="Add your title here">
+    </div>
     <div class="flex">
-        <div class="card h-2">
+        <div class="card">
             <h1>To Do</h1>
-            <div id="todo" class="flex gap column">
-                <div class="flex">
-                    <input type="checkbox" class="">
-                    <input type="text" class="task-card">
-                </div>
-                
-            </div>
-            <button>Add new task</button>
+            <div id="todo" class="flex gap column"></div>
+            <button onclick="addToDo()">Add new task</button>
         </div>
-        <div class="card h-2">
+        <div class="card">
             <h1>In Progress</h1>
-            <div id="in_progress">
-                <div>
-                    <input type="checkbox" class="">
-                    <input type="text" class="task-card">
-                </div>
-            </div>
+            <div id="in_progress" class="flex gap column"></div>
         </div>
-        <div class="card h-2">
+        <div class="card">
             <h1>Completed</h1>
-            <div id="completed"></div>
+            <div id="completed" class="flex gap column"></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
