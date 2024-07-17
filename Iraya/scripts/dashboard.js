@@ -23,8 +23,6 @@ async function getData() {
     const taskChart = taskProgress(taskData);
     const moodChart = occurences(moodData.map(i => i['mood_status']));
 
-    console.log(taskChart)
-
     displayChart(journal, 'line', 'Journals', 
         Object.keys(journalChart), 
         Object.values(journalChart));
@@ -82,13 +80,13 @@ function taskProgress(list) {
     let todo = 0;
     let progress = 0;
     let completed = 0;
-    
+
     for(let item of list) {
-        if(todo)
+        if(item.todo)
             todo += JSON.parse(item.todo).length;
-        if(progress)
+        if(item.in_progress)
             progress += JSON.parse(item.in_progress).length;
-        if(completed)
+        if(item.completed)
             completed += JSON.parse(item.completed).length;
     }
     
