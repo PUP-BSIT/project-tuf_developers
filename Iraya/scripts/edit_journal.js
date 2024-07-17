@@ -1,3 +1,4 @@
+const form = document.querySelector('form');
 const journalId = document.querySelector('#journal_id');
 const journalTitle = document.querySelector('#journal_title');
 const journalContent = document.querySelector('#journal_content');
@@ -10,11 +11,15 @@ async function editJournal() {
         },
         body: `journal_id=${journalId.value}&\
             journal_title=${journalTitle.value}&\
-            journal_content=${journalContent.value}`
+            journal_content=${journalContent.innerHTML}`
     };
 
     const response = await fetch('./api.php', options);
     const data = await response.text();
 
     window.location.assign('./journal_manager.php');
+}
+
+function format(command) {
+    document.execCommand(command, false, null);
 }

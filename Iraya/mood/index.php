@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/stylesheets/main.css">
+    <link id="theme" rel="stylesheet" href="../assets/stylesheets/light.css">
     <title>Mood Tracker</title>
 </head>
 
@@ -36,7 +37,7 @@
 		</nav>
 	</header>
     <h1>Mood Tracker</h1>
-    <div class="flex">
+    <div class="flex down-1">
         <input type="text" id="search" class="grow-6">
         <button class="grow-1" onclick="searchMoods()">Search</button>
         <select id="sort_mood" class="grow-1" oninput="sortDate()">
@@ -52,7 +53,7 @@
             <option value="mood_joyful">Joyfull</option>
         </select>
     </div>
-    <div class="flex between">
+    <div class="flex between down-1">
         <button onclick="displayModal()">Add mood</button>
         <div>
             <button id="clear_button" 
@@ -127,7 +128,11 @@
             </div>
         </div>
     </div>
+    <button onclick="changeTheme('../assets/stylesheets')" 
+        class="theme-button">Change Theme</button>
     <script src="script.js"></script>
+    <script src="../scripts/theme.js" 
+        onload="loadTheme('../assets/stylesheets')"></script>
 </body>
 
 </html>

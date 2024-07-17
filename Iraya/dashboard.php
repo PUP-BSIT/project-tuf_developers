@@ -13,11 +13,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link id="theme" rel="stylesheet" href="./assets/stylesheets/light.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
-<header>
+    <header>
         <div class="logo-container">
             <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
             <div class="logo-text">
@@ -38,7 +39,7 @@
     <h1>Dashboard</h1>
     <div class="flex around">
         <div class="chart-container">
-            <h2>Journal Entry Frequency</h2>
+            <h2>Journal Entries Frequency</h2>
             <canvas id="journal"></canvas>
     </div>
         <div class="chart-container">
@@ -50,6 +51,10 @@
             <canvas id="mood"></canvas>
         </div>
     </div>
+    <button onclick="changeTheme('./assets/stylesheets')" 
+        class="theme-button">Change Theme</button>
     <script src="./scripts/dashboard.js"></script>
+    <script src="./scripts/theme.js" 
+        onload="loadTheme('./assets/stylesheets')"></script>
 </body>
 </html>

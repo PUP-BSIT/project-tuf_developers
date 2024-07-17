@@ -7,25 +7,19 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/stylesheets/add_journal.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/stylesheets/main.css"/>
+    <link id="theme" rel="stylesheet" href="./assets/stylesheets/light.css">
     <title>Add Journal</title>
   </head>
   <body>
-    <header>
+    <header class="down-1">
       <div class="logo-container">
-        <img
-          src="../Iraya/assets/images/logo.png"
-          alt="Iraya Logo"
-          class="logo"/>
+        <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
         <div class="logo-text">
           <h1>Iraya</h1>
           <p>Simplify Your Journaling Experience</p>
@@ -33,35 +27,52 @@
       </div>
       <nav>
         <ul>
-          <li><a href="./index.php">Home</a></li>
-          <li><a href="./login.php">Login</a></li>
-          <li><a href="./register.php">Register</a></li>
-          <li><a href="./about.php">About</a></li>
+          <li><a href="./dashboard.php">Dashboard</a></li>
+          <li><a href="./journal_manager.php">Journal</a></li>
+          <li><a href="./todo/todo.php">Tasks</a></li>
+          <li><a href="./mood/index.php">Mood</a></li>
+          <li><a href="./logout.php">Logout</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="journal">
-        <div class="journal-container">
-          <h1>Title</h1>
+      <a href="./journal_manager.php" class="btn">Back</a>
+      <section class="flex center">
+        <div class="flex column width-75">
           <input id="journal_title" placeholder="Add your entry title here">
+          <div class="notes-container flex">
+            <div id="journal_content" contenteditable=true
+              class="note pad-1 width-100" name="journal-content"></div>
+          </div>
           <button onclick="insertJournal()">
-            <img src="./assets/images/edit_image.png" alt="edit"/>Create Entry
+            Create Entry
           </button>
-          <div class="notes-container">
-            <textarea id="journal_content" class="input-box" 
-              name="journal-content"></textarea>
+          <div>
+            <button type="button" class="edit-icon bold-icon" 
+              onclick="format('bold')"></button>
+            <button type="button" class="edit-icon italic-icon"
+              onclick="format('italic')"></button>
+            <button type="button" class="edit-icon underline-icon"
+              onclick="format('underline')"></button>
+            <button type="button" class="edit-icon strikethrough-icon"
+              onclick="format('strikeThrough')"></button>
+            <button type="button" class="edit-icon unorderedlist-icon"
+              onclick="format('insertUnorderedList')"></button>
+            <button type="button" class="edit-icon orderedlist-icon"
+              onclick="format('insertOrderedList')"></button>
           </div>
         </div>
       </section>
     </main>
     <section class="footer">
       <div class="copyright">
-      <p>
-        © 2024 by Iraya. All rights reserved.
-      </p>
+      <p> © 2024 by Iraya. All rights reserved. </p>
       </div>
     </section>
+    <button onclick="changeTheme('./assets/stylesheets')" 
+    class="theme-button">Change Theme</button>
+    <script src="./scripts/theme.js" 
+    onload="loadTheme('./assets/stylesheets')"></script>
     <script src="./scripts/add_journal.js"></script>
   </body>
 </html>

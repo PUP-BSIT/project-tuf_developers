@@ -44,7 +44,7 @@ function loginUser($username, $password) {
 
     $_SESSION['user_id'] = $user['user_id'];
     $_SESSION['username'] = $user['username'];
-    header('Location:journal_manager.php');
+    header("Location:dashboard.php?remind={$user['username']}");
 }
 
 function getUser($username) {

@@ -6,10 +6,7 @@ const THEME = {
 const theme = document.querySelector('#theme');
 let currentTheme = localStorage.getItem('theme') ?? THEME.LIGHT;
 
-function changeTheme() {
-    if(!currentTheme)
-        localStorage.setItem('theme', THEME.LIGHT);
-
+function changeTheme(path) {
     if(currentTheme == THEME.LIGHT) {
         currentTheme = THEME.DARK;
         localStorage.setItem('theme', THEME.DARK);
@@ -19,7 +16,13 @@ function changeTheme() {
         localStorage.setItem('theme', THEME.LIGHT);
     }
 
-    theme.setAttribute('href',`./assets/stylesheets/${currentTheme}.css`);
+    theme.setAttribute('href',`${path}/${currentTheme}.css`);
 }
 
-theme.setAttribute('href',`./assets/stylesheets/${currentTheme}.css`);
+function loadTheme(path) {
+    console.log(currentTheme)
+    if(!currentTheme)
+        localStorage.setItem('theme', THEME.LIGHT);
+
+    theme.setAttribute('href',`${path}/${currentTheme}.css`);
+}

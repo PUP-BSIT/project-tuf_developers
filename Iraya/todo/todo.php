@@ -13,6 +13,7 @@ if (!$_SESSION['user_id']) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/stylesheets/main.css">
+    <link id="theme" rel="stylesheet" href="../assets/stylesheets/light.css">
     <title>To Do List</title>
 </head>
 
@@ -36,7 +37,7 @@ if (!$_SESSION['user_id']) {
         </nav>
     </header>
     <h1>Tasks</h1>
-    <div class="flex margin-down">
+    <div class="flex down-2">
         <button type="button" onclick="newTask()">New Task</button>
         <select id="sort_tasks" class="grow-1" oninput="sortDate()">
             <option value="date_descending">Sort by Date: Descending</option>
@@ -81,7 +82,11 @@ if (!$_SESSION['user_id']) {
             <div class="btn">Completed: 4</div>
         </div>
     </div>
+    <button onclick="changeTheme('../assets/stylesheets')" 
+        class="theme-button">Change Theme</button>
     <script src="todo.js"></script>
+    <script src="../scripts/theme.js" 
+        onload="loadTheme('../assets/stylesheets')"></script>
 </body>
 
 </html>

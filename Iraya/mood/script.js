@@ -116,18 +116,18 @@ function displayMoodList() {
 }
 
 function set(button) {
-    if(button?.classList.contains('mood-btn-selected')) {
-        button.classList.remove('mood-btn-selected');
+    if(button?.classList.contains('card-selected')) {
+        button.classList.remove('card-selected');
         return;
     }
 
     const moodButtons = document.querySelectorAll('.mood-btn');
     for(const moodButton of moodButtons) {
-        moodButton.classList.remove('mood-btn-selected');
+        moodButton.classList.remove('card-selected');
     }
 
     moodValue = button?.value;
-    button?.classList.add('mood-btn-selected');
+    button?.classList.add('card-selected');
 
     warning.textContent = '';
 }
@@ -199,12 +199,11 @@ function searchMoods() {
 function selectMoods(event) {
     const button = event.currentTarget;
    
-     //unselect if selected
-    if(button.classList.contains('mood-btn-selected')) {
+    if(button.classList.contains('card-selected')) {
         selectedMoods = selectedMoods.filter(item => item.id !== button.id);
-        button.classList.remove('mood-btn-selected');
+        button.classList.remove('card-selected');
         
-        if(selectMoods.length == 1)
+        if(selectedMoods.length == 1) 
             editButton.classList.remove('none');
         if(selectedMoods.length == 0) {
             clearButton.classList.add('none');
@@ -214,10 +213,9 @@ function selectMoods(event) {
         return;
     } 
 
-    //select if not selected
     selectedMoods.push(button);
 
-    button.classList.add('mood-btn-selected');
+    button.classList.add('card-selected');
     clearButton.classList.remove('none');
     editButton.classList.remove('none');
     deleteButton.classList.remove('none');
@@ -228,7 +226,7 @@ function selectMoods(event) {
 
 function clearAllSelection() {
     for(const button of selectedMoods) {
-        button.classList.remove('mood-btn-selected');
+        button.classList.remove('card-selected');
     }
 
     selectedMoods = [];
@@ -251,7 +249,8 @@ async function editSelection() {
     if(!rowData) return;
 
     moodValue = rowData.mood_status;
-    const statusButton = document.querySelector(`#${moodValue}`);
+    console.log(moodValue)
+    const statusButton = document.querySelector(`#mood_${moodValue}`);
     const descriptionText = document.querySelector('#mood_description');
     descriptionText.value = rowData.mood_description;
     set(statusButton);

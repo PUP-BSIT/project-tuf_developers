@@ -8,10 +8,34 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 194, 40);
+  color: #dfff4e;
 }
 
 button, .btn {
-  background-color: rgb(255, 194, 40);
+  background-color: #dfff4e;
   color: rgb(27, 24, 15);
+}
+
+.secondary {
+  background-color: #222;
+}
+
+.card-list {
+  background-color: #222;
+  color: white;
+}
+
+.delete-icon {
+  background-color: #dfff4e;
+  background-image: url('../../assets/images/delete_image.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.mood-btn {
+  background-color: #546125;
+}
+
+.card-selected {
+  background-color: #546125;
 }

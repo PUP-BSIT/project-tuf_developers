@@ -86,7 +86,9 @@
       </div>
     </section>
     <script src="./scripts/register.js"></script>
-    <button onclick="changeTheme()" class="theme-button">Change Theme</button>
-    <script src="./scripts/theme.js"></script>
+    <button onclick="changeTheme('./assets/stylesheets')" 
+      class="theme-button">Change Theme</button>
+    <script src="./scripts/theme.js" 
+      onload="loadTheme('./assets/stylesheets')"></script>
   </body>
 </html>

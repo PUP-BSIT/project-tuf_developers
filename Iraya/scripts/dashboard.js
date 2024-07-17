@@ -6,6 +6,9 @@ const journalEndpoint = './api.php';
 const taskEndpoint = './todo/api.php';
 const moodEndpoint = './mood/api.php';
 
+const urlParams = new URLSearchParams(window.location.search);
+const reminder = urlParams.get('remind');
+
 let journalData;
 let taskData;
 let moodData;
@@ -30,12 +33,18 @@ async function getData() {
     displayChart(task, 'doughnut', 'Task Progress', 
         ['To Do', 'In Progress', 'Completed'],
         Object.values(taskChart));
-
     
     displayChart(mood, 'pie', 'Mood Tracker', 
         Object.keys(moodChart),
         Object.values(moodChart));
 
+    const [todo, progress] = taskChart;
+    if(reminder) 
+        setTimeout(() => {
+            alert(`Welcome back, ${reminder}! \nYou have ${todo + progress} ` + 
+                `Uncompleted Tasks in your To-Do List. \n` +
+                `Make sure to check your To-Do List to complete your tasks!`);
+        }, 1000);
 }
 
 getData();
@@ -65,18 +74,19 @@ function occurences(list, isDate=false) {
     const map = {};
     let count = 1;
     
+    list.sort((a,b) => new Date(a) - new Date(b));
+
     for(let item of list) {
         if(isDate) item = new Date(item).toDateString();
 
         if(map[item]) map[item] += count; 
         else map[item] = count;
     }
-    
+
     return map;
 }
 
 function taskProgress(list) {
-    console.log(list)
     let todo = 0;
     let progress = 0;
     let completed = 0;
@@ -89,6 +99,6 @@ function taskProgress(list) {
         if(item.completed)
             completed += JSON.parse(item.completed).length;
     }
-    
+   
     return [todo, progress, completed];
 }

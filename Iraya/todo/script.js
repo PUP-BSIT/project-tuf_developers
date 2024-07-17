@@ -61,9 +61,9 @@ async function getTasks() {
 getTasks();
 
 function populateTasks() {
-    const todoData = JSON.parse(taskData.todo);
-    const progressData = JSON.parse(taskData.in_progress);
-    const completedData = JSON.parse(taskData.completed);
+    const todoData = (taskData.todo)? JSON.parse(taskData.todo) : [];
+    const progressData = (taskData.in_progress)? JSON.parse(taskData.in_progress): [];
+    const completedData = (taskData.completed)? JSON.parse(taskData.completed): [];
 
     title.value = taskData.title;
 

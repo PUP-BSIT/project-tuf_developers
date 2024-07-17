@@ -21,7 +21,7 @@ function displayTasks() {
 
         const row = document.createElement('div');
         row.innerHTML = `
-            <div class="card fit inverted">
+            <div class="card fit inverted secondary">
                 <div class="flex between">
                     <div>${item.title}</div>
                     <button class="delete-icon inverted-btn"></button>

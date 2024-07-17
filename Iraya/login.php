@@ -67,8 +67,10 @@
       </p>
       </div>
     </section>
-    <button onclick="changeTheme()" class="theme-button">Change Theme</button>
+    <button onclick="changeTheme('./assets/stylesheets')" 
+      class="theme-button">Change Theme</button>
     <script src="./scripts/login.js"></script>
-    <script src="./scripts/theme.js"></script>
+    <script src="./scripts/theme.js" 
+      onload="loadTheme('./assets/stylesheets')"></script>
   </body>
 </html>

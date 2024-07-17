@@ -31,7 +31,7 @@
         <h2 class="f-4">Welcome to Iraya</h2>
         <p>Your go-to platform for simplifying your journaling experience.</p>
         <p class="down-2">Start today and discover the benefits of keeping a journal.</p>
-        <a href="./login.php" class="btn">Login</a>
+        <a href="./login.php" class="btn margin-right">Login</a>
         <a href="./register.php" class="btn">Register</a>
       </div>
       <div>
@@ -39,13 +39,15 @@
       </div>
     </section>
   </main>
-  <footer class="footer pad-1">
+  <footer class="pad-1">
     <div class="text-center">
       <p>© 2024 by Iraya. All rights reserved.</p>
     </div>
   </footer>
 
-  <button onclick="changeTheme()" class="theme-button">Change Theme</button>
-  <script src="./scripts/theme.js"></script>
+  <button onclick="changeTheme('./assets/stylesheets')" 
+    class="theme-button">Change Theme</button>
+  <script src="./scripts/theme.js" 
+    onload="loadTheme('./assets/stylesheets')"></script>
 </body>
 </html>

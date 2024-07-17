@@ -120,6 +120,7 @@
     </div>
   </section>
   <button onclick="changeTheme()" class="theme-button">Change Theme</button>
-  <script src="./scripts/theme.js"></script>
+  <script src="./scripts/theme.js" 
+      onload="loadTheme('./assets/stylesheets')"></script>
 </body>
 </html>

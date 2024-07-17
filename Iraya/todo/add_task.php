@@ -13,6 +13,7 @@ if (!$_SESSION['user_id']) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/stylesheets/main.css">
+    <link id="theme" rel="stylesheet" href="../assets/stylesheets/light.css">
     <title>To Do List</title>
 </head>
 
@@ -58,7 +59,11 @@ if (!$_SESSION['user_id']) {
             <div id="completed" class="flex gap column"></div>
         </div>
     </div>
+    <button onclick="changeTheme('../assets/stylesheets')" 
+        class="theme-button">Change Theme</button>
     <script src="script.js"></script>
+    <script src="../scripts/theme.js"
+        onload="loadTheme('../assets/stylesheets')"></script>
 </body>
 
 </html>
