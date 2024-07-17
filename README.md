@@ -10,4 +10,4 @@ https://iraya.site/
 ---
 
 # Credentials
-Username: `irayauser` Password: `irayauser123`
+Username: `irayauser` Password: `Iraya@User123`
