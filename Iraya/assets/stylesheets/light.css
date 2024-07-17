@@ -1,0 +1,12 @@
+a {
+    color: gray;
+}
+
+a:hover {
+    color: rgb(255, 194, 40);
+}
+
+button, .btn {
+    background-color: rgb(255, 194, 40);
+    color: rgb(27, 24, 15);
+}

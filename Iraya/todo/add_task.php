@@ -12,8 +12,7 @@ if (!$_SESSION['user_id']) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../mood/modal.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../assets/stylesheets/main.css">
     <title>To Do List</title>
 </head>
 
@@ -28,7 +27,7 @@ if (!$_SESSION['user_id']) {
         </div>
         <nav>
             <ul>
-                <li><a href="../index.php">Home</a></li>
+                <li><a href="../dashboard.php">Dashboard</a></li>
                 <li><a href="../journal_manager.php">Journal</a></li>
                 <li><a href="./todo.php">Tasks</a></li>
                 <li><a href="../mood/index.php">Mood</a></li>

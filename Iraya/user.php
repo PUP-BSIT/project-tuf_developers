@@ -31,13 +31,15 @@ function loginUser($username, $password) {
     $user = getUser($username);
 
     if(!$user) {
-        echo 'User with that username does not exist';
-        exit;
+        $message = 'User with that username does not exist';
+        header("Location:login.php?message=$message");
+        return;
     }
 
     if($user['password'] != $password) {
-        echo "Invalid password.";
-        exit;
+        $message = 'Password is incorrect';
+        header("Location:login.php?message=$message");
+        return;
     }
 
     $_SESSION['user_id'] = $user['user_id'];

@@ -24,11 +24,12 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./assets/stylesheets/login.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/main.css" />
+    <link id="theme" rel="stylesheet" href="./assets/stylesheets/light.css">    
     <title>Register</title>
   </head>
   <body>
-    <header>
+    <header class="down-5">
       <div class="logo-container">
         <img
           src="./assets/images/logo.png"
@@ -48,24 +49,24 @@
         </ul>
       </nav>
     </header>
-    <div>
-      <form method="POST">
+    <div class="flex column center down-6">
+      <form method="POST" class="flex column width-50">
         <div class="title">
           <h1>Register</h1>
         </div>
-        <div>
+        <div class="flex column">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" 
             oninput="validateUsername()" required/>
           <div id="username_message"></div>
         </div>
-        <div class="warning-container">
+        <div class="flex column warning-container">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" 
             oninput="validatePassword(this)" required/>
           <div id="password_message"></div>
         </div>
-        <div class="warning-container">
+        <div class="flex column warning-container">
           <label for="confirm">
             Confirm Password
           </label>
@@ -78,12 +79,14 @@
       </form>
     </div>
     <section class="footer">
-      <div class="copyright">
+      <div class="copyright text-center">
       <p>
         © 2024 by Iraya. All rights reserved.
       </p>
       </div>
     </section>
     <script src="./scripts/register.js"></script>
+    <button onclick="changeTheme()" class="theme-button">Change Theme</button>
+    <script src="./scripts/theme.js"></script>
   </body>
 </html>

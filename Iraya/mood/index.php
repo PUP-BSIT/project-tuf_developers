@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="../assets/stylesheets/main.css">
     <title>Mood Tracker</title>
 </head>
 
@@ -27,7 +27,7 @@
     </div>
 		<nav>
 			<ul>
-				<li><a href="../index.php">Home</a></li>
+				<li><a href="../dashboard.php">Dashboard</a></li>
 				<li><a href="../journal_manager.php">Journal</a></li>
                 <li><a href="../todo/todo.php">Tasks</a></li>
 				<li><a href="#">Mood</a></li>
@@ -83,35 +83,35 @@
                 <button 
                     class="mood-btn" 
                     id="mood_sad"
-                    value="mood_sad" 
+                    value="sad" 
                     onclick="set(this)">
                     <img src="../assets/images/mood_sad.png" alt="emoji">
                 </button>
                 <button 
                     class="mood-btn" 
                     id="mood_unhappy"
-                    value="mood_unhappy" 
+                    value="unhappy" 
                     onclick="set(this)">
                     <img src="../assets/images/mood_unhappy.png" alt="emoji">
                 </button>
                 <button 
                     class="mood-btn" 
                     id="mood_neutral"
-                    value="mood_neutral" 
+                    value="neutral" 
                     onclick="set(this)">
                     <img src="../assets/images/mood_neutral.png" alt="emoji">
                 </button>
                 <button 
                     class="mood-btn" 
                     id="mood_happy"
-                    value="mood_happy"
+                    value="happy"
                     onclick="set(this)">
                     <img src="../assets/images/mood_happy.png" alt="emoji">
                 </button>
                 <button 
                     class="mood-btn"
                     id="mood_joyful" 
-                    value="mood_joyful" 
+                    value="joyful" 
                     onclick="set(this)">
                     <img src="../assets/images/mood_joyful.png" alt="emoji">
                 </button>

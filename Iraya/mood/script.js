@@ -102,7 +102,7 @@ function displayMoodList() {
 
         row.innerHTML = `
             <div>
-                <img src="../assets/images/${item.mood_status}.png" 
+                <img src="../assets/images/mood_${item.mood_status}.png" 
                     alt="emoji">
             </div>
             <div class="text-left">${item.mood_description}</div>

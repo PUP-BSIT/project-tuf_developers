@@ -190,3 +190,8 @@ nav ul li a {
 nav ul li a:hover {
 	color: #ffa500;
 }
+
+.chart-container {
+    width: 400px;
+    height: 400px;
+}

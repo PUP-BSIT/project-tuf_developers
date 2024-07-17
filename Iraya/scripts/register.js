@@ -25,8 +25,8 @@ async function validatePassword(input) {
     const specialChar = /[@$!%*?&]/;
 
     if(password.value != confirm.value) {
-        passwordMessage.textContent = confirmMessage.textContent = 
-            'Passwords do not match';
+        passwordMessage.textContent = ''; 
+        confirmMessage.textContent = 'Passwords do not match';
     }
     else if(password.value.length < 8) {
         passwordMessage.textContent = confirmMessage.textContent =
@@ -57,3 +57,9 @@ function register(event) {
 }
 
 form.addEventListener('submit',register);
+
+const urlParams = new URLSearchParams(window.location.search);
+const message = urlParams.get('message');
+
+if(message) 
+    alert(message);
