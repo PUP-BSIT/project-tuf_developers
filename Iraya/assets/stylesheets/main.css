@@ -204,6 +204,7 @@ textarea {
 }
 
 .strong {
+    font-size: 1.3rem;
 	font-weight: bold;
 }
 
@@ -446,4 +447,12 @@ button,
 
 .unorderedlist-icon {
 	background-image: url("../../assets/images/edit_list_unordered.png");
+}
+
+.warn {
+    color: #924141;
+}
+
+.success {
+    color: #499642;
 }

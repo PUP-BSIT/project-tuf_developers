@@ -39,7 +39,8 @@
       <a href="./journal_manager.php" class="btn">Back</a>
       <section class="flex center">
         <div class="flex column width-75">
-          <input id="journal_title" placeholder="Add your entry title here">
+          <input id="journal_title" placeholder="Add your entry title here"
+          class="strong pad-1">
           <div class="notes-container flex">
             <div id="journal_content" contenteditable=true
               class="note pad-1 width-100" name="journal-content"></div>

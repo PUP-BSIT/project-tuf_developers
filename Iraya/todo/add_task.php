@@ -18,7 +18,7 @@ if (!$_SESSION['user_id']) {
 </head>
 
 <body>
-    <header>
+    <header class="down-1">
         <div class="logo-container">
             <img src="../assets/images/logo.png" alt="Iraya Logo" class="logo" />
             <div class="logo-text">
@@ -36,11 +36,11 @@ if (!$_SESSION['user_id']) {
             </ul>
         </nav>
     </header>
-    <a href="./todo.php" class="btn margin-down margin-up">Cancel</a>
-    <div>
+    <a href="./todo.php" class="btn down-1">Cancel</a>
+    <div class="flex">
         <input type="text" 
             id="title" 
-            class="input-title" 
+            class="width-100 pad-1 strong" 
             onblur="updateTask()"
             placeholder="Add your title here">
     </div>

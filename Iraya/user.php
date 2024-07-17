@@ -18,7 +18,7 @@ function registerUser($username, $password) {
         from users", $params);
 
     $message = 'Registered Successfully!';
-    header("Location:login.php?message=$message");
+    header("Location:login.php?message=$message&type=success");
 }
 
 function isUserLoggedIn() {

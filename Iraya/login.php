@@ -56,15 +56,13 @@
           <label for="password">Password</label>
           <input type="password" name="password" required />
         </div>
-        <div> <?= $message ?? '' ?> </div>
+        <div id="message"> <?= $message ?? '' ?> </div>
         <button type="submit">Login</button>
       </form>
     </div>
     <section class="footer">
-      <div class="copyright text-center">
-      <p>
-        © 2024 by Iraya. All rights reserved.
-      </p>
+      <div class="text-center">
+      <p> © 2024 by Iraya. All rights reserved. </p>
       </div>
     </section>
     <button onclick="changeTheme('./assets/stylesheets')" 

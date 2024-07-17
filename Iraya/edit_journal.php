@@ -42,12 +42,12 @@ $row = $result->fetch_assoc();
     </nav>
   </header>
 
-  <button type="button" id="back_button">Back</button>
+  <a href="./journal_manager.php" class="btn">Back</a>
   <main class="flex center">
     <form class="flex column width-75">
       <div class="flex column">
         <input type="text" name="journal_title" id="journal_title" 
-          value="<?= $row['journal_title'] ?>">
+          class="strong pad-1" value="<?= $row['journal_title'] ?>">
       </div>
       <div class="flex column">
         <div name="journal_content" contenteditable=true class="note pad-1"

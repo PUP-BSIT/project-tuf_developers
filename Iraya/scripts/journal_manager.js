@@ -34,7 +34,7 @@ function displayJournals() {
         row.classList.add('card-list');
         row.innerHTML = `
             <div class="pad-1 strong"> ${item[FIELD.TITLE]} </div>
-            <div class="pad-1"> ${item[FIELD.CONTENT]} </div>`;
+            <div class="pad-1 width-100"> ${item[FIELD.CONTENT]} </div>`;
         
         const {editButton, deleteButton} = createActionButtons(
             item[FIELD.JOURNAL_ID]);

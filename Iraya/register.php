@@ -58,13 +58,13 @@
           <label for="username">Username</label>
           <input type="text" id="username" name="username" 
             oninput="validateUsername()" required/>
-          <div id="username_message"></div>
+          <div id="username_message" class="warn"></div>
         </div>
         <div class="flex column warning-container">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" 
             oninput="validatePassword(this)" required/>
-          <div id="password_message"></div>
+          <div id="password_message" class="warn"></div>
         </div>
         <div class="flex column warning-container">
           <label for="confirm">
@@ -72,17 +72,15 @@
           </label>
           <input type="password" id="confirm" name="confirm_password" 
             oninput="validatePassword(this)" required/>
-          <div id="confirm_message"></div>
+          <div id="confirm_message" class="warn"></div>
         </div>
-        <?= $message ?? '' ?>
+        <div class="warn"> <?= $message ?? '' ?> </div>
         <button type="submit">Register</button>
       </form>
     </div>
     <section class="footer">
-      <div class="copyright text-center">
-      <p>
-        © 2024 by Iraya. All rights reserved.
-      </p>
+      <div class="text-center">
+      <p> © 2024 by Iraya. All rights reserved. </p>
       </div>
     </section>
     <script src="./scripts/register.js"></script>
