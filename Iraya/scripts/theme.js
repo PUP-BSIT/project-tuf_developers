@@ -1,10 +1,10 @@
-const theme = document.querySelector('#theme');
-let currentTheme = localStorage.getItem('theme') ?? THEME.LIGHT;
-
 const THEME = {
     LIGHT: 'light',
     DARK: 'night'
 };
+
+const theme = document.querySelector('#theme');
+let currentTheme = localStorage.getItem('theme') ?? THEME.LIGHT;
 
 function changeTheme() {
     if(!currentTheme)
