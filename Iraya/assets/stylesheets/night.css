@@ -13,7 +13,12 @@ a:hover {
 
 button, .btn {
   background-color: #dfff4e;
-  color: rgb(27, 24, 15);
+  color: #1b180f;
+}
+
+.card-list, .modal-content {
+  background-color: #222;
+  color: #fff;
 }
 
 .secondary {
@@ -33,7 +38,7 @@ button, .btn {
 }
 
 .mood-btn {
-  background-color: #546125;
+  background-color: #222;
 }
 
 .card-selected {

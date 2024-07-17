@@ -80,7 +80,7 @@
     <div class="modal">
         <div class="modal-content">
             <h2>How are you feeling today?</h2>
-            <div>
+            <div class="down-1">
                 <button 
                     class="mood-btn" 
                     id="mood_sad"
@@ -117,14 +117,15 @@
                     <img src="../assets/images/mood_joyful.png" alt="emoji">
                 </button>
             </div>
-            <div class="flex">
+            <div class="flex down-1">
                 <textarea id="mood_description" class="grow-1"></textarea>
             </div>
             <div>
                 <sub id="warn_text"></sub>
                 <button id="add" onclick="addMood()">Add</button>
                 <button id="edit" onclick="editMood()">Edit</button>
-                <button onclick="removeModal()">Cancel</button>
+                <button class="margin-left" onclick="removeModal()">
+                    Cancel</button>
             </div>
         </div>
     </div>
