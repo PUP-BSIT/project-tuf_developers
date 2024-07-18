@@ -43,21 +43,20 @@ $row = $result->fetch_assoc();
   </header>
 
   <a href="./journal_manager.php" class="btn">Back</a>
-  <form>
-    <div>
-      <label for="journal_title">Title</label>
-      <input type="text" name="journal_title" id="journal_title" 
-          value="<?= $row['journal_title'] ?>">
-    </div>
-    <div>
-    <label for="journal_content">Content</label>
-    <textarea name="journal_content" 
-        id="journal_content"><?= $row['journal_content'] ?></textarea>
-    </div>
-    <input type="hidden" id="journal_id" name="journal_id" 
-            value=<?= $journalId ?>>
-        <button type="button" onclick="editJournal()">Edit Journal</button>
-  </form>
+  <main class="flex center">
+    <form class="flex column width-75">
+      <div class="flex column">
+        <input type="text" name="journal_title" id="journal_title" 
+          class="strong pad-1" value="<?= $row['journal_title'] ?>">
+      </div>
+      <div class="flex column">
+        <div name="journal_content" contenteditable=true class="note pad-1"
+          id="journal_content"><?= $row['journal_content'] ?></div>
+      </div>
+      <input type="hidden" id="journal_id" name="journal_id" 
+        value=<?= $journalId ?>>
+    </form>
+  </main>
 
   <section class="footer">
     <p class="copyright">© 2024 by Iraya. All rights reserved. </p>
