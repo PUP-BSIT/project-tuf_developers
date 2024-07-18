@@ -54,6 +54,9 @@ if (!isUserLoggedIn()) {
       Delete
     </button>
   </div>
+  <div class="main-content flex center column">
+    <div id="journals" class="width-100"></div>
+  </div>
   <section class="footer">
     <div class="copyright">
       <p> © 2024 by Iraya. All rights reserved.</p>
