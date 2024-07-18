@@ -191,3 +191,33 @@ button,
 .grow-6 {
 	flex-grow: 6;
 }
+
+.f-2 {
+	font-size: 2rem;
+}
+
+.f-3 {
+	font-size: 3rem;
+}
+
+.f-4 {
+	font-size: 4rem;
+}
+
+.f-5 {
+	font-size: 5rem;
+}
+
+.f-6 {
+	font-size: 6rem;
+}
+
+.strong {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.input-title {
+	font-size: 1.5rem;
+	width: 100%;
+}
