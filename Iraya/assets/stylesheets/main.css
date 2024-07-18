@@ -221,3 +221,61 @@ button,
 	font-size: 1.5rem;
 	width: 100%;
 }
+
+.pad-1 {
+	padding: 1rem;
+}
+
+.pad-2 {
+	padding: 2rem;
+}
+
+.pad-3 {
+	padding: 3rem;
+}
+
+.pad-x {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.pad-y {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.down-1 {
+	margin-bottom: 1rem;
+}
+
+.down-2 {
+	margin-bottom: 2rem;
+}
+
+.down-3 {
+	margin-bottom: 3rem;
+}
+
+.down-4 {
+	margin-bottom: 4rem;
+}
+
+.down-5 {
+	margin-bottom: 5rem;
+}
+
+.down-6 {
+	margin-bottom: 6rem;
+}
+
+.margin-up {
+	margin-top: 1rem;
+}
+
+.margin-left {
+	margin-left: 1rem;
+}
+
+.margin-right {
+	margin-right: 1rem;
+}
