@@ -3,7 +3,7 @@ session_start();
 require_once 'user.php';
 
 if (!isUserLoggedIn()) {
-    header('Location:login.php');
+  header('Location:login.php');
 }
 
 $journalId = $_GET['journal_id'] ?? '';
