@@ -50,7 +50,7 @@
             <option value="mood_unhappy">Unhappy</option>
             <option value="mood_neutral">Neutral</option>
             <option value="mood_happy">Happy</option>
-            <option value="mood_joyful">Joyfull</option>
+            <option value="mood_joyful">Joyful</option>
         </select>
     </div>
     <div class="flex between down-1">

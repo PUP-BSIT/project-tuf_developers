@@ -29,7 +29,7 @@
     <title>Register</title>
   </head>
   <body>
-    <header class="down-5">
+    <header class="down-3">
       <div class="logo-container">
         <img
           src="./assets/images/logo.png"

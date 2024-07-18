@@ -219,6 +219,7 @@ textarea {
 
 .text-center {
 	text-align: center;
+	align-self: center;
 }
 
 .down-1 {

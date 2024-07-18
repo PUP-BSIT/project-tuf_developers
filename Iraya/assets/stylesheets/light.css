@@ -11,6 +11,10 @@ button, .btn {
     color: rgb(27, 24, 15);
 }
 
+button:hover, .btn:hover {
+    background-color: #ffeab5;
+}
+
 .secondary {
     background-color: #ffc228;
 }

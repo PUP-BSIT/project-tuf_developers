@@ -26,7 +26,7 @@
     <title>Login</title>
   </head>
   <body>
-    <header class="down-5">
+    <header class="down-3">
       <div class="logo-container">
         <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
         <div class="logo-text">
@@ -58,6 +58,13 @@
         </div>
         <div id="message"> <?= $message ?? '' ?> </div>
         <button type="submit">Login</button>
+        <div class="text-center">
+          <a href="./forgot_password.php">Forgot Password?</a>
+        </div>
+        <hr class="width-100">
+        <div class="flex center">
+          <a href="./register.php" class="btn">Create New Account</a>
+        </div>
       </form>
     </div>
     <section class="footer">

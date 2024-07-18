@@ -12,13 +12,23 @@ function registerUser($username, $password) {
         return;
     }
 
-    $stmnt = $conn->execute_query("
+    $conn->execute_query("
         insert into users(user_id,username,password)
         select concat('ui', lpad(max(index_id) + 1, 4, '0')), ?, ?
         from users", $params);
 
+    $user = getUser($username);
+
+    if(session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+    
+    $_SESSION['user_id'] = $user['user_id'];
+    $_SESSION['username'] = $user['username'];
+    
     $message = 'Registered Successfully!';
-    header("Location:login.php?message=$message&type=success");
+   
+    header("Location:generate_code.php?message=$message");
 }
 
 function isUserLoggedIn() {

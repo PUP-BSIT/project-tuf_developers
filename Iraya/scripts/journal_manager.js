@@ -70,8 +70,8 @@ function editJournal(journalId) {
 
 function searchJournals() {
     searchData = journalData.filter((item) => {
-        return item[4].includes(search.value) ||
-            item[5].includes(search.value);
+        return item[3].includes(search.value) ||
+            item[4].includes(search.value);
     });
     
     selectedJournals = [];

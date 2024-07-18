@@ -45,43 +45,7 @@ if (!$_SESSION['user_id']) {
         </select>
     </div>
     
-    <div id="task_list" class="flex gap wrap around">
-        <div class="card fit inverted">
-            <div class="flex right">
-                <button class="more-icon inverted-btn"></button>
-            </div>
-            <div class="btn inverted-btn">To-Do: 3</div>
-            <div class="btn inverted-btn">In Progress: 2</div>
-            <div class="btn inverted-btn">Completed: 4</div>
-        </div>
-
-        <div class="card fit">
-            <div class="flex right">
-                <button class="more-icon"></button>
-            </div>
-            <div class="btn">To-Do: 3</div>
-            <div class="btn">In Progress: 2</div>
-            <div class="btn">Completed: 4</div>
-        </div>
-
-        <div class="card fit">
-            <div class="flex right">
-                <button class="more-icon"></button>
-            </div>
-            <div class="btn">To-Do: 3</div>
-            <div class="btn">In Progress: 2</div>
-            <div class="btn">Completed: 4</div>
-        </div>
-
-        <div class="card fit">
-            <div class="flex right">
-                <button class="more-icon"></button>
-            </div>
-            <div class="btn">To-Do: 3</div>
-            <div class="btn">In Progress: 2</div>
-            <div class="btn">Completed: 4</div>
-        </div>
-    </div>
+    <div id="task_list" class="flex gap wrap around"></div>
     <button onclick="changeTheme('../assets/stylesheets')" 
         class="theme-button">Change Theme</button>
     <script src="todo.js"></script>
