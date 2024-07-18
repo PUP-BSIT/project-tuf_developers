@@ -40,8 +40,8 @@
         </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="copyright">
+  <footer class="pad-1">
+    <div class="text-center">
       <p>© 2024 by Iraya. All rights reserved.</p>
     </div>
   </footer>
