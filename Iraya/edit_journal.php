@@ -77,6 +77,8 @@ $row = $result->fetch_assoc();
     <p class="copyright">© 2024 by Iraya. All rights reserved. </p>
   </section>
 
-  <script src="./scripts/edit_journal.js"></script>
+  <button onclick="changeTheme('./assets/stylesheets')" 
+    class="theme-button">Change Theme</button>
+
 </body>
 </html>
