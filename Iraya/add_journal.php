@@ -35,17 +35,31 @@
         </ul>
       </nav>
   </header>
-    <main>
-      <section class="journal">
-        <div class="journal-container">
-          <h1>Title</h1>
-          <input id="journal_title" placeholder="Add your entry title here">
+  <a href="./journal_manager.php" class="btn">Back</a>
+      <section class="flex center">
+        <div class="flex column width-75">
+          <input id="journal_title" placeholder="Add your entry title here"
+          class="strong pad-1">
+          <div class="notes-container flex">
+            <div id="journal_content" contenteditable=true
+              class="note pad-1 width-100" name="journal-content"></div>
+          </div>
           <button onclick="insertJournal()">
-            <img src="./assets/images/edit_image.png" alt="edit"/>Create Entry
+            Create Entry
           </button>
-          <div class="notes-container">
-            <textarea id="journal_content" class="input-box" 
-              name="journal-content"></textarea>
+          <div>
+            <button type="button" class="edit-icon bold-icon" 
+              onclick="format('bold')"></button>
+            <button type="button" class="edit-icon italic-icon"
+              onclick="format('italic')"></button>
+            <button type="button" class="edit-icon underline-icon"
+              onclick="format('underline')"></button>
+            <button type="button" class="edit-icon strikethrough-icon"
+              onclick="format('strikeThrough')"></button>
+            <button type="button" class="edit-icon unorderedlist-icon"
+              onclick="format('insertUnorderedList')"></button>
+            <button type="button" class="edit-icon orderedlist-icon"
+              onclick="format('insertOrderedList')"></button>
           </div>
         </div>
       </section>
