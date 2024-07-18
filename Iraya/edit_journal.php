@@ -13,6 +13,7 @@ $row = $result->fetch_assoc();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,22 +22,22 @@ $row = $result->fetch_assoc();
   <link id="theme" rel="stylesheet" href="./assets/stylesheets/light.css">
 </head>
 <body>
-  <header>
+
+  <header class="down-1">
     <div class="logo-container">
-      <img src="./assets/images/logo.png" 
-          alt="Iraya Logo" 
-          class="logo" />
+      <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
       <div class="logo-text">
-          <h1>Iraya</h1>
-          <p>Simplify Your Journaling Experience</p>
+        <h1>Iraya</h1>
+        <p>Simplify Your Journaling Experience</p>
       </div>
     </div>
     <nav>
       <ul>
-        <li><a href="./index.php">Home</a></li>
-        <li><a href="./login.php">Login</a></li>
-        <li><a href="./register.php">Register</a></li>
-        <li><a href="./about.php">About</a></li>
+        <li><a href="./dashboard.php">Dashboard</a></li>
+        <li><a href="./journal_manager.php">Journal</a></li>
+        <li><a href="./todo/todo.php">Tasks</a></li>
+        <li><a href="./mood/index.php">Mood</a></li>
+        <li><a href="./logout.php">Logout</a></li>
       </ul>
     </nav>
   </header>
