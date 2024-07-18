@@ -45,6 +45,15 @@ if (!isUserLoggedIn()) {
       <option value="date_ascending">Sort by Date: Ascending</option>
     </select>
   </div>
+  <div class="flex down-1 right">
+    <button id="clear_button" class="none" onclick="clearAllSelection()">
+      Clear All Selections
+    </button>
+    <button id="edit_button" class="none">Edit</button>
+    <button id="delete_button" class="none" onclick="deleteAllSelection()">
+      Delete
+    </button>
+  </div>
   <section class="footer">
     <div class="copyright">
       <p> © 2024 by Iraya. All rights reserved.</p>
