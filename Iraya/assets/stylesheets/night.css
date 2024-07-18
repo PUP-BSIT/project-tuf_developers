@@ -16,6 +16,11 @@ button, .btn {
   color: #1b180f;
 }
 
+button:hover, .btn:hover {
+  background-color: #f4ffc2;
+  color: #1b180f;
+}
+
 .card-list, .modal-content {
   background-color: #222;
   color: #fff;
@@ -42,5 +47,6 @@ button, .btn {
 }
 
 .card-selected {
-  background-color: #546125;
+  background-color: #f4ffc2;
+  color: #1b180f;
 }
