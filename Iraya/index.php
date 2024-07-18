@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iraya Home Page</title>
-  <link rel="stylesheet" href="./assets/stylesheets/index.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/main.css">
+  <link id="theme" rel="stylesheet" href="./assets/stylesheets/light.css">
 </head>
 <body>
   <header>
