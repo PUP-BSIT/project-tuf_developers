@@ -412,3 +412,33 @@ nav ul li a {
 	text-decoration: none;
 	display: block;
 }
+
+.theme-button {
+	position: fixed;
+	bottom: 1rem;
+	right: 2rem;
+}
+
+.note {
+	background-color: #fff;
+	color: #111;
+	border: 1px solid #555;
+	height: 40vh;
+}
+
+.warn {
+	color: #924141;
+}
+
+.success {
+	color: #499642;
+}
+
+.none {
+	display: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+}
