@@ -31,8 +31,9 @@ function loginUser($username, $password) {
     $user = getUser($username);
 
     if(!$user) {
-        echo 'User with that username does not exist';
-        exit;
+        $message = 'User with that username does not exist';
+        header("Location:login.php?message=$message");
+        return;
     }
 
     if($user['password'] != $password) {
