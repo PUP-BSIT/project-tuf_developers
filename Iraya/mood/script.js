@@ -193,7 +193,7 @@ function searchMoods() {
     });
     
     selectedMoods = [];
-    sortDate(searchData);
+    sortDate();
 }
 
 function selectMoods(event) {

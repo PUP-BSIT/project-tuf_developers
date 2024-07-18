@@ -35,7 +35,8 @@
         <a href="./register.php" class="btn">Register</a>
       </div>
       <div>
-        <img src="./assets/images/welcome_picture.png" alt="Welcome Image" />
+        <img src="./assets/images/welcome_picture.png" alt="Welcome Image"
+          class="home-image" />
       </div>
     </section>
   </main>

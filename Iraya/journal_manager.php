@@ -44,7 +44,7 @@ if (!isUserLoggedIn()) {
     <button class="grow-1" onclick="searchJournals()">
       Search
     </button>
-    <select id="sort_mood" class="grow-1" oninput="sortDate()">
+    <select id="sort_journals" class="grow-1" oninput="sortDate()">
       <option value="date_descending">Sort by Date: Descending</option>
       <option value="date_ascending">Sort by Date: Ascending</option>
     </select>

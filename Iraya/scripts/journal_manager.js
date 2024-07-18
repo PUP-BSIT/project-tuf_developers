@@ -75,14 +75,15 @@ function searchJournals() {
     });
     
     selectedJournals = [];
-    displayJournals();
+    sortDate();
 }
 
 function selectJournal(journalId, event) {
     const button = event.currentTarget;
 
     if(button.classList.contains('card-selected')) {
-        selectedJournals = selectedJournals.filter(item => item.id !== button.id);
+        selectedJournals = selectedJournals.filter(
+            item => item.id !== button.id);
         button.classList.remove('card-selected');
         
         if(selectedJournals.length == 1)
@@ -112,11 +113,11 @@ function selectJournal(journalId, event) {
 }
 
 function clearAllSelection() {
-    for(const button of selectedMoods) {
+    for(const button of selectedJournals) {
         button.classList.remove('card-selected');
     }
 
-    selectedMoods = [];
+    selectedJournals = [];
     clearButton.classList.add('none');
     editButton.classList.add('none');
     deleteButton.classList.add('none');
@@ -134,4 +135,22 @@ async function deleteAllSelection() {
     }
 
     window.location.reload();
+}
+
+function sortDate() {
+    const sortInput = document.querySelector('#sort_journals');
+    const SORTDATE = {
+        ASCENDING: 'date_ascending',
+        DESCENDING: 'date_descending'
+    };
+    
+    searchData.sort((a, b) => {
+		if (sortInput.value == SORTDATE.ASCENDING) {
+			return new Date(a[6]) - new Date(b[6]);
+		} else {
+			return new Date(b[6]) - new Date(a[6]);
+		}
+	});
+    console.log('a')
+    displayJournals();
 }

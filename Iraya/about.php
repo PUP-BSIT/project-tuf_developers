@@ -64,39 +64,39 @@
         <div class="team-container flex text-center">
           <div class="box">
             <img src="./assets/images/Añonuevo_DIT.jpg" 
-            alt="Jheferson's Picture" class="width-75">
+              alt="Jheferson's Picture" class="width-75 about-image">
             <h3>Jheferson Añonuevo</h3>
             <h5>Project Manager</h5>
             <div class="icons">
             </div>
           </div>
-          <div class="box-girls">
+          <div>
             <img src="./assets/images/Roche_DIT.jpg" alt="Maui's Picture" 
-              class="width-75">
+              class="width-75 about-image">
             <h3>Maui Jane Roche</h3>
             <h5>UI/UX Designer</h5>
             <div class="icons">
             </div>
           </div>
-          <div class="box">
+          <div>
             <img src="./assets/images/Nogadas_DIT.jpg" alt="Von's Picture" 
-              class="width-75">
+              class="width-75 about-image">
             <h3>Von Ryan Nogadas</h3>
             <h5>Lead Developer</h5>
             <div class="icons">
             </div>
           </div>
-          <div class="box-girls">
+          <div>
             <img src="./assets/images/Donatos_DIT.jpg" alt="Andrea's Picture" 
-              class="width-75">
+              class="width-75 about-image">
             <h3>Andrea Donatos</h3>
             <h5>UI/UX Designer</h5>
             <div class="icons">
             </div>
           </div>
-          <div class="box">
+          <div>
             <img src="./assets/images/Cahigan_DIT.jpg" alt="Mark's Picture" 
-              class="width-75">
+              class="width-75 about-image">
             <h3>Mark Cahigan</h3>
             <h5>Tester</h5>
             <div class="icons">

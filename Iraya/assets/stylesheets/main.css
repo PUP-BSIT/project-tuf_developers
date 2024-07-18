@@ -3,6 +3,10 @@ body {
 	font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue";
 }
 
+main {
+	min-height: 80vh;
+}
+
 .modal {
 	display: none;
 	position: fixed;
@@ -455,4 +459,14 @@ button,
 
 .success {
     color: #499642;
+}
+
+@media (max-width: 700px) {
+	.logo-container, .home-image, .about-image {
+		display: none;
+	}
+
+	h3, h5 {
+		font-size: 0.7rem;
+	}
 }
