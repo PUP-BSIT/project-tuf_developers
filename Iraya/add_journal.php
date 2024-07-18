@@ -17,12 +17,9 @@
     <title>Add Journal</title>
   </head>
   <body>
-    <header>
+  <header class="down-1">
       <div class="logo-container">
-        <img
-          src="../Iraya/assets/images/logo.png"
-          alt="Iraya Logo"
-          class="logo"/>
+        <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
         <div class="logo-text">
           <h1>Iraya</h1>
           <p>Simplify Your Journaling Experience</p>
@@ -30,13 +27,14 @@
       </div>
       <nav>
         <ul>
-          <li><a href="./index.php">Home</a></li>
-          <li><a href="./login.php">Login</a></li>
-          <li><a href="./register.php">Register</a></li>
-          <li><a href="./about.php">About</a></li>
+          <li><a href="./dashboard.php">Dashboard</a></li>
+          <li><a href="./journal_manager.php">Journal</a></li>
+          <li><a href="./todo/todo.php">Tasks</a></li>
+          <li><a href="./mood/index.php">Mood</a></li>
+          <li><a href="./logout.php">Logout</a></li>
         </ul>
       </nav>
-    </header>
+  </header>
     <main>
       <section class="journal">
         <div class="journal-container">
