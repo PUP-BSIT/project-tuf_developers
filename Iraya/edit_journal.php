@@ -83,4 +83,5 @@ $row = $result->fetch_assoc();
     onload="loadTheme('./assets/stylesheets')"></script>
   <script src="./scripts/edit_journal.js"></script>
 </body>
+
 </html>
