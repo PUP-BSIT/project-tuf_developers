@@ -1,0 +1,42 @@
+a {
+  color: gray;
+}
+
+a:hover {
+  color: #ffc228;
+}
+
+button, .btn {
+  background-color: #ffc228;
+  color: rgb(27, 24, 15);
+}
+
+.secondary {
+  background-color: #ffc228;
+}
+
+.secondary .btn {
+  background-color: white;
+  color: black;
+}
+
+.card-list, .modal-content {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffc228;
+}
+
+.delete-icon {
+  background-color: #fff;
+  background-image: url('../../assets/images/delete_image.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.mood-btn {
+  background-color: #fff;
+}
+
+.card-selected {
+  background-color: #ffeab5;
+}
