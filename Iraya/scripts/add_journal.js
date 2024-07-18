@@ -16,3 +16,7 @@ async function insertJournal() {
 
     window.location.replace('./journal_manager.php');
 }
+
+function format(command) {
+    document.execCommand(command, false, null);
+}
