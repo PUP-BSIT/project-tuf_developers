@@ -55,6 +55,7 @@ $row = $result->fetch_assoc();
       </div>
       <input type="hidden" id="journal_id" name="journal_id" 
         value=<?= $journalId ?>>
+      <button type="button" onclick="editJournal()">Edit Journal</button>
     </form>
   </main>
 
