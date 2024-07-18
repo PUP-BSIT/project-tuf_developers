@@ -167,3 +167,27 @@ button,
 .height-25 {
 	height: 25%;
 }
+
+.grow-1 {
+	flex-grow: 1;
+}
+
+.grow-2 {
+	flex-grow: 2;
+}
+
+.grow-3 {
+	flex-grow: 3;
+}
+
+.grow-4 {
+	flex-grow: 4;
+}
+
+.grow-5 {
+	flex-grow: 5;
+}
+
+.grow-6 {
+	flex-grow: 6;
+}
