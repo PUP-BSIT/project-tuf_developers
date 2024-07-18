@@ -29,7 +29,7 @@
     <title>Register</title>
   </head>
   <body>
-    <header>
+  <header class="down-5">
       <div class="logo-container">
         <img
           src="./assets/images/iraya_logo.png"
