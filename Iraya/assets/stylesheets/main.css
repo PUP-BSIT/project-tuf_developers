@@ -222,6 +222,14 @@ textarea {
 	align-self: center;
 }
 
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
 .down-1 {
 	margin-bottom: 1rem;
 }
