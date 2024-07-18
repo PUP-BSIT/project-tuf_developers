@@ -27,97 +27,93 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <div class="heading">
-      <h1 class="header-about">About Iraya</h1>
-      <p>
-        Iraya is an e-journal tool where you can list, organize, 
-        and manage your digital journals, making it easy to track and 
-        analyze your entries over time. 
+  <main class="pad-3">
+    <div class="heading text-center down-5">
+      <h1 class="header-about f-3">About Iraya</h1>
+      <p>Iraya is an e-journal tool where you can list, organize,
+        and manage your digital journals, making it easy to track and
+        analyze your entries over time.
       </p>
     </div>
     <div class="about-container">
-      <section class="about">
-       <div class="about-image">
-        <img src="./assets/images/about.png" alt="Picture">
-       </div> 
-       <div class="about-content">
-        <h2>Capture moments with Iraya</h2>
-        <p>
-          Iraya, your modern solution to journaling
-           that blends innovation with inspiration. At Iraya, we believe in 
-           the power of capturing life moments, reflections, and aspirations
-          in a way that is both secure and creatively fulfilling. 
-          Our mission is to simplify and enhance your journaling experience, 
-          making it a delightful journey through nostalgia.
-        </p>
-        <h2>Our Vision</h2>
-        <p>
-          In today's fast-paced world, we understand the importance 
-          of preserving memories while adapting to ever-evolving digital 
-          landscapes. Iraya aims to bridge the gap between traditional 
-          journaling and modern technology, offering a user-centric platform
-          that caters to your personal and creative needs.
-        </p>
-       </div>
+      <section class="about flex">
+        <div class="about-image">
+          <img src="./assets/images/about.png" alt="Picture">
+        </div>
+        <div class="about-content">
+          <h2>Capture moments with Iraya</h2>
+          <p> Iraya, your modern solution to journaling
+            that blends innovation with inspiration. At Iraya, we believe in
+            the power of capturing life moments, reflections, and aspirations
+            in a way that is both secure and creatively fulfilling.
+            Our mission is to simplify and enhance your journaling experience,
+            making it a delightful journey through nostalgia.
+          </p>
+          <h2>Our Vision</h2>
+          <p> In today's fast-paced world, we understand the importance
+            of preserving memories while adapting to ever-evolving digital
+            landscapes. Iraya aims to bridge the gap between traditional
+            journaling and modern technology, offering a user-centric platform
+            that caters to your personal and creative needs.</p>
+          </div>
+        </section>
+        <section class="team">
+          <div class="center">
+            <h1>TUF Developers</h1>
+          </div>
+          <div class="team-container flex text-center">
+            <div class="box">
+              <img src="./assets/images/Añonuevo_DIT.jpg" 
+                alt="Jheferson's Picture" class="width-75 about-image">
+                <h3>Jheferson Añonuevo</h3>
+                <h5>Project Manager</h5>
+            <div class="icons">
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/Roche_DIT.jpg" alt="Maui's Picture" 
+              class="width-75 about-image">
+              <h3>Maui Jane Roche</h3>
+              <h5>UI/UX Designer</h5>
+              <div class="icons">
+          </div>
+          </div>
+          <div>
+            <img src="./assets/images/Nogadas_DIT.jpg" alt="Von's Picture" 
+              class="width-75 about-image">
+            <h3>Von Ryan Nogadas</h3>
+            <h5>Lead Developer</h5>
+            <div class="icons">
+          </div>
+          </div>
+          <div>
+            <img src="./assets/images/Donatos_DIT.jpg" alt="Andrea's Picture" 
+              class="width-75 about-image">
+            <h3>Andrea Donatos</h3>
+            <h5>UI/UX Designer</h5>
+            <div class="icons">
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/Cahigan_DIT.jpg" alt="Mark's Picture" 
+              class="width-75 about-image">
+            <h3>Mark Cahigan</h3>
+            <h5>Tester</h5>
+            <div class="icons">
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="team">
-      <div class="center">
-        <h1>TUF Developers</h1>
-      </div>
-      <div class="team-container">
-        <div class="box">
-          <img src="./assets/images/Añonuevo_DIT.jpg" 
-            alt="Jheferson's Picture">
-          <h3>Jheferson Añonuevo</h3>
-          <h5>Project Manager</h5>
-          <div class="icons">
-        </div>
-        </div>
-        <div class="box-girls">
-          <img src="./assets/images/Roche_DIT.jpg" 
-               alt="Maui's Picture">
-          <h3>Maui Jane Roche</h3>
-          <h5>UI/UX Designer</h5>
-          <div class="icons">
-        </div>
-        </div>
-        <div class="box">
-          <img src="./assets/images/Nogadas_DIT.jpg" 
-               alt="Von's Picture">
-          <h3>Von Ryan Nogadas</h3>
-          <h5>Lead Developer</h5>
-          <div class="icons">
-        </div>
-        </div>
-        <div class="box-girls">
-          <img src="./assets/images/Donatos_DIT.jpg" 
-               alt="Andrea's Picture">
-          <h3>Andrea Donatos</h3> 
-          <h5>UI/UX Designer</h5>
-          <div class="icons">
-        </div>
-        </div>
-        <div class="box">
-          <img src="./assets/images/Cahigan_DIT.jpg" 
-               alt="Mark's Picture">
-          <h3>Mark Cahigan</h3>
-          <h5>Tester</h5>
-          <div class="icons">
-        </div>
-        </div>
-      </div>
-     </section>
-      <div class="closing_remark">
-        <p>"Thank you for choosing Iraya.  Embrace change, preserve 
-            memories, and let your digital story unfold with us."
+      <div class="text-center">
+        <p>"Thank you for choosing Iraya. Embrace change, preserve
+          memories, and let your digital story unfold with us."
         </p>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
   </main>
-</section>
-</main>
+  </section>
+  </main>
 <section class="footer">
       <div class="copyright">
       <p>
