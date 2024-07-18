@@ -42,7 +42,7 @@ $row = $result->fetch_assoc();
     </nav>
   </header>
 
-  <button type="button" id="back_button">Back</button>
+  <a href="./journal_manager.php" class="btn">Back</a>
   <form>
     <div>
       <label for="journal_title">Title</label>
