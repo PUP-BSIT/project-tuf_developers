@@ -56,6 +56,20 @@ $row = $result->fetch_assoc();
       <input type="hidden" id="journal_id" name="journal_id" 
         value=<?= $journalId ?>>
       <button type="button" onclick="editJournal()">Edit Journal</button>
+      <div>
+        <button type="button" class="edit-icon bold-icon" 
+          onclick="format('bold')"></button>
+        <button type="button" class="edit-icon italic-icon"
+          onclick="format('italic')"></button>
+        <button type="button" class="edit-icon underline-icon"
+          onclick="format('underline')"></button>
+        <button type="button" class="edit-icon strikethrough-icon"
+          onclick="format('strikeThrough')"></button>
+        <button type="button" class="edit-icon unorderedlist-icon"
+          onclick="format('insertUnorderedList')"></button>
+        <button type="button" class="edit-icon orderedlist-icon"
+          onclick="format('insertOrderedList')"></button>
+      </div>
     </form>
   </main>
 
