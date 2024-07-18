@@ -37,8 +37,9 @@ function loginUser($username, $password) {
     }
 
     if($user['password'] != $password) {
-        echo "Invalid password.";
-        exit;
+        $message = 'Password is incorrect';
+        header("Location:login.php?message=$message");
+        return;
     }
 
     $_SESSION['user_id'] = $user['user_id'];
