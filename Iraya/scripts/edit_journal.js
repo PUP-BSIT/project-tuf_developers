@@ -11,7 +11,7 @@ async function editJournal() {
         },
         body: `journal_id=${journalId.value}&\
             journal_title=${journalTitle.value}&\
-            journal_content=${journalContent.value}`
+            journal_content=${journalContent.innerHTML}`
     };
 
     const response = await fetch('./api.php', options);
