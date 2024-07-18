@@ -119,5 +119,6 @@
       <p> © 2024 by Iraya. All rights reserved. </p>
     </div>
   </section>
+  <button onclick="changeTheme()" class="theme-button">Change Theme</button>
 </body>
 </html>
