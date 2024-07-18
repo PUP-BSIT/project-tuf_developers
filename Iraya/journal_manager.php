@@ -35,23 +35,19 @@ if (!isUserLoggedIn()) {
       </ul>
     </nav>
   </header>
-  <div class="main-content">
-    <a href="./add_journal.php" class="add-journal">Add Journal</a>
-    <table id="journals">
-      <tr>
-          <th>Title</th>
-          <th>Content</th>
-          <th>View</th>
-          <th>Edit</th>
-          <th>Delete</th>
-      </tr>
-    </table>
+  <h1>Journals</h1>
+  <div class="flex down-1">
+    <a href="./add_journal.php" class="btn">Add Journal</a>
+    <input id="search" type="text" class="grow-6">
+    <button class="grow-1" onclick="searchJournals()">Search</button>
+    <select id="sort_journals" class="grow-1" oninput="sortDate()">
+      <option value="date_descending">Sort by Date: Descending</option>
+      <option value="date_ascending">Sort by Date: Ascending</option>
+    </select>
   </div>
   <section class="footer">
-      <div class="copyright">
-      <p>
-        © 2024 by Iraya. All rights reserved.
-      </p>
+    <div class="copyright">
+      <p> © 2024 by Iraya. All rights reserved.</p>
       </div>
     </section>
   <script src="./scripts/journal_manager.js"></script>
