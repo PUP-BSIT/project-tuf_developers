@@ -279,3 +279,19 @@ button,
 .margin-right {
 	margin-right: 1rem;
 }
+
+.text-left {
+	width: 100%;
+	text-align: left;
+	padding-left: 1rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.bottom-right {
+	text-align: end;
+	align-self: end;
+	width: 15rem;
+}
