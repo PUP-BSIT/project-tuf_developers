@@ -17,26 +17,24 @@ if (!isUserLoggedIn()) {
   <title>Journals</title>
 </head>
 <body>
-  <header>
-		<div class="logo-container">
+  <header class="down-1">
+    <div class="logo-container">
       <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
       <div class="logo-text">
         <h1>Iraya</h1>
         <p>Simplify Your Journaling Experience</p>
       </div>
     </div>
-		<nav>
-			<ul>
-				<li><a href="./index.php">Home</a></li>
-				<li><a href="#">Manager</a></li>
-				<li><a href="./register.php">Preferences</a></li>
-				<li><a href="./about.php">Logout</a></li>
-				<li>
-						<a href="#" class="get-started-btn">Get Started</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+    <nav>
+      <ul>
+        <li><a href="./dashboard.php">Dashboard</a></li>
+        <li><a href="./journal_manager.php">Journal</a></li>
+        <li><a href="./todo/todo.php">Tasks</a></li>
+        <li><a href="./mood/index.php">Mood</a></li>
+        <li><a href="./logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
   <div class="main-content">
     <a href="./add_journal.php" class="add-journal">Add Journal</a>
     <table id="journals">
