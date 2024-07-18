@@ -35,6 +35,7 @@
         </ul>
       </nav>
   </header>
+  <main>
   <a href="./journal_manager.php" class="btn">Back</a>
       <section class="flex center">
         <div class="flex column width-75">
@@ -66,11 +67,11 @@
     </main>
     <section class="footer">
       <div class="copyright">
-      <p>
-        © 2024 by Iraya. All rights reserved.
-      </p>
+      <p> © 2024 by Iraya. All rights reserved. </p>
       </div>
     </section>
-    <script src="./scripts/add_journal.js"></script>
+    <button onclick="changeTheme('./assets/stylesheets')" 
+    class="theme-button">Change Theme</button>
+
   </body>
 </html>
