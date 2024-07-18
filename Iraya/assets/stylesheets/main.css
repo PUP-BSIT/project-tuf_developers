@@ -81,3 +81,24 @@ button,
 	font-weight: bold;
 	text-decoration: none;
 }
+
+.mood-sad {
+	background-image: url("../assets/images/emotion-sad-line.png");
+}
+
+.mood-unhappy {
+	background-image: url("../assets/images/emotion-unhappy-line.png");
+}
+
+.mood-neutral {
+	background-image: url("../assets/images/emotion-normal-line.png");
+}
+
+.mood-happy {
+	background-image: url("../assets/images/emotion-happy-line.png");
+}
+
+.mood-joyful {
+	background-image: url("../assets/images/emotion-laugh-line.png");
+}
+
