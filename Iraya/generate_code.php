@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
     
     if(!$data) {
         $conn->execute_query("insert into codes(code_id,user_id,code) 
-            select concat('c',max(index_id)), ?, UUID() 
+            select concat('c',max(index_id)+1), ?, UUID() 
             from codes", [$userId]);
         
         $response = $conn->query("select code from codes 

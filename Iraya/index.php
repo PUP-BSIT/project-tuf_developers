@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    require_once 'user.php';
+
+    if(isUserLoggedIn()) {
+        header('Location:dashboard.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

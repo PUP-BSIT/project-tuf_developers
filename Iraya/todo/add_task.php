@@ -36,7 +36,7 @@ if (!$_SESSION['user_id']) {
             </ul>
         </nav>
     </header>
-    <a href="./todo.php" class="btn down-1">Cancel</a>
+    <a href="./todo.php" class="btn down-1">Back</a>
     <div class="flex">
         <input type="text" 
             id="title" 

@@ -25,16 +25,24 @@ function displayJournals() {
         JOURNAL_ID: 0,
         USER_ID: 2,
         TITLE: 3,
-        CONTENT: 4
+        CONTENT: 4,
+        DATE_CREATED: 5,
+        DATE_UPDATED: 6
     };
 
     for(item of searchData) {
         const row = document.createElement('button');
         row.id = item[FIELD.JOURNAL_ID];
         row.classList.add('card-list');
+
+        const date = new Date(item[FIELD.DATE_UPDATED]).toDateString();
+
         row.innerHTML = `
             <div class="pad-1 strong"> ${item[FIELD.TITLE]} </div>
-            <div class="pad-1 width-100"> ${item[FIELD.CONTENT]} </div>`;
+            <div class="flex center pad-1 width-100">
+                <div>${item[FIELD.CONTENT]}</div>
+            </div>
+            <div>${date}</div>`;
         
         const {editButton, deleteButton} = createActionButtons(
             item[FIELD.JOURNAL_ID]);
