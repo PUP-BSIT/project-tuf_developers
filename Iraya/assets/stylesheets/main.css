@@ -102,3 +102,36 @@ button,
 	background-image: url("../assets/images/emotion-laugh-line.png");
 }
 
+.flex {
+	display: flex;
+	gap: 1rem;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.around {
+	justify-content: space-around;
+}
+
+.right {
+	justify-content: right;
+}
+
+.gap {
+	gap: 2rem;
+}
