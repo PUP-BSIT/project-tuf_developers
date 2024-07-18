@@ -5,6 +5,13 @@ function registerUser($username, $password) {
     global $conn;
     $params = [$username, $password];
 
+    $user = getUser($username);
+    if($user) {
+        $message = "Account already exists";
+        header("Location:register.php?message=$message");
+        return;
+    }
+
     $stmnt = $conn->execute_query("
         insert into users(user_id,username,password)
         select concat('ui', lpad(max(index_id) + 1, 4, '0')), ?, ?
