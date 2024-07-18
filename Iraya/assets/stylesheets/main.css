@@ -350,3 +350,52 @@ nav ul li a {
 .fit {
 	width: fit-content;
 }
+
+.delete-icon {
+	background-image: url("../assets/images/delete_image.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 1rem;
+}
+
+.more-icon {
+	background-image: url("../assets/images/more_icon.png");
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: fit-content;
+	padding: 1rem;
+}
+
+.edit-icon {
+	background-color: #555;
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 1rem;
+}
+
+.bold-icon {
+	background-image: url("../../assets/images/edit_bold.png");
+}
+
+.italic-icon {
+	background-image: url("../../assets/images/edit_italic.png");
+}
+
+.underline-icon {
+	background-image: url("../../assets/images/edit_underline.png");
+}
+
+.strikethrough-icon {
+	background-image: url("../../assets/images/edit_strikethrough.png");
+}
+
+.orderedlist-icon {
+	background-image: url("../../assets/images/edit_list_ordered.png");
+}
+
+.unorderedlist-icon {
+	background-image: url("../../assets/images/edit_list_unordered.png");
+}
