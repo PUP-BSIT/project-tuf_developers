@@ -1,6 +1,14 @@
 const journals = document.querySelector("#journals");
+const search = document.querySelector('#search');
+
+const clearButton = document.querySelector('#clear_button');
+const editButton = document.querySelector('#edit_button');
+const deleteButton = document.querySelector('#delete_button');
+
 const endpoint = './api.php';
 let journalData;
+let searchData;
+let selectedJournals = [];
 
 fetch(endpoint)
 	.then((result) => result.json())
