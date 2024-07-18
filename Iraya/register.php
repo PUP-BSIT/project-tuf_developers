@@ -49,25 +49,33 @@
         </ul>
       </nav>
     </header>
-    <div>
-      <form method="POST">
+    <div class="flex column center down-6">
+      <form method="POST" class="flex column width-50">
         <div class="title">
           <h1>Register</h1>
         </div>
-        <div>
+        <div class="flex column">
           <label for="username">Username</label>
-          <input type="text" name="username" required/>
+          <input type="text" id="username" name="username" 
+            oninput="validateUsername()" required/>
+          <div id="username_message" class="warn"></div>
         </div>
-        <div>
+        <div class="flex column warning-container">
           <label for="password">Password</label>
-          <input type="password" name="password" required/>
+          <input type="password" id="password" name="password" 
+            oninput="validatePassword(this)" required/>
+          <div id="password_message" class="warn"></div>
         </div>
-        <div>
-          <label for="confirm_password">Confirm Password</label>
-          <input type="password" name="confirm_password" required/>
+        <div class="flex column warning-container">
+          <label for="confirm">
+            Confirm Password
+          </label>
+          <input type="password" id="confirm" name="confirm_password" 
+            oninput="validatePassword(this)" required/>
+          <div id="confirm_message" class="warn"></div>
         </div>
+        <div class="warn"> <?= $message ?? '' ?> </div>
         <button type="submit">Register</button>
-        <?= $message ?? '' ?>
       </form>
     </div>
     <section class="footer">
