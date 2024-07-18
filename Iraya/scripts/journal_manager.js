@@ -14,7 +14,7 @@ fetch(endpoint)
 	.then((result) => result.json())
 	.then((data) => {
 		journalData = data;
-		displayJournals();
+        searchJournals();
 	});
 
 function displayJournals() {
