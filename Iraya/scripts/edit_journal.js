@@ -19,3 +19,7 @@ async function editJournal() {
 
     window.location.assign('./journal_manager.php');
 }
+
+function format(command) {
+    document.execCommand(command, false, null);
+}
