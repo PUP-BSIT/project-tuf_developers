@@ -1,6 +1,8 @@
 <?php
     require_once 'user.php';
 
+    $message = $_GET['message'] ?? '';
+    
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $username = $_POST['username'];
         $password = $_POST['password'];
