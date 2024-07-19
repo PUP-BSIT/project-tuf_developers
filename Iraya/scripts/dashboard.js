@@ -4,7 +4,7 @@ const mood = document.querySelector('#mood');
 
 const journalEndpoint = './api.php';
 const taskEndpoint = './todo/api.php';
-const moodEndpoint = './mood/api.php';
+const moodEndpoint = './mood/api.php?type=week';
 
 const urlParams = new URLSearchParams(window.location.search);
 const reminder = urlParams.get('remind');

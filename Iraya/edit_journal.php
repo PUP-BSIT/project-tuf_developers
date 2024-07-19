@@ -72,11 +72,6 @@ $row = $result->fetch_assoc();
       </div>
     </form>
   </main>
-
-  <section class="footer">
-    <p class="copyright">© 2024 by Iraya. All rights reserved. </p>
-  </section>
-
   <button onclick="changeTheme('./assets/stylesheets')" 
     class="theme-button">Change Theme</button>
   <script src="./scripts/theme.js" 

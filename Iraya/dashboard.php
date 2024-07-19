@@ -54,7 +54,7 @@
         </div>
         <div class="chart-container">
             <a href="./mood/index.php" class="text-center btn block">
-                Overall Mood Chart</a>
+                Weekly Mood Chart</a>
             <canvas id="mood"></canvas>
             <div class="text-center strong"></div>
         </div>
