@@ -59,7 +59,7 @@
         </section>
         <section class="team">
           <div class="center">
-            <h1>TUF Developers</h1>
+            <h1>Developers of Iraya</h1>
           </div>
           <div class="team-container flex text-center">
             <div class="box">
@@ -71,35 +71,43 @@
             </div>
           </div>
           <div>
+            <div class="box">
             <img src="./assets/images/Roche_DIT.jpg" alt="Maui's Picture" 
               class="width-75 about-image">
               <h3>Maui Jane Roche</h3>
               <h5>UI/UX Designer</h5>
               <div class="icons">
+            </div>
           </div>
           </div>
           <div>
+            <div class="box">
             <img src="./assets/images/Nogadas_DIT.jpg" alt="Von's Picture" 
               class="width-75 about-image">
             <h3>Von Ryan Nogadas</h3>
             <h5>Lead Developer</h5>
             <div class="icons">
+            </div>
           </div>
           </div>
           <div>
+            <div class="box">
             <img src="./assets/images/Donatos_DIT.jpg" alt="Andrea's Picture" 
               class="width-75 about-image">
             <h3>Andrea Donatos</h3>
             <h5>UI/UX Designer</h5>
             <div class="icons">
             </div>
+            </div>
           </div>
           <div>
+            <div class="box">
             <img src="./assets/images/Cahigan_DIT.jpg" alt="Mark's Picture" 
               class="width-75 about-image">
             <h3>Mark Cahigan</h3>
             <h5>Tester</h5>
             <div class="icons">
+            </div>
             </div>
           </div>
         </div>
@@ -119,8 +127,9 @@
       <p> © 2024 by Iraya. All rights reserved. </p>
     </div>
   </section>
-  <button onclick="changeTheme()" class="theme-button">Change Theme</button>
+  <button onclick="changeTheme('./assets/stylesheets')" 
+    class="theme-button">Change Theme</button>
   <script src="./scripts/theme.js" 
-      onload="loadTheme('./assets/stylesheets')"></script>
+    onload="loadTheme('./assets/stylesheets')"></script>
 </body>
 </html>

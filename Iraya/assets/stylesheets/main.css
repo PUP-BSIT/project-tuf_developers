@@ -141,7 +141,8 @@ button,
 }
 
 .width-75 {
-	width: 75%;
+	width: 60%;
+  border-radius: 15px;
 }
 
 .width-50 {
@@ -436,6 +437,11 @@ nav ul li a {
 
 .none {
 	display: none;
+}
+
+.box {
+  padding: 5px;
+  padding-top: 2rem;
 }
 
 .grid {
