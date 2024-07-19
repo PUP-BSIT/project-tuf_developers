@@ -40,8 +40,3 @@ button, .btn {
 .card-selected {
   background-color: #ffeab5;
 }
-
-.about-image img {
-  background-color: 2px solid #fedf2ee0;
-  border-radius: 15px;
-}
