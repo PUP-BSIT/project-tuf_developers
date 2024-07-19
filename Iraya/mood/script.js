@@ -166,6 +166,7 @@ function filterMood() {
             continue;
 
         const row = document.createElement('button');
+        row.id = item.mood_id;
         row.classList.add('card-list');
         const date = new Date(item.datetime_created).toLocaleString()
 

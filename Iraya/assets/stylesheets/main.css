@@ -458,13 +458,22 @@ nav ul li a {
 		font-size: 0.7rem;
 	}
 
-	header {
+	header, body {
 		padding: 0;
+		margin: 0;
 	}
 
 	nav {
+		display: flex;
+		width: 100%;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
+		font-size: 0.85rem;
+	}
+
+	ul {
+		width: 100%;
+		justify-content: space-between;
 	}
 
 	.width-50 {
