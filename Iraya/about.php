@@ -38,7 +38,7 @@
     <div class="about-container">
       <section class="about flex">
         <div class="about-image">
-          <img src="./assets/images/about.png" alt="Picture">
+          <img src="./assets/images/vision_img.png" alt="Picture">
         </div>
         <div class="about-content">
           <h2>Capture moments with Iraya</h2>
