@@ -112,8 +112,6 @@
     </div>
   </section>
   </main>
-  </section>
-  </main>
   <section class="footer">
     <div class="text-center">
       <p> © 2024 by Iraya. All rights reserved. </p>
