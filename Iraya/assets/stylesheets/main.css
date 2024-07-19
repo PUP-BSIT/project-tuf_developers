@@ -21,6 +21,7 @@ table {
 
 main {
 	min-height: 80vh;
+	padding: 1rem;
 }
 
 .modal {
@@ -38,10 +39,6 @@ main {
 	margin: 15% auto;
 	padding: 20px;
 	width: 80%;
-}
-
-.display {
-	display: block;
 }
 
 .card-list {
@@ -424,6 +421,7 @@ nav ul li a {
 	color: #111;
 	border: 1px solid #555;
 	height: 40vh;
+	overflow: scroll;
 }
 
 .warn {
@@ -443,6 +441,14 @@ nav ul li a {
 	grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
 }
 
+.display, .block {
+	display: block;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
 @media (max-width: 700px) {
 	.logo-container, .home-image, .about-image {
 		display: none;
@@ -450,5 +456,27 @@ nav ul li a {
 
 	h3, h5 {
 		font-size: 0.7rem;
+	}
+
+	header, body {
+		padding: 0;
+		margin: 0;
+	}
+
+	nav {
+		display: flex;
+		width: 100%;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		font-size: 0.85rem;
+	}
+
+	ul {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.width-50 {
+		width: 100%;
 	}
 }

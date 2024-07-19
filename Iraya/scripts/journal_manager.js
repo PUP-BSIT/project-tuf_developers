@@ -38,7 +38,7 @@ function displayJournals() {
 
 		row.innerHTML = `
                 <div class="pad-1 strong"> ${item[FIELD.TITLE]} </div>
-                <div class="flex center pad-1 width-100 text-left">
+                <div class="flex center pad-1 width-100 text-left overflow">
                     <div>${item[FIELD.CONTENT]}</div>
                 </div>
                 <div>${date}</div>`;

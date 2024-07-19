@@ -3,8 +3,18 @@ session_start();
 require_once '../config.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $response = $conn->execute_query('select * from moods where user_id=?',
+    $type = $_GET['type'] ?? '';
+    $response = '';
+
+    if($type == 'week') {
+        $response = $conn->execute_query('select * from moods 
+            where week(datetime_created) = week(now()) and user_id=?',
         [$_SESSION['user_id']]);
+    } else {
+        $response = $conn->execute_query('select * from moods where user_id=?',
+            [$_SESSION['user_id']]);
+    }
+
     $data = [];
     while($row = $response->fetch_assoc()) {
         $data[] = $row;

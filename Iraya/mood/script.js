@@ -153,7 +153,7 @@ function sortDate() {
 		}
 	});
 
-    displayMoodList();
+    filterMood();
 }
 
 function filterMood() {
@@ -166,19 +166,17 @@ function filterMood() {
             continue;
 
         const row = document.createElement('button');
+        row.id = item.mood_id;
         row.classList.add('card-list');
         const date = new Date(item.datetime_created).toLocaleString()
 
         row.innerHTML = `
             <div>
-                <img src="../assets/images/${item.mood_status}.png" 
+                <img src="../assets/images/mood_${item.mood_status}.png" 
                     alt="emoji">
             </div>
             <div class="text-left">${item.mood_description}</div>
-            <div class="bottom-right">${date}</div>
-            <div>
-                <img>
-            </div>`;
+            <div class="bottom-right">${date}</div>`;
         row.onclick = selectMoods;
         list.append(row);
     }

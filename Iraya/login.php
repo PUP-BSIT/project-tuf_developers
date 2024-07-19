@@ -43,7 +43,7 @@
         </ul>
       </nav>
     </header>
-    <div class="flex center down-6">
+    <div class="flex center down-6 pad-1">
       <form method="POST" class="flex column width-50">
         <div class="title">
           <h1>Login</h1>

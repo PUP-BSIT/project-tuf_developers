@@ -5,8 +5,6 @@
     if(!isUserLoggedIn()) {
         header('Location:login.php');
     }
-
-    $username = $_SESSION['username'];
 ?>
 
 <!DOCTYPE html>
@@ -14,15 +12,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link rel="stylesheet" href="./assets/stylesheets/memory_game.css">
     <link id="theme" rel="stylesheet" href="./assets/stylesheets/light.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <title>Dashboard</title>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="./assets/images/logo.png" alt="Iraya Logo" class="logo" />
+            <img src="./assets/images/logo.png" alt="Iraya Logo" 
+                 class="logo" />
             <div class="logo-text">
                 <h1>Iraya</h1>
                 <p>Simplify Your Journaling Experience</p>
@@ -34,34 +33,21 @@
                 <li><a href="./journal_manager.php">Journal</a></li>
                 <li><a href="./todo/todo.php">Tasks</a></li>
                 <li><a href="./mood/index.php">Mood</a></li>
+                <li><a href="./memory_game.php">Game</a></li>
                 <li><a href="./logout.php">Logout</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Welcome, <span id="username"><?= $username ?></span>!</h1>
-    <div class="flex around">
-        <div class="chart-container">
-            <a href="journal_manager.php" class="text-center btn block">
-                Journal Entries Frequency</a>
-            <canvas id="journal"></canvas>
-            <div class="text-center strong"></div>
+    <section class="flex center column">
+        <h1>Memory Matching Game</h1>
+        <div class="game-container" id="game_container"></div>
+        <div class="reset-button">
+           <button id="reset_button">Reset</button>
         </div>
-        <div class="chart-container">
-            <a href="./todo/todo.php" class="text-center btn block">
-                Overall Task Progress</a>
-            <canvas id="task"></canvas>
-            <div class="text-center strong"></div>
-        </div>
-        <div class="chart-container">
-            <a href="./mood/index.php" class="text-center btn block">
-                Weekly Mood Chart</a>
-            <canvas id="mood"></canvas>
-            <div class="text-center strong"></div>
-        </div>
-    </div>
+    </section>
+    <script src="./scripts/memory_game.js"></script>
     <button onclick="changeTheme('./assets/stylesheets')" 
         class="theme-button">Change Theme</button>
-    <script src="./scripts/dashboard.js"></script>
     <script src="./scripts/theme.js" 
         onload="loadTheme('./assets/stylesheets')"></script>
 </body>
