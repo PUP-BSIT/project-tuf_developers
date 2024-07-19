@@ -31,7 +31,10 @@
       <h1 class="header-about f-3">About Iraya</h1>
       <p>Iraya is an e-journal tool where you can list and track your mood, 
         manage your to-do list, and easily track and analyze your entries
-         over time
+        over time. Our vision is to create a digital space where users can
+        document and preserve their thoughts and memories. And 
+        Our mission is to simplify and enhance the user journaling
+        experience, making it a delightful journey through nostalgia.
       </p>
     </div>
     <div class="about-container">
@@ -40,21 +43,8 @@
           <img src="./assets/images/vision_img.png" alt="Picture">
         </div>
         <div class="about-content">
-          <h2>Our Vision</h2>
-          <p>  Our vision is to create a digital space where users can
-             document and preserve their thoughts and memories. 
-          </p>
-          <h2>Our Mission</h2>
-          <p> Our mission is to simplify and enhance the user journaling
-              experience, making it a delightful journey through nostalgia.
-          </p>
-        </div>
-      </section>
-      <section class="about flex">
-            <div class="choose-content">
-              <h2>Story Behind Iraya.</h2>
-              <p>
-              A song by Just Hush called "Iraya." The song beautifully 
+          <h2>Story Behind Iraya</h2>
+          <p> A song by Just Hush called "Iraya." The song beautifully 
               captures the essence of nostalgia, the passage of time, 
               and the enduring beauty or resilience of a person or place. 
               We decided to name our project "Iraya" to pay  deference to the
@@ -69,12 +59,9 @@
               inspiration.  We wanted users to feel a connection to their
               past, present, and future through the entries they create in 
               Iraya.
-              </p>
-            </div>
-            <div class="choose-image">
-              <img src="./assets/images/choose_img.png" alt="Picture" />
-            </div>
-          </section>
+          </p>
+        </div>
+      </section>
         </div>
       <section class="team">
         <div class="center">

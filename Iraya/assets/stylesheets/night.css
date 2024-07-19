@@ -50,10 +50,3 @@ button:hover, .btn:hover {
   background-color: #f4ffc2;
   color: #1b180f;
 }
-
-.box {
-  background-color: #b1d02a;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-

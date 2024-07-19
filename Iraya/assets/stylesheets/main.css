@@ -438,23 +438,9 @@ nav ul li a {
 	display: none;
 }
 
-.box {
-  padding: 5px;
-  padding-top: 2rem;
-
-}
-
 .about-image {
   width: 50%;
   border-radius: 15px;
-}
-
-.about-content {
-  margin-top: 5%;
-}
-
-.choose-content {
-  margin-top: 7%;
 }
 
 .center h1 {
