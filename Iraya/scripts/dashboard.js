@@ -1,3 +1,4 @@
+const username = document.querySelector('#username').textContent;
 const journal = document.querySelector('#journal');
 const task = document.querySelector('#task');
 const mood = document.querySelector('#mood');
@@ -5,9 +6,6 @@ const mood = document.querySelector('#mood');
 const journalEndpoint = './api.php';
 const taskEndpoint = './todo/api.php';
 const moodEndpoint = './mood/api.php?type=week';
-
-const urlParams = new URLSearchParams(window.location.search);
-const reminder = urlParams.get('remind');
 
 let journalData;
 let taskData;
@@ -26,6 +24,9 @@ async function getData() {
     const taskChart = taskProgress(taskData);
     const moodChart = occurences(moodData.map(i => i['mood_status']));
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const remind = urlParams.get('remind');    
+
     displayChart(journal, 'line', 'Journal', 
         Object.keys(journalChart), 
         Object.values(journalChart));
@@ -43,11 +44,11 @@ async function getData() {
     progress = progress ?? 0;
     const uncompleted = todo + progress;
 
-    if(uncompleted == 0 && reminder) 
+    if(uncompleted != 0 && remind) 
         setTimeout(() => {
-            alert(`Welcome back, ${reminder}! \nYou have ${uncompleted} ` + 
-                `Uncompleted Tasks in your To-Do List. \n` +
-                `Make sure to check your To-Do List to complete your tasks!`);
+            alert(`Welcome back, ${username}! \n You have ${uncompleted} ` +
+                  `uncompleted tasks in your To-Do List. \n Make sure to ` +
+                  `check your To-Do List to complete your tasks!`);
         }, 1000);
 }
 
