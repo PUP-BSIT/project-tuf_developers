@@ -38,7 +38,7 @@
             </ul>
         </nav>
     </header>
-    <h1>Welcome, <?= $username ?>!</h1>
+    <h1>Welcome, <span id="username"><?= $username ?></span>!</h1>
     <div class="flex around">
         <div class="chart-container">
             <a href="journal_manager.php" class="text-center btn block">
