@@ -40,10 +40,6 @@ main {
 	width: 80%;
 }
 
-.display {
-	display: block;
-}
-
 .card-list {
 	display: flex;
 	justify-content: space-between;
@@ -424,6 +420,7 @@ nav ul li a {
 	color: #111;
 	border: 1px solid #555;
 	height: 40vh;
+	overflow: scroll;
 }
 
 .warn {
@@ -441,6 +438,10 @@ nav ul li a {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+}
+
+.display, .block {
+	display: block;
 }
 
 @media (max-width: 700px) {
