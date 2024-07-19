@@ -46,16 +46,16 @@
         </select>
         <select id="filter_mood" oninput="filterMood()">
             <option value="all">All Moods</option>
-            <option value="mood_sad">Sad</option>
-            <option value="mood_unhappy">Unhappy</option>
-            <option value="mood_neutral">Neutral</option>
-            <option value="mood_happy">Happy</option>
-            <option value="mood_joyful">Joyful</option>
+            <option value="sad">Sad</option>
+            <option value="unhappy">Unhappy</option>
+            <option value="neutral">Neutral</option>
+            <option value="happy">Happy</option>
+            <option value="joyful">Joyful</option>
         </select>
     </div>
     <div class="flex between down-1">
         <button onclick="displayModal()">Add mood</button>
-        <div>
+        <div class="flex">
             <button id="clear_button" 
                 class="none" 
                 onclick="clearAllSelection()">
