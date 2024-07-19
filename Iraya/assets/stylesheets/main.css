@@ -432,6 +432,15 @@ nav ul li a {
 	color: #499642;
 }
 
+.about-image {
+  width: 50%;
+  border-radius: 15px;
+}
+
+.center h1 {
+  text-align: center;
+}
+
 .none {
 	display: none;
 }
