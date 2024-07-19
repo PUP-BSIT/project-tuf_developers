@@ -57,11 +57,6 @@ if (!isUserLoggedIn()) {
   <div class="main-content flex center column">
     <div id="journals" class="width-100"></div>
   </div>
-  <section class="footer">
-    <div class="copyright">
-      <p> © 2024 by Iraya. All rights reserved.</p>
-    </div>
-  </section>
   <button onclick="changeTheme('./assets/stylesheets')" 
     class="theme-button">Change Theme</button>
   <script src="./scripts/journal_manager.js"></script>
