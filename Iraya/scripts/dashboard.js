@@ -19,22 +19,22 @@ async function getData() {
     const moodResponse = await fetch(moodEndpoint);
 
     journalData = await journalResponse.json();
-    taskData = await taskResponse.json(); //total progress
-    moodData = await moodResponse.json(); //mood this week
+    taskData = await taskResponse.json(); 
+    moodData = await moodResponse.json();
 
     const journalChart = occurences(journalData.map(i => i[6]), true);
     const taskChart = taskProgress(taskData);
     const moodChart = occurences(moodData.map(i => i['mood_status']));
 
-    displayChart(journal, 'line', 'Journals', 
+    displayChart(journal, 'line', 'Journal', 
         Object.keys(journalChart), 
         Object.values(journalChart));
 
-    displayChart(task, 'doughnut', 'Task Progress', 
+    displayChart(task, 'doughnut', 'Task', 
         ['To Do', 'In Progress', 'Completed'],
         Object.values(taskChart));
     
-    displayChart(mood, 'pie', 'Mood Tracker', 
+    displayChart(mood, 'pie', 'Mood', 
         Object.keys(moodChart),
         Object.values(moodChart));
 
@@ -50,6 +50,12 @@ async function getData() {
 getData();
 
 function displayChart(canvas, type, title, labels, data) {
+    if(!data.length) {
+        const message = canvas.nextElementSibling;
+        message.textContent = `Add your first ${title} to view the chart`;
+        return;
+    }
+
     const context = canvas.getContext('2d');
     const chart = new Chart(context, {
         type: type,
@@ -100,5 +106,9 @@ function taskProgress(list) {
             completed += JSON.parse(item.completed).length;
     }
    
+    if(!todo && !progress && !completed) {
+        return [];
+    }
+
     return [todo, progress, completed];
 }

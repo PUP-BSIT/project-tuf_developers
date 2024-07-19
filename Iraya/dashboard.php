@@ -5,6 +5,8 @@
     if(!isUserLoggedIn()) {
         header('Location:login.php');
     }
+
+    $username = $_SESSION['username'];
 ?>
 
 <!DOCTYPE html>
@@ -36,19 +38,25 @@
             </ul>
         </nav>
     </header>
-    <h1>Dashboard</h1>
+    <h1>Welcome, <?= $username ?>!</h1>
     <div class="flex around">
         <div class="chart-container">
-            <h2>Journal Entries Frequency</h2>
+            <a href="journal_manager.php" class="text-center btn block">
+                Journal Entries Frequency</a>
             <canvas id="journal"></canvas>
-    </div>
-        <div class="chart-container">
-            <h2>Overall Task Progress</h2>
-            <canvas id="task"></canvas>
+            <div class="text-center strong"></div>
         </div>
         <div class="chart-container">
-            <h2>Overall Mood Chart</h2>
+            <a href="./todo/todo.php" class="text-center btn block">
+                Overall Task Progress</a>
+            <canvas id="task"></canvas>
+            <div class="text-center strong"></div>
+        </div>
+        <div class="chart-container">
+            <a href="./mood/index.php" class="text-center btn block">
+                Overall Mood Chart</a>
             <canvas id="mood"></canvas>
+            <div class="text-center strong"></div>
         </div>
     </div>
     <button onclick="changeTheme('./assets/stylesheets')" 
