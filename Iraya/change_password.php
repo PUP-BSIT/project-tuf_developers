@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $conn->execute_query("update users set password=? 
             where user_id=?", [$password, $userId]);
         
-        header('Location:change_password.php?message=Changed Successfully!');
+        header('Location:dashboard.php?remind=true');
     }
 }
 ?>

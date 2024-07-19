@@ -44,6 +44,8 @@ function changePassword() {
         event.preventDefault();
         return;
     }
+
+    alert('Password changed successfully!');
 }
 
 form.onsubmit = changePassword;
@@ -53,4 +55,5 @@ const message = urlParams.get('message');
 
 if(message) {
     alert(message);
+    location.replace('dashboard.php?');
 }
