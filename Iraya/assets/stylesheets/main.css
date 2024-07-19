@@ -141,8 +141,7 @@ button,
 }
 
 .width-75 {
-	width: 60%;
-  border-radius: 15px;
+	width: 75%;
 }
 
 .width-50 {
@@ -442,6 +441,24 @@ nav ul li a {
 .box {
   padding: 5px;
   padding-top: 2rem;
+
+}
+
+.about-image {
+  width: 50%;
+  border-radius: 15px;
+}
+
+.about-content {
+  margin-top: 5%;
+}
+
+.choose-content {
+  margin-top: 7%;
+}
+
+.center h1 {
+  text-align: center;
 }
 
 .grid {

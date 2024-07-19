@@ -29,13 +29,13 @@
     <section class="flex center">
       <div>
         <h2 class="f-4">Welcome to Iraya</h2>
-        <p>Your go-to platform for simplifying your journaling experience.</p>
-        <p class="down-2">Start today and discover the benefits of keeping a journal.</p>
+        <p>“Embrace Change, Preserve Memories”</p>
+        <p class="down-2">Journey through Nostalgia with Iraya</p>
         <a href="./login.php" class="btn margin-right">Login</a>
         <a href="./register.php" class="btn">Register</a>
       </div>
       <div>
-        <img src="./assets/images/welcome_picture.png" alt="Welcome Image"
+        <img src="./assets/images/welcome_img.png" alt="Welcome Image"
           class="home-image" />
         </div>
     </section>
