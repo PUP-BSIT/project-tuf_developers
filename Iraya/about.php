@@ -41,7 +41,7 @@
         </div>
         <div class="about-content">
           <h2>Our Vision</h2>
-          <p>  Our vision is to create a digital sanctuary where users can
+          <p>  Our vision is to create a digital space where users can
              document and preserve their thoughts and memories. 
           </p>
           <h2>Our Mission</h2>
