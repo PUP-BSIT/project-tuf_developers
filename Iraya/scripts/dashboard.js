@@ -38,10 +38,14 @@ async function getData() {
         Object.keys(moodChart),
         Object.values(moodChart));
 
-    const [todo, progress] = taskChart;
-    if(reminder) 
+    let [todo, progress] = taskChart;
+    todo = todo ?? 0;
+    progress = progress ?? 0;
+    const uncompleted = todo + progress;
+
+    if(uncompleted == 0 && reminder) 
         setTimeout(() => {
-            alert(`Welcome back, ${reminder}! \nYou have ${todo + progress} ` + 
+            alert(`Welcome back, ${reminder}! \nYou have ${uncompleted} ` + 
                 `Uncompleted Tasks in your To-Do List. \n` +
                 `Make sure to check your To-Do List to complete your tasks!`);
         }, 1000);
