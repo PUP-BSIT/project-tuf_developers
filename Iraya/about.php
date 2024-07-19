@@ -41,11 +41,11 @@
         </div>
         <div class="about-content">
           <h2>Our Vision</h2>
-          <p> Our vision was to create a digital sanctuary where users
-              could document and preserve their thoughts and memories.
+          <p>  Our vision is to create a digital sanctuary where users can
+             document and preserve their thoughts and memories. 
           </p>
           <h2>Our Mission</h2>
-          <p>  Our mission is to simplify and enhance your journaling
+          <p> Our mission is to simplify and enhance the user journaling
               experience, making it a delightful journey through nostalgia.
           </p>
         </div>
