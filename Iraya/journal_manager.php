@@ -33,6 +33,7 @@ if (!isUserLoggedIn()) {
         <li><a href="./journal_manager.php">Journal</a></li>
         <li><a href="./todo/todo.php">Tasks</a></li>
         <li><a href="./mood/index.php">Mood</a></li>
+        <li><a href="./memory_game.php">Game</a></li>
         <li><a href="./logout.php">Logout</a></li>
       </ul>
     </nav>

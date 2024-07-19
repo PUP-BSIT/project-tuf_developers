@@ -1,8 +1,3 @@
-h1 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 .game-container {
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -13,8 +8,6 @@ h1 {
 .card {
     width: 80px;
     height: 80px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,27 +42,6 @@ h1 {
     align-items: center;
 }
 
-.card-front {
-    background-color: #f8e187;
-}
-
 .card-back {
-    background-color: hsl(50, 100%, 60%);
-    color: #fff;
     transform: rotateY(180deg);
-}
-
-#reset_button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #fdd835;
-    border-radius: 10px;
-}
-
-.reset-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 25px;
 }

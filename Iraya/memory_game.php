@@ -1,11 +1,21 @@
+<?php
+    session_start();
+    require_once 'user.php';
+
+    if(!isUserLoggedIn()) {
+        header('Location:login.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hopping Character Game</title>
+    <title>Memory Game</title>
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
     <link rel="stylesheet" href="./assets/stylesheets/memory_game.css">
+    <link id="theme" rel="stylesheet" href="./assets/stylesheets/light.css">
 </head>
 <body>
     <header>
@@ -22,6 +32,7 @@
                 <li><a href="./journal_manager.php">Journal</a></li>
                 <li><a href="./todo/todo.php">Tasks</a></li>
                 <li><a href="./mood/index.php">Mood</a></li>
+                <li><a href="./memory_game.php">Game</a></li>
                 <li><a href="./logout.php">Logout</a></li>
             </ul>
         </nav>
@@ -34,5 +45,9 @@
         </div>
     </section>
     <script src="./scripts/memory_game.js"></script>
+    <button onclick="changeTheme('./assets/stylesheets')" 
+        class="theme-button">Change Theme</button>
+    <script src="./scripts/theme.js" 
+        onload="loadTheme('./assets/stylesheets')"></script>
 </body>
 </html>

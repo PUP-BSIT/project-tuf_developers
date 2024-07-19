@@ -22,7 +22,7 @@ let lockBoard = false;
 
 function createCard(value) {
 	const card = document.createElement("div");
-	card.classList.add("card");
+	card.classList.add("card","secondary");
 	card.innerHTML = `
         <div class="card-inner">
             <div class="card-front"></div>

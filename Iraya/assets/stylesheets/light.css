@@ -11,7 +11,7 @@ button, .btn {
     color: rgb(27, 24, 15);
 }
 
-button:hover, .btn:hover {
+button:hover, .btn:hover, .card-front {
     background-color: #ffeab5;
 }
 
@@ -19,7 +19,7 @@ button:hover, .btn:hover {
     background-color: #ffc228;
 }
 
-.secondary .btn {
+.secondary .btn, .card-back {
     background-color: white;
     color: black;
 }
