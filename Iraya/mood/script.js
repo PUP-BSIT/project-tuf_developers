@@ -153,7 +153,7 @@ function sortDate() {
 		}
 	});
 
-    displayMoodList();
+    filterMood();
 }
 
 function filterMood() {
