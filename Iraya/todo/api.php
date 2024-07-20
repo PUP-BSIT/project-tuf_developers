@@ -23,9 +23,8 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 else if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $_POST = json_decode(file_get_contents('php://input'),true);
     $conn->execute_query("
-        insert into tasks(task_id, user_id)
-        select concat('m-', lpad(coalesce(max(index_id),0) + 1, 4, '0')), ?
-        from tasks", [$_SESSION['user_id']]);
+        insert into tasks(user_id)
+        values(?)", [$_SESSION['user_id']]);
 
     $response = $conn->query('select max(task_id) from tasks');
     $data = $response->fetch_assoc();

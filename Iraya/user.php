@@ -14,8 +14,7 @@ function registerUser($username, $password) {
 
     $conn->execute_query("
         insert into users(user_id,username,password)
-        select concat('ui', lpad(max(index_id) + 1, 4, '0')), ?, ?
-        from users", $params);
+        values(?, ?, ?)", $params);
 
     $user = getUser($username);
 
@@ -73,10 +72,8 @@ function addJournal($title, $content) {
     $params = [$userId, $title, $content];
 
     $stmnt = $conn->execute_query("
-        insert into journals (journal_id, user_id, journal_title, 
-        journal_content) 
-        select concat('j', lpad(max(index_id) + 1, 4, '0')), ?, ?, ? 
-        from journals", $params);
+        insert into journals (user_id, journal_title, journal_content) 
+        values(?, ?, ?)", $params);
     
     if ($stmnt) {
         echo "Journal entry added successfully!";

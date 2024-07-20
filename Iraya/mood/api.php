@@ -28,9 +28,8 @@ else if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $description = $_POST['mood_description'];
 
     $conn->execute_query("
-        insert into moods(mood_id, user_id, mood_status, mood_description)
-        select concat('m-', lpad(max(index_id) + 1, 4, '0')), ?, ?, ?
-        from moods",[$_SESSION['user_id'], $status, $description]);
+        insert into moods(user_id, mood_status, mood_description)
+        values(?, ?, ?, ?)",[$_SESSION['user_id'], $status, $description]);
 }
 else if($_SERVER['REQUEST_METHOD'] == 'PATCH') {
     $_PATCH = json_decode(file_get_contents('php://input'),true);
