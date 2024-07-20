@@ -30,7 +30,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="./dashboard.php">Dashboard</a></li>
+                <li><a href="./dashboard.php" class="line">Dashboard</a></li>
                 <li><a href="./journal_manager.php">Journal</a></li>
                 <li><a href="./todo/todo.php">Tasks</a></li>
                 <li><a href="./mood/index.php">Mood</a></li>

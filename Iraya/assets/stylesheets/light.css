@@ -2,7 +2,7 @@ a {
   color: gray;
 }
 
-a:hover {
+a:hover, .line {
   color: #ffc228;
 }
 

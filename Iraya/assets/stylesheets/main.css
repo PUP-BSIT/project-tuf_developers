@@ -421,6 +421,10 @@ nav ul li a {
 	display: block;
 }
 
+.line {
+	text-decoration: underline;
+}
+
 .theme-button {
 	position: fixed;
 	bottom: 1rem;
