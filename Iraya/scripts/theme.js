@@ -20,7 +20,6 @@ function changeTheme(path) {
 }
 
 function loadTheme(path) {
-  console.log(currentTheme)
   if(!currentTheme)
       localStorage.setItem('theme', THEME.LIGHT);
 
