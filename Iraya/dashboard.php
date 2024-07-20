@@ -34,19 +34,20 @@
                 <li><a href="./journal_manager.php">Journal</a></li>
                 <li><a href="./todo/todo.php">Tasks</a></li>
                 <li><a href="./mood/index.php">Mood</a></li>
+                <li><a href="./memory_game.php">Game</a></li>
                 <li><a href="./logout.php">Logout</a></li>
             </ul>
         </nav>
     </header>
     <h1>Welcome, <span id="username"><?= $username ?></span>!</h1>
-    <div class="flex around">
+    <div class="chart-list flex around">
         <div class="chart-container">
             <a href="journal_manager.php" class="text-center btn block">
                 Journal Entries Frequency</a>
             <canvas id="journal"></canvas>
             <div class="text-center strong"></div>
         </div>
-        <div class="chart-container">
+        <div class="chart-container down-6">
             <a href="./todo/todo.php" class="text-center btn block">
                 Overall Task Progress</a>
             <canvas id="task"></canvas>

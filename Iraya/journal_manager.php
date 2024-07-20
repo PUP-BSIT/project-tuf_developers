@@ -31,15 +31,18 @@ if (!isUserLoggedIn()) {
         <li><a href="./journal_manager.php">Journal</a></li>
         <li><a href="./todo/todo.php">Tasks</a></li>
         <li><a href="./mood/index.php">Mood</a></li>
+        <li><a href="./memory_game.php">Game</a></li>
         <li><a href="./logout.php">Logout</a></li>
       </ul>
     </nav>
   </header>
   <h1>Journals</h1>
+  <div class="sticky">
   <div class="flex down-1">
     <a href="./add_journal.php" class="btn">Add Journal</a>
     <input id="search" type="text" class="grow-6">
     <button class="grow-1" onclick="searchJournals()">Search</button>
+    <button class="grow-1" onclick="clearJournals()">Clear</button>
     <select id="sort_journals" class="grow-1" oninput="sortDate()">
       <option value="date_descending">Sort by Date: Descending</option>
       <option value="date_ascending">Sort by Date: Ascending</option>
@@ -53,6 +56,7 @@ if (!isUserLoggedIn()) {
     <button id="delete_button" class="none" onclick="deleteAllSelection()">
       Delete
     </button>
+  </div>
   </div>
   <div class="main-content flex center column">
     <div id="journals" class="width-100"></div>

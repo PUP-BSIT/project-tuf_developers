@@ -65,6 +65,11 @@ function searchJournals() {
 	sortDate();
 }
 
+function clearJournals() {
+	search.value = '';
+	searchJournals();
+}
+
 function selectJournal(journalId, event) {
 	const button = event.currentTarget;
 

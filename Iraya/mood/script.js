@@ -252,6 +252,11 @@ async function editSelection() {
     displayModal('edit');
 }
 
+function clearJournals() {
+	search.value = '';
+	searchMoods();
+}
+
 async function deleteSelection() {
     for(const item of selectedMoods) {
         await fetch(endpoint, {

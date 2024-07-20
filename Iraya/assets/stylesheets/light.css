@@ -19,7 +19,7 @@ button:hover, .btn:hover {
   background-color: #ffc228;
 }
 
-.secondary .btn {
+.secondary .btn, .sticky, .card-front {
   background-color: white;
   color: black;
 }
@@ -41,6 +41,6 @@ button:hover, .btn:hover {
   background-color: #fff;
 }
 
-.card-selected {
+.card-selected, .card-back {
   background-color: #ffeab5;
 }

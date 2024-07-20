@@ -1,4 +1,4 @@
-body {
+body, .sticky {
   background-color: #111;
   color: white;
 }
@@ -11,12 +11,12 @@ a:hover {
   color: #dfff4e;
 }
 
-button, .btn {
+button, .btn, .card-front {
   background-color: #dfff4e;
   color: #1b180f;
 }
 
-button:hover, .btn:hover {
+button:hover, .btn:hover, .card-back {
   background-color: #f4ffc2;
   color: #1b180f;
 }

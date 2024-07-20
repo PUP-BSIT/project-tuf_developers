@@ -32,14 +32,18 @@
 				<li><a href="../journal_manager.php">Journal</a></li>
                 <li><a href="../todo/todo.php">Tasks</a></li>
 				<li><a href="#">Mood</a></li>
+                <li><a href="../memory_game.php">Game</a></li>
 				<li><a href="../logout.php">Logout</a></li>
 			</ul>
 		</nav>
 	</header>
     <h1>Mood Tracker</h1>
-    <div class="flex down-1">
+    <main class="pad-1">
+    <div class="sticky">
+    <div class="flex down-1 wrap">
         <input type="text" id="search" class="grow-6">
         <button class="grow-1" onclick="searchMoods()">Search</button>
+        <button class="grow-1" onclick="clearJournals()">Clear</button>
         <select id="sort_mood" class="grow-1" oninput="sortDate()">
             <option value="date_descending">Sort by Date: Descending</option>
             <option value="date_ascending">Sort by Date: Ascending</option>
@@ -75,8 +79,9 @@
             </button>
         </div>
     </div>
+    </div>
     <div id="mood_list"></div>
-
+    </main>
     <div class="modal">
         <div class="modal-content">
             <h2>How are you feeling today?</h2>
